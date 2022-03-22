@@ -17,7 +17,15 @@ body:
       description: e.g 多久会翻译一篇文章
     validations:
       required: true
-
+  
+  - type: textarea
+    id: contact
+    attributes:
+      label: 留一个联系方式
+      description: 方便我们与你联系:)
+    validations:
+      required: true
+      
   - type: textarea
     id: works
     attributes:
