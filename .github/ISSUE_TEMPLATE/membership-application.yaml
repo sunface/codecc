@@ -1,6 +1,6 @@
 name: 申请加入 Rust TT 翻译小组
 description: 给大家简单介绍下自己
-labels: kind/bug
+labels: kind/custom
 body:
   - type: textarea
     id: about
@@ -15,8 +15,8 @@ body:
     attributes:
       label: 社区预期参与程度
       description: e.g 多久会翻译一篇文章
-    validations:
-      required: true
+      validations:
+        required: true
 
   - type: textarea
     id: works
