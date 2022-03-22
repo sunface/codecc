@@ -8,7 +8,7 @@ body:
       label: 英文水平和写作能力
       description: 简单介绍下即可，我们希望能为社区提供高质量的文章，因此需要了解下这方面的水平
       validations:
-      required: true
+        required: true
 
   - type: textarea
     id: frequency
