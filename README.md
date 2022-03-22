@@ -1,5 +1,3 @@
-<h1 align="center">TT 翻译组</h1>
-
 <div align="center">
     <img src="https://github.com/studyrs/TT/blob/main/assets/logo.png?raw=true">
 </div>
