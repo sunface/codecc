@@ -8,6 +8,10 @@
 
 ## 最新文章
 
+| 文章链接 | 原文链接 | 翻译时间 | 是否已完成 |
+| ------- | ------ | ------- | -------- |
+| [Rust异步编程指南](https://github.com/studyrs/async-book) | [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/) | 2022-03-01 | 是 |
+
 ## 历史归档
 
 ## 加入我们
