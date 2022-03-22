@@ -25,6 +25,27 @@
   
 条件挺高的，但是我们的目标也很高。而且与其它技术网站翻译组的**志愿者定位**不同，你们都是社区最核心的成员，诸位的大名和贡献将列在社区网站上最显著的位置( 还有诸多好处，未来一一揭晓 )。
     
+    
+<table>
+  <tr>
+    <td align="center">
+        <a href="http://im.dev">
+            <img src="https://avatars.githubusercontent.com/u/7036754?v=4?s=100" width="100px;" alt=""/>
+            <br />
+            <sub><b>Sunface</b></sub>
+        </a>
+     </td>
+    <td align="center">
+        <a href="https://github.com/asur4s">
+            <img src="https://avatars.githubusercontent.com/u/99897242?v=4?s=100" width="100px;" alt=""/>
+            <br />
+            <sub><b>Asur4s</b></sub>
+        </a>
+     </td>
+
+  </tr>
+</table>
+
 ## 历史归档
   
 
