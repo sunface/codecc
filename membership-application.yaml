@@ -1,0 +1,30 @@
+name: 申请加入 Rust TT 翻译小组
+description: 给大家简单介绍下自己
+labels: kind/custom
+body:
+  - type: textarea
+    id: about
+    attributes:
+      label: 英文水平和写作能力
+      description: 简单介绍下即可，我们希望能为社区提供高质量的文章，因此需要了解下这方面的水平
+      validations:
+      required: true
+
+  - type: textarea
+    id: frequency
+    attributes:
+      label: 社区预期参与程度
+      description: e.g 多久会翻译一篇文章
+    validations:
+      required: true
+
+  - type: textarea
+    id: works
+    attributes:
+      label: 如果可以，请附上你之前比较得意的翻译作品( optional )
+
+  - type: textarea
+    id: anticipation
+    attributes:
+      label: 你对我们有哪些预期?
+
