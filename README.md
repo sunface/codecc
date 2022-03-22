@@ -6,11 +6,14 @@
 
 > 未来，所有的翻译文章都会在此仓库中进行分类和归纳，以便大家查看阅读。同时，为了能及时获取最新的翻译内容，大家可以点击右上角的 🌟 进行收藏 :D
 
-## 最新文章
+## 最新内容
 
 | 文章链接 | 原文链接 | 翻译时间 | 是否已完成 |
 | ------- | ------ | ------- | -------- |
 | [Rust异步编程指南](https://github.com/studyrs/async-book) | [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/) | 2022-03-01 | 是 |
+| [Cargo使用指南](https://github.com/studyrs/cargo-book) | [The Cargo Book](https://doc.rust-lang.org/stable/cargo/index.html) | 2022-02-27 | 是 |
+| [Tokio官方教程](https://github.com/studyrs/tokio-course) | [Tokio Tutorial](https://tokio.rs/tokio/tutorial) | 2022-02-15 | 是 |
+
 
 ## 历史归档
 
