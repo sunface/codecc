@@ -15,8 +15,6 @@
 | [Tokio官方教程](https://github.com/studyrs/tokio-course) | [Tokio Tutorial](https://tokio.rs/tokio/tutorial) | 2022-02-15 | 是 |
 
 
-## 历史归档
-
 ## 加入我们
 
 翻译组目前刚成立，因此亟需各路高手的加入，只要满足以下条件，你就可以[申请加入](https://github.com/studyrs/RustTT/issues/new?template=membership-application.yaml):
@@ -26,8 +24,9 @@
   
 条件挺高的，但是我们的目标也很高。而且与其它技术网站翻译组的**志愿者定位**不同，你们都是社区最核心的成员，诸位的大名和贡献将列在社区网站上最显著的位置，尽享荣耀( 还有诸多好处，未来一一揭晓 )。
     
-QQ群号: 725405290 
+## 历史归档
   
+
 
 
 
