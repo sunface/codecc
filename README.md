@@ -22,7 +22,7 @@ RustTT 是 Rust 语言学习社区**的核心小组**，负责将国外优秀的
 
 - 读者目录：[新闻](./News/) &nbsp; [文章](./Posts/) &nbsp; [书籍](./Books/)
 
-- 贡献者目录：[翻译指南](./translate-guid) &nbsp; [会员手册](./tt-members)
+- 贡献者目录：[翻译指南](./translation-guide) &nbsp; [会员手册](./tt-members)
 
 ## 加入 RustTT
 
