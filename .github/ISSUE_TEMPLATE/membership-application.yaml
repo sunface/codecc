@@ -21,8 +21,8 @@ body:
   - type: textarea
     id: contact
     attributes:
-      label: 留一个联系方式
-      description: 方便我们与你联系:)
+      label: QQ
+      description: 如果通过审核，需要拉你进 QQ 群
     validations:
       required: true
       
