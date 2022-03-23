@@ -16,11 +16,11 @@
 | [Tokio官方教程](https://github.com/studyrs/tokio-course) | [Tokio Tutorial](https://tokio.rs/tokio/tutorial) | 2022-02-15 | 100% |  [Sunface](https://im.dev) |
 
 
-## 加入我们
+## 加入 RustTT
 
 > 郑重声明，所有翻译成果的著作权都归属于翻译者个人，RustTT 只是一个非盈利性组织
 
-翻译组目前刚成立，因此亟需各路高手的加入，请大家**务必先**阅读 [RustTT 贡献者指南](./贡献者指南.md)，然后**再**[点击这里](https://github.com/studyrs/RustTT/issues/new?template=membership-application.yaml)申请加入。
+翻译组目前刚成立，因此亟需各路高手的加入，请大家**务必先**阅读 [加入我们](./加入我们.md)，然后**再**[点击这里](https://github.com/studyrs/RustTT/issues/new?template=membership-application.yaml)申请加入。
 
 
 <table>
@@ -42,10 +42,4 @@
 
   </tr>
 </table>
-
-## 历史归档
   
-
-
-
-
