@@ -23,7 +23,7 @@ RustTT 是 Rust 语言学习社区**的核心小组**，负责将国外优秀的
 
 > 郑重声明，所有翻译成果的著作权都归属于翻译者个人，RustTT 只是一个非盈利性组织
 
-翻译组目前刚成立，因此亟需各路高手的加入，请大家**务必先**阅读 [加入我们](./加入我们.md)，然后**再**[点击这里](https://github.com/studyrs/RustTT/issues/new?template=membership-application.yaml)申请加入。
+翻译组目前刚成立，因此亟需各路高手的加入，请大家**务必先**阅读 [加入我们](./tt-members/加入我们.md)，然后**再**[点击这里](https://github.com/studyrs/RustTT/issues/new?template=membership-application.yaml)申请加入。
 
 
 <table>
