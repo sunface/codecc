@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/studyrs/TT/blob/main/assets/logo.png?raw=true">
+    <img src="https://github.com/studyrs/RustTT/blob/main/.github/assets/logo.png?raw=true">
 </div>
 
 <p align="center">RustTT 是 Rust 语言学习社区<strong>的核心小组</strong>，负责将国外优秀的技术文章、学习教程、新闻资讯翻译成中文，我们的目标是<i>打造国内最好的开源 Rust 学习社区。</i></p>
