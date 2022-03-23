@@ -8,12 +8,12 @@
 
 ## 最新内容
 
-| 文章链接 | 原文链接 | 翻译时间 | 是否已完成 | 作者 |
+| 文章链接 | 原文链接 | 翻译时间 | 完成进度 | 作者 |
 | ------- | ------ | ------- | -------- | ----- |
-| [手把手带你实现链表](https://github.com/studyrs/too-many-lists) | [Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/) | 2022-03-10 | 否 | [Sunface](https://im.dev) |
-| [Rust异步编程指南](https://github.com/studyrs/async-book) | [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/) | 2022-03-01 | 是 |  [Sunface](https://im.dev) |
-| [Cargo使用指南](https://github.com/studyrs/cargo-book) | [The Cargo Book](https://doc.rust-lang.org/stable/cargo/index.html) | 2022-02-27 | 是 |  [Sunface](https://im.dev) |
-| [Tokio官方教程](https://github.com/studyrs/tokio-course) | [Tokio Tutorial](https://tokio.rs/tokio/tutorial) | 2022-02-15 | 是 |  [Sunface](https://im.dev) |
+| [手把手带你实现链表](https://github.com/studyrs/too-many-lists) | [Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/) | 2022-03-10 | 80% | [Sunface](https://im.dev) |
+| [Rust异步编程指南](https://github.com/studyrs/async-book) | [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/) | 2022-03-01 | 100% |  [Sunface](https://im.dev) |
+| [Cargo使用指南](https://github.com/studyrs/cargo-book) | [The Cargo Book](https://doc.rust-lang.org/stable/cargo/index.html) | 2022-02-27 | 100% |  [Sunface](https://im.dev) |
+| [Tokio官方教程](https://github.com/studyrs/tokio-course) | [Tokio Tutorial](https://tokio.rs/tokio/tutorial) | 2022-02-15 | 100% |  [Sunface](https://im.dev) |
 
 
 ## 加入我们
