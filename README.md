@@ -18,6 +18,11 @@ RustTT 是 Rust 语言学习社区**的核心小组**，负责将国外优秀的
 | [Cargo使用指南](https://github.com/studyrs/cargo-book) | [The Cargo Book](https://doc.rust-lang.org/stable/cargo/index.html) | 2022-02-27 | 100% |  [Sunface](https://im.dev) |
 | [Tokio官方教程](https://github.com/studyrs/tokio-course) | [Tokio Tutorial](https://tokio.rs/tokio/tutorial) | 2022-02-15 | 100% |  [Sunface](https://im.dev) |
 
+## 目录索引
+
+- 读者目录：[新闻](./News/) &nbsp; [文章](./Posts/) &nbsp; [书籍](./Books/)
+
+- 贡献者目录：[翻译指南](./translate-guid) &nbsp; [会员手册](./tt-members)
 
 ## 加入 RustTT
 
