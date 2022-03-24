@@ -25,12 +25,21 @@ RustTT 所有的翻译成果都放在本仓库相应的目录中: [新闻](./New
 但我们考虑到读者可能还有内容搜索等需求，因此特地编写了 [读者指南](https://guide.rusttt.org/reader-guide/how-to-use.html)，若大家希望深入挖掘内容，可以快速浏览下。
 
 
+
 ## 加入 RustTT
 
 > 郑重声明，所有翻译成果的著作权都归属于翻译者个人，RustTT 只是一个非盈利性组织
 
 翻译组目前刚成立，因此亟需各路高手的加入，请大家**务必先**阅读 [加入我们](https://guide.rusttt.org/join-us.html)，然后**再**[点击这里](https://github.com/studyrs/RustTT/issues/new?template=membership-application.yaml)申请加入。
 
+
+## 贡献者指南
+
+本仓库暂不接受成员之外的贡献，因此 `贡献者 == RustTT成员`，关于如何贡献，请参见 [贡献者指南](http://guide.rusttt.org/translation-guide/steps.html)。
+
+## 成员列表
+
+目前成员先按照加入时间简单排序。
 
 <table>
     <tr>
