@@ -18,17 +18,18 @@ RustTT 是 Rust 语言学习社区**的核心小组**，负责将国外优秀的
 | [Cargo使用指南](https://github.com/studyrs/cargo-book) | [The Cargo Book](https://doc.rust-lang.org/stable/cargo/index.html) | 2022-02-27 | 100% |  [Sunface](https://im.dev) |
 | [Tokio官方教程](https://github.com/studyrs/tokio-course) | [Tokio Tutorial](https://tokio.rs/tokio/tutorial) | 2022-02-15 | 100% |  [Sunface](https://im.dev) |
 
-## 目录索引
+## 读者指南
 
-- 读者目录：[新闻](./News/) &nbsp; [文章](./Posts/) &nbsp; [书籍](./Books/)
+RustTT 所有的翻译成果都放在本仓库相应的目录中: [新闻](./News/) &nbsp; [文章](./Posts/) &nbsp; [书籍](./Books/)。
 
-- 贡献者目录：[翻译指南](./translation-guide) &nbsp; [小组成员手册](./tt-members)
+但是考虑到读者还有内容搜索等需求，因此我们提供了一个 [读者指南](https://guide.rusttt.org/reader-guide/how-to-use.html)，若大家希望深入挖掘内容，可以简单了解下。
+
 
 ## 加入 RustTT
 
 > 郑重声明，所有翻译成果的著作权都归属于翻译者个人，RustTT 只是一个非盈利性组织
 
-翻译组目前刚成立，因此亟需各路高手的加入，请大家**务必先**阅读 [加入我们](./tt-members/加入我们.md)，然后**再**[点击这里](https://github.com/studyrs/RustTT/issues/new?template=membership-application.yaml)申请加入。
+翻译组目前刚成立，因此亟需各路高手的加入，请大家**务必先**阅读 [加入我们](https://guide.rusttt.org/join-us.html)，然后**再**[点击这里](https://github.com/studyrs/RustTT/issues/new?template=membership-application.yaml)申请加入。
 
 
 <table>
