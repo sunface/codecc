@@ -9,23 +9,38 @@ body:
       description: 简单介绍下即可，我们希望能为社区提供高质量的文章，因此需要了解下这方面的水平
     validations:
       required: true
-
-  - type: textarea
+  
+  - type: dropdown
     id: frequency
     attributes:
-      label: 社区预期参与程度
-      description: e.g 多久会翻译一篇文章
-    validations:
-      required: true
-  
-  - type: textarea
-    id: contact
-    attributes:
-      label: QQ
-      description: 如果通过审核，需要拉你进 QQ 群
+      label: 预期多久翻译一篇文章?
+      options:
+        - 半周
+        - 一周
+        - 半个月
+        - 一个月
     validations:
       required: true
       
+  - type: dropdown
+    id: role
+    attributes:
+      label: 你希望以何种角色参与到翻译组中?
+      options:
+        - 翻译者
+        - 选题者
+        - Both
+    validations:
+      required: true
+        
+  - type: input
+    id: QQ
+    attributes:
+      label: QQ 号
+      placeholder: "如果通过审核，需要拉你进 QQ 群"
+    validations:
+      required: true
+    
   - type: textarea
     id: works
     attributes:
