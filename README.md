@@ -84,7 +84,7 @@ RustTT 是 Rust 语言学习社区**的核心小组**，负责将国外优秀的
             <a href="https://github.com/FaceFall">
                 <img src="https://avatars.githubusercontent.com/u/37741552?v=4?s=100" width="100px;" alt=""/>
                 <br />
-                <sub><b>lxbwolf</b></sub>
+                <sub><b>FaceFall</b></sub>
                 <br />
                 <sub>2022-03-23</sub>
             </a>
