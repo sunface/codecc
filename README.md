@@ -22,22 +22,22 @@ Rustt 是 Rust 语言学习社区**的核心小组**，负责将国外优秀的�
 
 Rustt 所有的翻译成果都放在本仓库相应的目录中: [新闻](./News/) &nbsp; [文章](./Posts/) &nbsp; [书籍](./Books/)。
 
-但我们考虑到读者可能还有内容搜索等需求，因此特地编写了 [读者指南](https://guide.Rustt.org/reader-guide/how-to-use.html)，若大家希望深入挖掘内容，可以快速浏览下。
+但我们考虑到读者可能还有内容搜索等需求，因此特地编写了 [读者指南](https://guide.rustt.org/reader-guide/how-to-use.html)，若大家希望深入挖掘内容，可以快速浏览下。
 
 ## 听说你有好的题材
 
-如果大家对某篇英文文章感兴趣，并觉得它值得推荐给更多的人，可以[提交选题](http://guide.Rustt.org/proposing.html)，但是需要遵循一定的提交规范。与翻译不同，**任何人都能提交新的选题**。
+如果大家对某篇英文文章感兴趣，并觉得它值得推荐给更多的人，可以[提交选题](http://guide.rustt.org/proposing.html)，但是需要遵循一定的提交规范。与翻译不同，**任何人都能提交新的选题**。
 
 ## 加入 Rustt
 
 > 郑重声明，所有翻译成果的著作权都归属于翻译者个人，Rustt 只是一个非盈利性组织
 
-翻译组目前刚成立，因此亟需各路高手的加入，请大家**务必先**阅读 [加入我们](https://guide.Rustt.org/join-us.html)，然后**再**[点击这里](https://github.com/studyrs/Rustt/issues/new?template=membership-application.yaml)申请加入。
+翻译组目前刚成立，因此亟需各路高手的加入，请大家**务必先**阅读 [加入我们](https://guide.rustt.org/join-us.html)，然后**再**[点击这里](https://github.com/studyrs/Rustt/issues/new?template=membership-application.yaml)申请加入。
 
 
 ## 贡献者指南
 
-关于如何贡献，请参见 [贡献者指南](http://guide.Rustt.org/translation-guide/steps.html)。
+关于如何贡献，请参见 [贡献者指南](http://guide.rustt.org/translation-guide/steps.html)。
 
 ## 成员列表
 
@@ -45,36 +45,36 @@ Rustt 所有的翻译成果都放在本仓库相应的目录中: [新闻](./News
 
 <table>
     <tr>
-        <td align="center" width="25%">
+        <td align="center">
             <a href="http://im.dev">
-                <img src="https://avatars.githubusercontent.com/u/7036754?v=4?s=100" width="100%"  alt=""/>
+                <img src="https://avatars.githubusercontent.com/u/7036754?v=4?s=100" width="100px"  alt=""/>
                 <br />
                 <sub><b>Sunface</b></sub>
                 <br />
                 <sub>2022-03-22</sub>
             </a>
         </td>
-        <td align="center"  width="25%">
+        <td align="center" >
             <a href="https://github.com/asur4s">
-                <img src="https://avatars.githubusercontent.com/u/99897242?v=4?s=100" width="100%" alt=""/>
+                <img src="https://avatars.githubusercontent.com/u/99897242?v=4?s=100" width="100px" alt=""/>
                 <br />
                 <sub><b>Asur4s</b></sub>
                 <br />
                 <sub>2022-03-22</sub>
             </a>
         </td>
-        <td align="center"  width="25%">
+        <td align="center" >
             <a href="https://github.com/minikiller">
-                <img src="https://avatars.githubusercontent.com/u/5356570?v=4?s=100" width="100%" alt=""/>
+                <img src="https://avatars.githubusercontent.com/u/5356570?v=4?s=100" width="100px" alt=""/>
                 <br />
                 <sub><b>minikiller</b></sub>
                 <br />
                 <sub>2022-03-23</sub>
             </a>
         </td>
-        <td align="center"  width="25%">
+        <td align="center">
             <a href="https://github.com/Cerdore">
-                <img src="https://avatars.githubusercontent.com/u/24353799?v=4?s=100" width="100%" alt=""/>
+                <img src="https://avatars.githubusercontent.com/u/24353799?v=4?s=100" width="100px" alt=""/>
                 <br />
                 <sub><b>Cerdore</b></sub>
                 <br />
@@ -83,27 +83,27 @@ Rustt 所有的翻译成果都放在本仓库相应的目录中: [新闻](./News
         </td>
     </tr>
     <tr>
-        <td align="center" width="25%">
+        <td align="center">
             <a href="https://github.com/FaceFall">
-                <img src="https://avatars.githubusercontent.com/u/37741552?v=4?s=100" width="100%" alt=""/>
+                <img src="https://avatars.githubusercontent.com/u/37741552?v=4?s=100" width="100px" alt=""/>
                 <br />
                 <sub><b>FaceFall</b></sub>
                 <br />
                 <sub>2022-03-23</sub>
             </a>
         </td>
-        <td align="center" width="25%">
+        <td align="center">
             <a href="https://github.com/lxbwolf">
-                <img src="https://avatars.githubusercontent.com/u/12119889?v=4?s=100" width="100%" alt=""/>
+                <img src="https://avatars.githubusercontent.com/u/12119889?v=4?s=100" width="100px" alt=""/>
                 <br />
                 <sub><b>lxbwolf</b></sub>
                 <br />
                 <sub>2022-03-23</sub>
             </a>
         </td>
-        <td align="center"  width="25%">
+        <td align="center">
             <a href="https://github.com/hyuuko">
-                <img src="https://avatars.githubusercontent.com/u/44204137?v=4?s=100" alt=""/>
+                <img src="https://avatars.githubusercontent.com/u/44204137?v=4?s=100" width="100px" alt=""/>
                 <br />
                 <sub><b>hyuuko</b></sub>
                 <br />
