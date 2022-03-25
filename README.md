@@ -1,7 +1,7 @@
 <div align="center">
     <img src="https://github.com/studyrs/Rustt/blob/main/.github/assets/logo.png?raw=true">
 
-Rustt贡献指南: [https://guide.rustt.org](https://guide.rustt.org)
+Rustt贡献者指南: [https://guide.rustt.org](https://guide.rustt.org)
 </div>
 
 <br />
