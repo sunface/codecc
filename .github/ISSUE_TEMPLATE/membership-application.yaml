@@ -22,16 +22,16 @@ body:
     validations:
       required: true
       
-  - type: dropdown
-    id: role
-    attributes:
-      label: 你希望以何种角色参与到翻译组中?
-      options:
-        - 翻译者
-        - 选题者
-        - Both
-    validations:
-      required: true
+#   - type: dropdown
+#     id: role
+#     attributes:
+#       label: 你希望以何种角色参与到翻译组中?
+#       options:
+#         - 翻译者
+#         - 选题者
+#         - Both
+#     validations:
+#       required: true
         
   - type: input
     id: QQ
