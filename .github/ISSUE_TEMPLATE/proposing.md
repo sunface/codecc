@@ -27,5 +27,5 @@ assignees: ''
 > 翻译：[Sunface](https://im.dev)
 > 选题：[Sunface](https://im.dev)
 >
-> 本文由 [RustTT](https://rusttt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出
+> 本文由 [Rustt](https://Rustt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出
 ```
