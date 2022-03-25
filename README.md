@@ -22,7 +22,7 @@ Rustt 是 Rust 语言学习社区**的核心小组**，负责将国外优秀的�
 
 Rustt 所有的翻译成果都放在本仓库相应的目录中: [新闻](./News/) &nbsp; [文章](./Posts/) &nbsp; [书籍](./Books/)。
 
-但我们考虑到读者可能还有内容搜索等需求，因此特地编写了 [读者指南](https://guide.rustt.org/reader-guide/how-to-use.html)，若大家希望深入挖掘内容，可以快速浏览下。
+<!-- 但我们考虑到读者可能还有内容搜索等需求，因此特地编写了 [读者指南](https://guide.rustt.org/reader-guide/how-to-use.html)，若大家希望深入挖掘内容，可以快速浏览下。 -->
 
 ## 听说你有好的题材
 
