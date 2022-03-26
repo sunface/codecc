@@ -1,7 +1,11 @@
 <div align="center">
     <img src="https://github.com/studyrs/Rustt/blob/main/.github/assets/logo.png?raw=true">
 
-Rustt贡献者指南: [https://guide.rustt.org](https://guide.rustt.org)
+<a align="center" href="https://guide.rustt.org">Rustt贡献者指南 </a>
+&nbsp;
+<a align="center" href="https://guide.rustt.org/join-us.html">加入我们 </a>
+&nbsp;
+<a align="center" href="https://github.com/studyrs/Rustt/blob/main/贡献者排名.md">贡献者风采 </a>
 </div>
 
 <br />
@@ -24,11 +28,6 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
 
 ## 优秀作品
 在茫茫文海中，如何找到受到大家一致好评的优秀作品？为了解决大家的困扰，我们专门提供了[优秀作品列表](./优秀作品.md)。
-
-
-## 加入 Rustt
-
-翻译组目前刚成立( 2022-03-22 )，因此亟需各路高手的加入，请大家**务必先**阅读 [加入我们](https://guide.rustt.org/join-us.html)，然后**再**[点击这里](https://github.com/studyrs/Rustt/issues/new?template=membership-application.yaml)申请加入。
 
 
 ## 明星贡献者
