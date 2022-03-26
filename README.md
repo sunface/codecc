@@ -12,6 +12,8 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
 
 如果大家对某篇英文文章感兴趣，并觉得它值得推荐给更多的人，可以[提交选题](http://guide.rustt.org/proposing.html)，**任何人都可提交。**
 
+<br />
+
 ## 最近翻译
 这里只列了一部分，想要阅读更多，请查看[最新翻译列表](./最近翻译.md)。
 
@@ -20,14 +22,18 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
 | [手把手带你实现链表](https://github.com/studyrs/too-many-lists) | [Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/) | 2022-03-10 | 80% | [Sunface](https://im.dev) |
 | [Rust异步编程指南](https://github.com/studyrs/async-book) | [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/) | 2022-03-01 | 100% |  [Sunface](https://im.dev) |
 
+<br />
 
 ## 优秀作品
 在茫茫文海中，如何找到受到大家一致好评的优秀作品？为了解决大家的困扰，我们专门提供了[优秀作品列表](./优秀作品.md)。
+
+<br />
 
 ## 加入 Rustt
 
 翻译组目前刚成立( 2022-03-22 )，因此亟需各路高手的加入，请大家**务必先**阅读 [加入我们](https://guide.rustt.org/join-us.html)，然后**再**[点击这里](https://github.com/studyrs/Rustt/issues/new?template=membership-application.yaml)申请加入。
 
+<br />
 
 ## 明星贡献者
 
@@ -47,3 +53,15 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
     </tr>
 </table> -->
   
+<br />
+
+## 组织发展史
+
+- `2022-03-22` 正式成立，创始人 [Sunface](https://im.dev)，同天，第一名成员加入： 
+
+<a href="https://github.com/asur4s">
+    <img src="https://avatars.githubusercontent.com/u/99897242?v=4?s=100" width="120px"  alt=""/>
+    <br />
+    <sub><b>asur4s</b></sub>
+    <br />
+</a>
