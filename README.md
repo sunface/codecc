@@ -59,9 +59,16 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
 
 - `2022-03-22` 正式成立，创始人 [Sunface](https://im.dev)，同天，第一名成员加入： 
 
-<a href="https://github.com/asur4s">
-    <img src="https://avatars.githubusercontent.com/u/99897242?v=4?s=100" width="120px"  alt=""/>
-    <br />
-    <sub><b>asur4s</b></sub>
-    <br />
-</a>
+<table>
+    <tr>
+        <td align="center">
+            <a href="https://github.com/asur4s">
+                <img src="https://avatars.githubusercontent.com/u/99897242?v=4?s=100" width="120px"  alt=""/>
+                <br />
+                <sub><b>asur4s</b></sub>
+                <br />
+            </a>
+        </td>
+    </tr>
+</table>
+
