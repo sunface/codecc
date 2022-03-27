@@ -2,7 +2,7 @@
 name: 提交新选题
 about: 请大家按规范的格式提交和翻译
 title: "[类型][日期] 标题"
-labels: 待认领
+labels: 待认领, 选题
 assignees: ''
 
 ---
