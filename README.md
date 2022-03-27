@@ -20,10 +20,9 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
 ## 最近翻译
 这里只列了一部分，想要阅读更多，请查看[最新翻译列表](./最近翻译.md)。
 
-| 文章链接 | 原文链接 | 翻译时间 | 完成进度 | 作者 |
-| ------- | ------ | ------- | -------- | ----- |
-| [手把手带你实现链表](https://github.com/studyrs/too-many-lists) | [Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/) | 2022-03-10 | 80% | [Sunface](https://im.dev) |
-| [Rust异步编程指南](https://github.com/studyrs/async-book) | [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/) | 2022-03-01 | 100% |  [Sunface](https://im.dev) |
+| 文章链接 |  翻译时间 | 完成进度 | 作者 |
+| ------- | ------- | -------- | ----- |
+| [Rust嵌入式开发](https://github.com/studyrs/Rustt/blob/main/Posts/%5B2022-03-26%5D%20Rust%20嵌入式开发.md) | 2022-03-27 | 100% | [lxbwolf](https://github.com/lxbwolf) |
 
 
 ## 优秀作品
