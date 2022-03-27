@@ -66,3 +66,17 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
     </tr>
 </table>
 
+- `2022-03-26` 首个[选题](https://github.com/studyrs/Rustt/issues/10)由 **minikiller** 贡献：
+
+<table>
+    <tr>
+        <td align="center">
+            <a href="https://github.com/minikiller">
+                  <img src="https://avatars.githubusercontent.com/u/5356570?v=4?s=100" width="120px"  alt=""/>
+                <br />
+                <sub><b>minikiller</b></sub>
+                <br />
+            </a>
+        </td>
+    </tr>
+</table>
