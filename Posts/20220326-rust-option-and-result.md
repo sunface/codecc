@@ -580,14 +580,13 @@ The last function call tried to open a file that does not exist:
 That error, coming from std::fs, was also properly propagated.
 
 ### 使用其他的 crates：anyhow
-There are many crates available to help us deal with errors. Some help us manage boilerplate code, others add features such as extra reporting. One example of a crate that is easy to use when starting out with Rust is anyhow:
 
-
+有许多的 crates 可以帮助我们处理错误，一些可以帮助我们管理样板代码，另一些则添加了额外报告等功能。一个易于使用的 crates 的代表就是 anyhow ：
 
 Rust anyhow【图片】
 
+这个 crate 将帮助我们实现一个简化的 Result 类型，同时通过增加 context 我们可以很轻松的标记我们的错误。下面的代码片段演示了三个 anyhow 的基础能力：
 
-This crate will give us a simplified Result type and we can easily annotate our errors by adding context. The following code snippet illustrates the three basic things that anyhow equips us with:
 ```rust
 use anyhow::{anyhow, Context, Result};
 use serde::{Deserialize, Serialize};
@@ -610,18 +609,20 @@ fn get_secrets(s: &str) -> Result<Secrets> {
 }
 ```
 
-In the above example, anyhow = "1.0.43" was added to the Cargo.toml file. At the top, three things are brought into scope. These are anyhow, Context and Result. Let’s discuss them one by one.
+在以上的例子中，需要在 Cargo.toml 增加 anyhow = "1.0.43" 。在头部，三个东西被引入，它们是 anyhow ，Context 和 Result 。让我们一个接一个的讨论：
 
 #### anyhow::Result
-A (more) convenient type to work with and deal with errors. You can also use this on main(). The get_secrets function is where we see this Result in use. It is this enum for which traits have been implemented that make things easier. One of those traits, that we will discuss next, is called ‘Context’.
+这是一个处理错误的一个更方便的类型。你可以在 main() 中使用它。在 get_secrets 函数中我们可以看到 Result 在使用，就是这个被实现的 enum 使事情变得简单。这些 trait 中的一个称作 Context ，我们将在下面进行讨论。
 
-If we run get_secrets and all is well, we get the following return:
+如果我们运行 get_secrets  并且一切正常，我们获得如下返回：
+
 ```rust
 let a = get_secrets("secrets.json");
 dbg!(a);
 ```
 
-The above will output the following:
+以上代码输出如下：
+
 ```
 /*
 [src\main.rs:] a = Ok(
@@ -633,18 +634,24 @@ The above will output the following:
 */
 ```
 
-We got a ‘normal’ Ok value.
+我们获得了一个正常的 Ok 数值。
 
 #### anyhow::Context
-As errors are propagated, the Context trait allows you to wrap the original error and include a message for more contextual awareness. Previously, we would open a file like so:
+
+正如错误是可以被传播的，Context trait 允许你将原始错误包装起来，并且包含了一个更多语境意识的信息。以前，我们会这样打开一个文件：
+
 ```rust
 let text = fs::read_to_string(s)?;
 ```
-This will open the file and unwrap the Ok variant. Alternatively, if read_to_string returns an Err, the ? will propagate that error. Now, we have the following:
+
+这将打开文件并且 unwrap Ok 变量。或者, 如果read_to_string 返回一个 Err，那么 ? 会传播这个错误。如今，我们可以象如下这样： 
+
 ```rust
 let text = fs::read_to_string(s).context("Secrets file is missing.")?;
 ```
-We did something similar with for the serde_json::from_str method. We can use the following to trigger 2 errors:
+
+我们对于 serde_json::from_str 方法做同样类似的事情，我们可以使用以下代码出发2个错误：
+
 ```rust
 let b = get_secrets("secrets.jsonnn");
 dbg!(b);
@@ -652,7 +659,8 @@ dbg!(b);
 let c = get_secrets("invalid_json.txt");
 dbg!(c);
 ```
-In the first case, there will be an error because the file does not exist. In the second case, Serde will give us an error because it cannot parse the JSON. The above functions output the following:
+在第一个用例，由于文件并不存在将会引起一个错误。在第二个用例，Serde 由于无法解析 JSON 将给我们一个错误。上面的函数输出如下内容：
+
 ```text
 [src\main.rs:358] b = Err(
     Error {
@@ -673,19 +681,23 @@ In the first case, there will be an error because the file does not exist. In th
 ```
 
 #### anyhow::anyhow
-This is a macro that you can use to have a function return an anyhow::Error. The following loads some JSON that contains a password that is too short (silly example I know):
+
+这是一个宏，你可以使用它来返回一个 anyhow::Error。下面加载一些 JSON ，其中包含太短的密码（我知道这是一个愚蠢的例子）：
+
 ```rust
 let d = get_secrets("wrong_secrets.json");
 dbg!(d);
 ```
-The result would be the following:
+
+结果应该如下：
+
 ```
 [src\main.rs:364] d = Err(
     "Password in secrets file is too short",
 )
 ```
 
-The anyhow crate was forked by Jane Lusby. She created eyre. That is also something worth checking out. Especially combined with the excellent Rustconf 2020 talk, dubbed Error handling Isn’t All About Errors.
+Jane Lusby 复制了 anyhow crate。她创建了[eyre](https://crates.io/crates/eyre/0.3.7)，这也是值得一看的。特别是结合优秀的[Rustconf 2020](https://2020.rustconf.com/talks)演讲，所谓的[Error handling Isn’t All About Errors](https://www.youtube.com/watch?v=rAF8mLI0naQ)。
 
 ## 收尾
 Understanding how the Option as well as the Result is used in Rust is very important. The above explanation of the Option, Result and error handling in Rust is my written account of how I learned about them. I hope this article will benefit others.
