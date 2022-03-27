@@ -583,7 +583,7 @@ That error, coming from std::fs, was also properly propagated.
 
 有许多的 crates 可以帮助我们处理错误，一些可以帮助我们管理样板代码，另一些则添加了额外报告等功能。一个易于使用的 crates 的代表就是 anyhow ：
 
-Rust anyhow【图片】
+![anyhow.png](https://github.com/rustt-org/rustt-assets/blob/main/20220326-rust-option-and-result/anyhow.png?raw=true)
 
 这个 crate 将帮助我们实现一个简化的 Result 类型，同时通过增加 context 我们可以很轻松的标记我们的错误。下面的代码片段演示了三个 anyhow 的基础能力：
 
@@ -702,7 +702,9 @@ Jane Lusby 复制了 anyhow crate。她创建了[eyre](https://crates.io/crates/
 ## 收尾
 Understanding how the Option as well as the Result is used in Rust is very important. The above explanation of the Option, Result and error handling in Rust is my written account of how I learned about them. I hope this article will benefit others.
 
-The code used in this article can be found (here)[https://github.com/saidvandeklundert/LearningRust/blob/master/blog/option-and-result/src/main.rs]. In addition to that, here are some additional links that are worth checking out to better understand the Option, the Result and error handling in Rust:
+了解 Option 以及 Result 如何用于 Rust 非常重要。上面对 Rust 中的 Option ，Result 和错误处理的解释，是我如何了解它们的书面描述。我希望这篇文章对其他人有益。
+
+这篇文章的源码可以在(这里)找到[https://github.com/saidvandeklundert/LearningRust/blob/master/blog/option-and-result/src/main.rs]。 除此之外，这里还有一些额外的链接值得查看，以更好地理解 Rust 中的 Option，Result 以及错误处理。
 
 * The Rust Programming Language [Chapter 6](https://doc.rust-lang.org/book/ch06-00-enums.html) and [Chapter 9](https://doc.rust-lang.org/book/ch09-00-error-handling.html)
 * From [Rustconf 2020](https://2020.rustconf.com/talks) talks, the [Error handling Isn’t All About Errors](https://www.youtube.com/watch?v=rAF8mLI0naQ) talk by by Jane Lusby
