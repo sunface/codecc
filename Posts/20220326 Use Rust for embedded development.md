@@ -2,7 +2,7 @@
 
 Rust 的高性能、可靠性和生产效率使其非常适合嵌入式系统。
 
-[rust_programming_crab_sea.png](https://raw.githubusercontent.com/studyrs/rustt-assets/main/20220326 Use Rust for embedded development/rust_programming_crab_sea.png)
+[rust_programming_crab_sea.png](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220326%20Use%20Rust%20for%20embedded%20development/rust_programming_crab_sea.png)
 
 近几年，很多开发者成为了 Rust 的狂热拥趸。技术潮流变幻莫测，我们很难分清这种对新技术的激情到底是出于新鲜感还是出于对技术本身的价值的认可，[RT-Thread](https://opensource.com/article/21/7/rt-thread-smart) 社区开发者 Liu Kang 认为 Rust 是一种设计良好的语言。Kang 说 Rust 的目标是帮助开发者构建可靠和高效的软件，而 Rust 自始至终都是为了这个目标设计的。你将会了解到一些 Rust 的关键特性，在本文中，Kang 展示了一些恰好适用于嵌入式的 Rust 的特性。下面是示例：
 
