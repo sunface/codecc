@@ -251,10 +251,9 @@ scons: Building targets ... scons: done building targets.
 在嵌入式开发开发中，你可以使用 Rust 的所有特性而无需牺牲灵活性和稳定性。现在就在你的嵌入式系统中尝试下 Rust 吧。你可以参考 RT-Thread 项目的 [YouTube 频道](https://www.youtube.com/channel/UCdDHtIfSYPq4002r27ffqP)来了解更多关于嵌入式 Rust（以及 RT-Thread）的信息。请记住，嵌入式也可以是开放的。
 
 ---
-
-via: https://opensource.com/article/21/10/rust-embedded-development
-
-作者：[Alan Smithee](https://opensource.com/users/alansmithee)
-译者：[lxbwolf](https://github.com/lxbwolf)
-
-本文由 [Rustt](https://github.com/studyrs/rustt) 翻译，[StudyRust](https://github.com/studyrs) 荣誉推出
+> 原文链接: https://opensource.com/article/21/10/rust-embedded-development
+> 
+> 翻译：[lxbwolf](https://github.com/lxbwolf)
+> 选题：[lxbwolf](https://github.com/lxbwolf)
+>
+> 本文由 [Rustt](https://Rustt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出
