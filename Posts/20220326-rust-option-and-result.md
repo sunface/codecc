@@ -609,7 +609,7 @@ fn get_secrets(s: &str) -> Result<Secrets> {
 }
 ```
 
-在以上的例子中，需要在 Cargo.toml 增加 anyhow = "1.0.43" 。在头部，三个东西被引入，它们是 anyhow ，Context 和 Result 。让我们一个接一个的讨论：
+在以上的例子中，需要在 Cargo.toml 增加 anyhow = "1.0.43" 。在头部，anyhow ，Context 和 Result 被引入。让我们一个接一个的讨论：
 
 #### anyhow::Result
 这是一个处理错误的一个更方便的类型。你可以在 main() 中使用它。在 get_secrets 函数中我们可以看到 Result 在使用，就是这个被实现的 enum 使事情变得简单。这些 trait 中的一个称作 Context ，我们将在下面进行讨论。
@@ -700,7 +700,6 @@ dbg!(d);
 Jane Lusby 复制了 anyhow crate。她创建了[eyre](https://crates.io/crates/eyre/0.3.7)，这也是值得一看的。特别是结合优秀的[Rustconf 2020](https://2020.rustconf.com/talks)演讲，所谓的[Error handling Isn’t All About Errors](https://www.youtube.com/watch?v=rAF8mLI0naQ)。
 
 ## 收尾
-Understanding how the Option as well as the Result is used in Rust is very important. The above explanation of the Option, Result and error handling in Rust is my written account of how I learned about them. I hope this article will benefit others.
 
 了解 Option 以及 Result 如何用于 Rust 非常重要。上面对 Rust 中的 Option ，Result 和错误处理的解释，是我如何了解它们的书面描述。我希望这篇文章对其他人有益。
 
