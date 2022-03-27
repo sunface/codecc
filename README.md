@@ -18,11 +18,11 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
 
 
 ## 最近翻译
-这里只列了一部分，想要阅读更多，请查看[最新翻译列表](./最近翻译.md)。
+这里只列了一部分，想要阅读更多，请查看各个分类下的 Readme.md，里面的文章列表按时间降序排列，例如[文章列表](https://github.com/studyrs/Rustt/tree/main/Posts)。
 
 | 文章链接 |  翻译时间 | 完成进度 | 作者 |
 | ------- | ------- | -------- | ----- |
-| [Rust嵌入式开发](https://github.com/studyrs/Rustt/blob/main/Posts/%5B2022-03-26%5D%20Rust%20嵌入式开发.md) | 2022-03-27 | 100% | [lxbwolf](https://github.com/lxbwolf) |
+| [Rust嵌入式开发](https://github.com/studyrs/Rustt/blob/main/Posts/%5B2022-03-26%5D%20Rust%20嵌入式开发.md) | 2022-03-27 | 100% | [Xiaobin.Liu](https://github.com/lxbwolf) |
 
 
 ## 优秀作品
@@ -58,7 +58,7 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
             <a href="https://github.com/asur4s">
                 <img src="https://avatars.githubusercontent.com/u/99897242?v=4?s=100" width="120px"  alt=""/>
                 <br />
-                <sub><b>asur4s</b></sub>
+                <sub><b>Asura</b></sub>
                 <br />
             </a>
         </td>
@@ -80,7 +80,7 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
     </tr>
 </table>
 
-- `2022-03-27`，[首篇翻译文章](https://github.com/studyrs/Rustt/blob/main/Posts/%5B2022-03-26%5D%20Rust%20嵌入式开发.md)由 **lxbwolf** 贡献:
+- `2022-03-27`，[首篇翻译文章](https://github.com/studyrs/Rustt/blob/main/Posts/%5B2022-03-26%5D%20Rust%20嵌入式开发.md)由 **Xiaobin.Liu** 贡献:
 
 <table>
     <tr>
@@ -88,7 +88,7 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
             <a href="https://github.com/lxbwolf">
                   <img src="https://avatars.githubusercontent.com/u/12119889?v=4?s=100" width="120px"  alt=""/>
                 <br />
-                <sub><b>lxbwolf</b></sub>
+                <sub><b>Xiaobin.Liu</b></sub>
                 <br />
             </a>
         </td>
