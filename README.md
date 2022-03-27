@@ -80,3 +80,18 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
         </td>
     </tr>
 </table>
+
+- `2022-03-27`，[首篇翻译文章](https://github.com/studyrs/Rustt/blob/main/Posts/%5B2022-03-26%5D%20Rust%20嵌入式开发.md)由 **lxbwolf** 贡献:
+
+<table>
+    <tr>
+        <td align="center">
+            <a href="https://github.com/lxbwolf">
+                  <img src="https://avatars.githubusercontent.com/u/12119889?v=4?s=100" width="120px"  alt=""/>
+                <br />
+                <sub><b>lxbwolf</b></sub>
+                <br />
+            </a>
+        </td>
+    </tr>
+</table>
