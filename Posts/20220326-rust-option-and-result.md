@@ -1,5 +1,5 @@
- # 使用pyo3，从python调用rust代码
-
+ # rust 的 Option 和 Result
+ 
  在 Rust 中，完全理解枚举 Option 和枚举 Result，对于理解可选数值和错误处理非常重要。在这篇文章中，我们将深入学习这两方面的内容。
 
 ## 概述
@@ -12,7 +12,7 @@
 
 ### Rust 中的 enum
 
-有很好的原因去使用 enum ，Among others, they are good for safe input handling and adding context to types by giving a collection of variants a name. In Rust, the Option as well as the Result are enumerations, also referred to as enums. Rust 中的 enum 是非常灵活的，它可以包括很多数据类型，例如 tuple ，struct 等等。另外，你还可以在 enums 上实现方法。
+有很好的原因去使用 enum ，除此之外，它们还有助于安全的输入处理，并通过为变量集合命名，为类型添加上下文。 在 Rust 中，Option 和 Result 都是 enum 类型。 Rust 中的 enum 是非常灵活的，它可以包括很多数据类型，例如 tuple ，struct 等等。另外，你还可以在 enums 上实现方法。
 
 Option 和 Result 理解起来非常简单。我们首先来看一个 enum 的例子：
 
@@ -68,7 +68,7 @@ fn matcher(x: Example) {
 }
 ```
 
-我们可以给这个 matcher 函数传递一个Example的数值，函数内部的 <font color="green">match</font> 将决定什么内容会被打印到屏幕：
+我们可以给这个 matcher 函数传递一个 Example 的数值，函数内部的 <font color="green">match</font> 将决定什么内容会被打印到屏幕：
 
 ```rust
 matcher(Example::This);
@@ -84,17 +84,18 @@ We got That
 
 ### Rust 中的 prelude
 
-The Rust prelude, described here, is something that is a part of every program. It is a list of things that are automatically imported into every Rust program. Most of the items in the prelude are traits that are used very often. But in addition to this, we also find the following 2 items:
+这里描述的 Rust prelude 是每个程序的一部分。它是自动导入到每个Rust程序中的内容列表。prelude 中的大多数内容都是经常使用的 <ruby>特征<rt>trait</rt></ruby> 。除此之外，我们还发现以下两项：
 
 * std::option::Option::{self, Some, None}
 * std::result::Result::{self, Ok, Err}
 
-The first one is the <font color="green">Option</font> enum, described as ‘a type which expresses the presence or absence of a value’. The later is the <font color="green">Result</font> enum, described as ‘a type for functions that may succeed or fail.’
+第一个就是 <font color="green">Option</font> enum，表示值的存在或不存在的类型。第二个是 <font color="green">Result</font> enum，被描述为一种可能成功或失败的函数返回类型。
 
-Because these types are so commonly used, their variants are also exported. Let’s go over both types in more detail.
+因为这些类型非常常用，所以也会预先加载它们。让我们更详细地讨论这两种类型。
 
 ## Option
-Brought into scope by the prelude, the [Option](https://doc.rust-lang.org/std/option/index.html) is available to us without having to lift a finger. option 定义如下：
+
+由 prelude 引入的 [Option](https://doc.rust-lang.org/std/option/index.html) 我们不需要动一根手指就可以使用。 Option 定义如下：
 
 ```rust
 pub enum Option<T> {
@@ -103,7 +104,7 @@ pub enum Option<T> {
 }
 ```
 
-The above tells us <font color="green">Option<T></font> is an enum with 2 variants: <font color="green">None</font> and <font color="green">Some(T)</font>. In terms of how it is used, the <font color="green">None</font> can be thought of as ‘nothing’ and the <font color="green">Some(T)</font> can be thought of as ‘something’. A key thing that is not immediately obvious to those starting out with Rust is the <font color="green"><T></font>-thing. The <font color="green"><T></font> tells us the Option Enum is a <font color="green">generic</font> Enum.
+以上我们可以看到 <font color="green">Option<T></font> 是一个<ruby>枚举<rt>enum</rt></ruby>并包含两个变量：<font color="green">None</font> 和 <font color="green">Some(T)</font>. In terms of how it is used, the <font color="green">None</font> can be thought of as ‘nothing’ and the <font color="green">Some(T)</font> can be thought of as ‘something’. A key thing that is not immediately obvious to those starting out with Rust is the <font color="green"><T></font>-thing. The <font color="green"><T></font> tells us the Option Enum is a <font color="green">generic</font> Enum.
 
 ### Option 是 type T 泛型
 
@@ -612,7 +613,7 @@ fn get_secrets(s: &str) -> Result<Secrets> {
 在以上的例子中，需要在 Cargo.toml 增加 anyhow = "1.0.43" 。在头部，anyhow ，Context 和 Result 被引入。让我们一个接一个的讨论：
 
 #### anyhow::Result
-这是一个处理错误的一个更方便的类型。你可以在 main() 中使用它。在 get_secrets 函数中我们可以看到 Result 在使用，就是这个被实现的 enum 使事情变得简单。这些 trait 中的一个称作 Context ，我们将在下面进行讨论。
+这是一个处理错误的一个更方便的类型。你可以在 main() 中使用它。在 get_secrets 函数中我们可以看到 Result 在使用，就是这个被实现的 enum 使事情变得简单。这些 <ruby>特征<rt>trait</rt></ruby> 中的一个称作 Context ，我们将在下面进行讨论。
 
 如果我们运行 get_secrets  并且一切正常，我们获得如下返回：
 
@@ -638,7 +639,7 @@ dbg!(a);
 
 #### anyhow::Context
 
-正如错误是可以被传播的，Context trait 允许你将原始错误包装起来，并且包含了一个更多语境意识的信息。以前，我们会这样打开一个文件：
+正如错误是可以被传播的，Context <ruby>特征<rt>trait</rt></ruby> 允许你将原始错误包装起来，并且包含了一个更多语境意识的信息。以前，我们会这样打开一个文件：
 
 ```rust
 let text = fs::read_to_string(s)?;
