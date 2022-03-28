@@ -20,10 +20,12 @@ Rustt 是 StudyRust **的核心小组**，负责将国外优秀的技术文章�
 ## 最近翻译
 这里只列了一部分，想要阅读更多，请查看各个分类下的 Readme.md，里面的文章列表按时间降序排列，例如[文章列表](https://github.com/studyrs/Rustt/tree/main/Posts)。
 
-| 文章链接 |  翻译时间 | 完成进度 | 作者 |
+| 中文名 | 原文名 |  翻译时间 | 作者 |
 | ------- | ------- | -------- | ----- |
-| [Rust嵌入式开发](https://github.com/studyrs/Rustt/blob/main/Posts/%5B2022-03-26%5D%20Rust%20嵌入式开发.md) | 2022-03-27 | 100% | [Xiaobin.Liu](https://github.com/lxbwolf) |
-
+| [Rust嵌入式开发](https://github.com/studyrs/Rustt/blob/main/Posts/%5B2022-03-26%5D%20Rust%20嵌入式开发.md) | [Use Rust for embedded development](https://opensource.com/article/21/10/rust-embedded-development) | 2022-03-27 | [Xiaobin.Liu](https://github.com/lxbwolf) |
+| [Rust异步编程指南](https://github.com/studyrs/async-book) | [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/) | 2022-03-01 |  [Sunface](https://im.dev) |
+| [Cargo使用指南](https://github.com/studyrs/cargo-book) | [The Cargo Book](https://doc.rust-lang.org/stable/cargo/index.html) | 2022-02-27 |  [Sunface](https://im.dev) |
+| [Tokio官方教程](https://github.com/studyrs/tokio-course) | [Tokio Tutorial](https://tokio.rs/tokio/tutorial) | 2022-02-15 | [Sunface](https://im.dev) |
 
 ## 优秀作品
 在茫茫文海中，如何找到受到大家一致好评的优秀作品？为了解决这种困扰，我们专门提供了[优秀作品列表](./优秀作品.md)。
