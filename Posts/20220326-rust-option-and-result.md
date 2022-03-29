@@ -302,7 +302,7 @@ if let Some(a) = contains_char("Rust in action", 'a') {
 
 #### struct 中的 Option 数值
 
-我们也可以在结构中使用 Option 。如果字段可能有或可能没有任何值，这可能很有用：
+我们也可以在结构中使用 Option 。表示字段可能值有或可能没有任何值，一般会很有用：
 
 ```rust
 #[derive(Debug)]
@@ -332,7 +332,7 @@ Person { name: "Jan", age: None }
 
 #### 真实世界的实例
 
-在Rust中使用 Option 的一个例子是数组的 pop 方法。此方法返回一个 Option\<T> 。pop方法返回最后一个元素。但有时候元素可能是空的。在这种情况下，它应该返回 None 值。另一个问题是，数组里的元素可以包含任何类型。在这种情况下，它很方便返回 Some(T) 。因此，pop() 返回 Option\<T> 。
+在 Rust 中使用 Option 的一个例子是数组的 pop 方法。此方法返回一个 Option\<T> 。pop 方法返回最后一个元素，有时候元素可能是空的。在这种情况下，它应该返回 None 值。另一个问题是，数组里的元素可以包含任何类型。在这种情况下，它很方便返回 Some(T) 。因此，pop() 返回 Option\<T> 。
 
 从 Rust 1.53 获得数组的 pop 方法：
 
@@ -383,7 +383,7 @@ pub enum Result<T, E> {
     Err(E),
 }
 ```
-Result 枚举是包含2个类型的泛型，分别是 T 和 E 。T 用于 Ok 变量，表示一个成功的结果。E 用于 Err 变量，表示一个错误的数值。由于 E 是泛型，所以可以使人们可以传达不同的错误。如果 Result 不是 E 上的泛型，那么只会有1种类型的错误。就会与 Option 中有1种类型的 None 相同。在报告中使用错误值时，就不会留下太多的空间。
+Result 枚举是包含2个类型的泛型，分别是 T 和 E 。T 用于 Ok 变量，表示一个成功的结果。E 用于 Err 变量，表示一个错误的数值。由于 E 是泛型，所以可以使人们可以传递不同的错误。如果 Result 不是 E 上的泛型，那么只会有1种类型的错误。就会与 Option 中有1种类型的 None 相同。在报告中使用错误值时，就显得不太灵活。
 
 如前所述，Prelude 将 Result 枚举以及 Ok 和 Err 变量纳入 prelude 的范围，如下所示：
 
@@ -407,9 +407,9 @@ fn check_length(s: &str, min: usize) -> Result<&str, String> {
 }
 ```
 
-这不是一个非常有用的函数，但足够简单的展示返回一个 Result 。函数带有两个参数，一个是字符串字面量参数，一个是需要检查包含的字符数量参数。如果字符数量等于或者小于 min , 字符串被返回。这个返回值标记成了 Result 枚举。我们指定函数返回时 Result 将包含的类型。如果字符串足够长，我们将返回字符串文本。如果出现错误，我们将返回一条字符串消息。这解释了 Result <&str，String>。
+这不是一个非常有用的函数，但足够简单的展示返回一个 Result 。函数带有两个参数，一个是字符串字面量参数，一个是需要检查包含的字符数量参数。如果字符数量等于或者大于 min , 字符串被返回。这个返回值标记成了 Result 枚举。我们指定函数返回时 Result 将包含的类型。如果字符串足够长，我们将返回字符串文本。如果出现错误，我们将返回一条字符串消息。这例子很好解释了 Result <&str，String>。
 
-if s.chars().count() >= min 为我们进行检查。如果计算结果为true，它将返回 Result 枚举的 Ok 变量中包装的字符串。我们之所以可以简单地写 Ok(s)，是因为组成 Result 的变量也被纳入了范围。我们可以看到 else 语句将返回一个 Err 变量。在本例中，它是一个包含消息的字符串。
+if s.chars().count() >= min 语句为我们进行检查。如果计算结果为true，它将返回 Result 枚举的 Ok 变量中包装的字符串。我们之所以可以简单地写 Ok(s)，是因为组成 Result 的变量也被纳入了范围。我们可以看到 else 语句将返回一个 Err 变量。在本例中，它是一个包含错误消息的字符串。
 
 让我们运行函数并且使用 dbg！输出 Result ：
 
@@ -533,9 +533,11 @@ fn main() {
 ### 使用 ? 并且处理不同的错误
 Different projects oftentimes define their own errors. Searching a repo for something like pub struct Error or pub enum Error can sometimes reveal the errors defined for a project. But the thing is, different crates and projects might return their own error type. If you have a function that uses methods from a variety of projects, and you want to propagate that error, things can get a bit trickier. There are several ways to deal with this. Let’s look at an example where we deal with this by ‘Boxing’ the error.
 
-In the next example, we define a function that reads the entire contents of target file into a string and then serializes it into JSON, while mapping it to a struct. The function returns a Result. The Ok variant is the ‘Person’ struct and the Error that will be propagated can be an error coming serde or std::fs. To be able to return errors from both these packages, we return Result<Person, Box<dyn Error>>. The ‘Person’ is the Ok variant of the Result. The Err variant is defined as Box<dyn Error>, which represents ‘any type of error’.
+不同的项目通常会定义自己的错误。在 repo 中搜索诸如 pub struct Error 或 pub enum Error 之类的内容，有时可能会发现为项目定义的错误。但问题是，不同的 create 和项目可能会返回自己的错误类型。如果有一个函数使用来自各种项目中的方法，并且想要传播错误，那么事情可能会变得有点棘手。有几种方法可以解决这个问题。让我们来看一个例子，我们通过 Box 错误来处理这个问题。
 
-Another thing worth mentioning about the following example is the use of ?. We will use fs::read_to_string(s) to read a file as a string and we will use erde_json::from_str(&text) to serialize the text to a struct. In order to avoid having to write match arms for the Results returned by those methods, we place the ? behind the call to those methods. This syntactic sugar will perform an unwrap in case the preceding Result contains an Ok. If the preceding Result contains an Err variant, it ensures that this Err is returned just as if the return keyword would have been used to propagate the error. And when the error is returned, our ‘Box’ will catch them.
+在下一个示例中，我们定义了一个函数，该函数将目标文件的全部内容读入到一个字符串中，然后将其序列化为 JSON ，同时将其映射到结构体。函数返回一个 Result 。Ok 变量是Person结构体，将传播的错误可能是来自 serde 或 std::fs 的错误。为了能够从这两个包返回错误，我们返回Result<Person，Box<dyn Error>>。 Person 是 Result 的 Ok 变体。Err 变量定义为 Box<dyn Error> ，表示任何类型的错误 。
+
+关于下面的例子，另一件值得一提的事情是 ？。我们将使用 fs::read_to_string 将文件作为字符串读取，并使用 serde_json::from_str(&text) 将文本序列化为结构。为了避免为这些方法返回的结果编写匹配表达式，我们将 ？放在调用这些方法的背后。如果前面的 Result 包含 Ok ，则此语法糖将执行 unwrap 。如果前面的结果包含 Err 变量，它将确保返回此错误，就像使用 return 关键字传播错误一样。当错误被返回时，我们的 Box 将捕获它们。
 
 实例代码：
 
