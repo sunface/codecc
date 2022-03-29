@@ -10,19 +10,22 @@
 
 <br />
 
-Rustt (读音 / rʌsˈti /) 是 StudyRust **的核心小组**，负责将国外优秀的技术文章、学习教程、新闻资讯翻译成中文。
-
-所有翻译文章的原始存档都会发表在此仓库中，大家可以点击右上角的 🌟 收藏，感谢支持 :)
+Rustt (读音 / rʌsˈti /) 是 [StudyRust](https://studyrust) **的核心小组**，负责将国外优秀的技术文章、学习教程、新闻资讯翻译成中文。
 
 如果大家对某篇英文文章感兴趣，并觉得它值得推荐给更多的人，可以[提交选题](http://guide.rustt.org/proposing.html)，**任何人都可提交。**
 
+## 订阅
+
+- 所有翻译文章的原始存档都会发表在此仓库中，大家可以点击右上角的 🌟 收藏
+
+- 翻译文章还会同步推送到社区的微信公众号中: `studyrust`
 
 ## 最近翻译
-这里只列了一部分，想要阅读更多，请查看各个分类下的 Readme.md，里面的文章列表按时间降序排列，例如[文章列表](https://github.com/studyrs/Rustt/tree/main/Articles)。
+这里只列了一部分，想要阅读更多，请查看各个分类目录，例如[文章列表](https://github.com/studyrs/Rustt/tree/main/Articles)。
 
 | 中文名 | 原文名 |  翻译时间 | 作者 |
 | ------- | ------- | -------- | ----- |
-| [Rust嵌入式开发](https://github.com/studyrs/Rustt/blob/main/Posts/%5B2022-03-26%5D%20Rust%20嵌入式开发.md) | [Use Rust for embedded development](https://opensource.com/article/21/10/rust-embedded-development) | 2022-03-27 | [Xiaobin.Liu](https://github.com/lxbwolf) |
+| [Rust嵌入式开发](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-03-26%5D%20Rust%20嵌入式开发.md) | [Use Rust for embedded development](https://opensource.com/article/21/10/rust-embedded-development) | 2022-03-27 | [Xiaobin.Liu](https://github.com/lxbwolf) |
 | [Rust异步编程指南](https://github.com/studyrs/async-book) | [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/) | 2022-03-01 |  [Sunface](https://im.dev) |
 | [Cargo使用指南](https://github.com/studyrs/cargo-book) | [The Cargo Book](https://doc.rust-lang.org/stable/cargo/index.html) | 2022-02-27 |  [Sunface](https://im.dev) |
 | [Tokio官方教程](https://github.com/studyrs/tokio-course) | [Tokio Tutorial](https://tokio.rs/tokio/tutorial) | 2022-02-15 | [Sunface](https://im.dev) |
