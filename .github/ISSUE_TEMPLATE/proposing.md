@@ -14,10 +14,9 @@ assignees: ''
 1. 修改 issue 标题：将 `类型` 修改为为 文章、书籍、资讯 中的一个，并将 `日期` 和 `标题` 进行替换
 2. 将上面的原文链接和下面声明模版中的 `原文链接`、`选题` 替换成相应的内容
 3. 在issue中评论：@ 一个 approver，他会对选题进行审核，通过后会为你加上相应的积分
-
-approver列表: https://guide.rustt.org/org-info/members.html#approver
 -->
 
+approver列表: https://guide.rustt.org/org-info/members.html#approver
 
 **翻译者须知**
 
