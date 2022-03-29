@@ -104,13 +104,13 @@ pub enum Option<T> {
 }
 ```
 
-以上我们可以看到 <font color="green">Option<T></font> 是一个<ruby>枚举<rt>enum</rt></ruby>并包含两个变量：<font color="green">None</font> 和 <font color="green">Some(T)</font>. In terms of how it is used, the <font color="green">None</font> can be thought of as ‘nothing’ and the <font color="green">Some(T)</font> can be thought of as ‘something’. A key thing that is not immediately obvious to those starting out with Rust is the <font color="green"><T></font>-thing. The <font color="green"><T></font> tells us the Option Enum is a <font color="green">generic</font> Enum.
+以上我们可以看到 <font color="green">Option<T></font> 是一个<ruby>枚举<rt>enum</rt></ruby>并包含两个变量：<font color="green">None</font> 和 <font color="green">Some(T)</font>。就其使用方式而言，<font color="green">None</font> 可以被认为是“无”，<font color="green">Some(T)</font> 可以被认为是“某物”。对于那些刚开始使用 Rust 的人来说，一件关键的事情不是很明显，那就是 T 这件符号。这个 T 告诉我们这是一个泛型。
 
-### Option 是 type T 泛型
+### Option 是 "T" 型上的泛型
 
-The enum is ‘generic over type T’. The ‘T’ could have been any letter, just that ‘T’ is used as a convention where 1 generic is involved.
+<ruby>枚举<rt>enum</rt></ruby>是 "T" 型上的泛型。字符 "T" 可以是任何的字符串, 只是 “T” 被用作涉及1个泛型的约定。
 
-So what does it mean when we say ‘the enum is generic over type T’? It means that we can use it for any type. As soon as we start working with the Enum, we can (and must actually) replace ‘T’ with a concrete type. This can be any type, as illustrated by the following:
+那么，当我们说 “枚举是T型上的泛型” 是什么意思呢？这意味着我们可以将其用于任何类型。一旦我们开始使用<ruby>枚举<rt>enum</rt></ruby>，我们就可以（而且必须）用具体类型替换 “T” 。这可以是任何类型，如下所示：
 
 ```rust
 let a_str: Option<&str> = Some("a str");
@@ -149,16 +149,16 @@ Some(Person { name: "Marie", age: 2 })
 None
 ```
 
-The code shows us the enum can be generic over standard as well as over custom types. Additionally, when we define an enum as being of type x, it can still contain the variant ‘None’. So the Option is a way of saying the following:
+代码告诉我们，枚举可以是泛型，不但可以是标准类型，也可以是自定义类型。此外，当我们将枚举定义为 x 类型时，它仍然可以包含变量 “None” 。因此，这个 Option 是这样说的：
 
 ```text
 This can be of a type T value, which can be anything really, or it can be nothing. 
 ```
 
 ### Option 上的匹配
-Since Rust does not use exceptions or null values, you will see the Option (and as we will learn later on the Result) used all over the place.
+既然 Rust 不使用异常或者空数值，你会看到 Option（我们将在后面了解 Result ）被广泛使用。
 
-Since the Option is an enum, we can use pattern matching to handle each variant in it’s own way:
+由于该 Option 是一个<ruby>枚举<rt>enum</rt></ruby>，我们可以使用模式匹配以自己的方式处理每个变量：
 
 ```rust
 let something: Option<&str> = Some("a String"); // Some("a String")
@@ -182,12 +182,13 @@ We go something: a String
 We got nothing
 ```
 
-### Unwrapping the Option
-Oftentimes, you’ll see unwrap being used. This looked a bit mysterious at first. Hoovering over it in the IDE offers some clues:
+### 取出 Option 中的值
 
-{[ID unwrap]}
+通常，你会看到 unwrap 被使用。一开始看起来有点神秘，在IDE中浏览它可以提供一些线索：
 
-In case you are using VScode, something that is nice to know is that simultaneously pressing Ctrl + left mouse button can take you to the source code. In this case, it takes us to the place in option.rs where unwrap is defined:
+![unwrap.png](https://github.com/rustt-org/rustt-assets/blob/main/20220326-rust-option-and-result/ide_unwrap.png?raw=true)
+
+如果您使用的是 VScode ，那么同时按下 Ctrl + 鼠标左键可以找到源代码。在这种情况下，它将我们带到 option.rs 文件中 unwrap 定义的位置：
 
 ```rust
 pub const fn unwrap(self) -> T {
@@ -198,7 +199,7 @@ pub const fn unwrap(self) -> T {
 }
 ```
 
-In option.rs, we can see unwrap is defined in the impl<T> Option<T> block. When we call it on a value, it will try to ‘unwrap’ the value that is tucked into the Some variant. It matches on ‘self’ and if the Some variant is present, ‘val’ is ‘unwrapped’ and returned. If the ‘None’ variant is present, the panic macro is called:
+在 option.rs 中，我们可以看到 unwrap 被定义在 impl \<T> Option\<T> 代码块中。 当我们调用某个值时，它会尝试 unwrap 隐藏在 Some 变量中的值。它与 self 匹配，如果存在 Some 变量，val 将被 unwrap 并返回。如果存在 None 变量，则调用 panic 宏：
 
 ```rust
 let something: Option<&str> = Some("Something");
@@ -216,12 +217,14 @@ Some("Something")
 thread 'main' panicked at 'called `Option::unwrap()` on a `None` value', src\main.rs:86:17
 ```
 
-Calling unwrap on an Option is quick and easy but letting your program panic and crash is not a very elegant or safe approach.
+在一个 Option 上调用 unwrap 方法既快捷又简单，但让程序陷入恐慌和崩溃并不是一种非常优雅或安全的方法。
 
 ### Option 实例
-Let’s look at some examples where you could use an Option.
+
+让我们来看一些可以使用 Option 的示例。
 
 #### 给一个函数传递一个可选的数值
+
 ```rust
 fn might_print(option: Option<&str>) {
     match option {
@@ -235,7 +238,7 @@ might_print(something);
 might_print(nothing);
 ```
 
-输入如下：
+输出如下：
 
 ```text
 The argument contains the following value: 'some str'
@@ -258,20 +261,26 @@ let q = contains_char("Rust in action", 'q');
 println!("{:?}", a);
 println!("{:?}", q);
 ```
-We can safely assign the return of this function to a variable and, later on, use match to determine how to handle a ‘None’ return. The previous code prints the following:
+
+我们可以安全地将此函数的返回分配给一个变量，然后使用 match 确定如何处理 None 返回。前面的代码打印以下内容：
+
 ```text
 Some("Rust in action")
 None
 ```
-Let’s examine three different ways to work with the Optional return.
 
-The first one, which is the least safe, would be simply calling unwrap:
+让我们研究三种不同的方法来处理 Option 的返回。
+
+第一个，是最不安全的，简单地调用 unwrap 方法：
+
 ```rust
 let a = contains_char("Rust in action", 'a');
 let a_unwrapped = a.unwrap();   
 println!("{:?}", a_unwrapped);
 ```
-The second, safer option, is to use a match statement:
+
+第二个，更安全的选择是使用 match 语句：
+
 ```rust
 let a = contains_char("Rust in action", 'a');
 match a {
@@ -279,7 +288,9 @@ match a {
     None => println!("contains_char did not return something, so branch off here"),
 }
 ```
-The third option is to capture the return of the function in a variable and use if let:
+
+第三个， Option 是在变量中捕获函数的返回，并在以下情况下使用：
+
 ```rust
 let a = contains_char("Rust in action", 'a');
 if let Some(a) = contains_char("Rust in action", 'a') {
@@ -290,7 +301,8 @@ if let Some(a) = contains_char("Rust in action", 'a') {
 ```
 
 #### struct 中的 Option 数值
-We can also use the Option inside a struct. This might be useful in case a field may or may not have any value:
+
+我们也可以在结构中使用 Option 。如果字段可能有或可能没有任何值，这可能很有用：
 
 ```rust
 #[derive(Debug)]
@@ -319,9 +331,11 @@ Person { name: "Jan", age: None }
 ```
 
 #### 真实世界的实例
-An example where the Option is used inside Rust is the pop method for vectors. This method returns an Option<T>. The pop-method returns the last element. But it can be that a vector is empty. In that case, it should return None. An additional problem is that a vector can contain any type. In that case, it is convenient for it to return Some(T). So for that reason, pop() returns Option<T>.
 
-The pop method for the vec from Rust 1.53:
+在Rust中使用 Option 的一个例子是数组的 pop 方法。此方法返回一个 Option\<T> 。pop方法返回最后一个元素。但有时候元素可能是空的。在这种情况下，它应该返回 None 值。另一个问题是，数组里的元素可以包含任何类型。在这种情况下，它很方便返回 Some(T) 。因此，pop() 返回 Option\<T> 。
+
+从 Rust 1.53 获得数组的 pop 方法：
+
 ```rust
 impl<T, A: Allocator> Vec<T, A> {
     // .. lots of other code
@@ -338,7 +352,8 @@ impl<T, A: Allocator> Vec<T, A> {
     // lots of other code
 }   
 ``` 
-A trivial example where we output the result of popping a vector beyond the point where it is still containing items:
+
+一个简单的例子，我们不断输出数组里的元素，尽管已经超出其包含的数据项：
 
 ```rust
 let mut vec = vec![0, 1];
@@ -347,6 +362,7 @@ let b = vec.pop();
 let c = vec.pop();
 println!("{:?}\n{:?}\n{:?}\n", a, b, c);
 ```
+
 以上代码输出如下：
 
 ```text
@@ -357,7 +373,7 @@ None
 
 ## Result
 
-Another important construct in Rust is the Result enum. Same as with the Option, the Result is an enum. The definition of the Result can be found in result.rs:
+Rust 另外的一个重要的结构就是 Result 枚举。和 Option 一样，Result 也是一个枚举。在 result.rs 源码里可以找到 Result 的定义：
 
 ```rust
 pub enum Result<T, E> {
@@ -367,17 +383,19 @@ pub enum Result<T, E> {
     Err(E),
 }
 ```
+Result 枚举是包含2个类型的泛型，分别是 T 和 E 。T 用于 Ok 变量，表示一个成功的结果。E 用于 Err 变量，表示一个错误的数值。由于 E 是泛型，所以可以使人们可以传达不同的错误。如果 Result 不是 E 上的泛型，那么只会有1种类型的错误。就会与 Option 中有1种类型的 None 相同。在报告中使用错误值时，就不会留下太多的空间。
 
-The Result enum is generic over 2 types, given the name T and E. The T is used for the OK variant, which is used to express a successful result. The E is used for the Err variant, used to express an error value. The fact that Result is generic over E makes it possible to communicate different errors. If Result would not have been generic over E, there would just be 1 type of error. Same as there is 1 type of ‘None’ in Option. This would not leave a lot of room when using the error value in our flow control or reporting.
+如前所述，Prelude 将 Result 枚举以及 Ok 和 Err 变量纳入 prelude 的范围，如下所示：
 
-As indicated before, the Prelude brings the Result enum as well as the Ok and Err variants into scope in the Prelude like so:
 ```
 std::result::Result::{self, Ok, Err}
 ```
+
 这意味着在我们的代码里面，我们可以在任何位置，直接访问 Result ，Ok 和 Err 。
 
 ### Result 上的匹配
-Let’s start off creating an example function that returns a Result. In the example function, we check whether a string contains a minimum number of characters. The function is the following:
+
+让我们开始创建一个可以返回 Result 的函数例子。在这个函数例子里，我们检查一个字符串是否包括一个最小数量的字符。函数如下：
 
 ```rust
 fn check_length(s: &str, min: usize) -> Result<&str, String> {
@@ -389,10 +407,11 @@ fn check_length(s: &str, min: usize) -> Result<&str, String> {
 }
 ```
 
-It is not a very useful function, but simple enough to illustrate returning a Result. The function takes in a string literal and checks the number of characters it contains. If the number of characters is equal to, or more then ‘min’, the string is returned. If this is not the case, an error is returned. The return is annotated with the Result enum. We specify the types that the Result will contain when the function returns. If the string is long enough, we return a string literal. If there is an error, we will return a message that is a String. This explains the Result<&str, String>.
+这不是一个非常有用的函数，但足够简单的展示返回一个 Result 。函数带有两个参数，一个是字符串字面量参数，一个是需要检查包含的字符数量参数。如果字符数量等于或者小于 min , 字符串被返回。这个返回值标记成了 Result 枚举。我们指定函数返回时 Result 将包含的类型。如果字符串足够长，我们将返回字符串文本。如果出现错误，我们将返回一条字符串消息。这解释了 Result <&str，String>。
 
-The if s.chars().count() >= min does the check for us. In case it evaluates to true, it will return the string wrapped in the Ok variant of the Result enum. The reason we can simply write Ok(s) is because the variants that make up Result are brought into scope as well. We can see that the else statement will return an Err variant. In this case, it is a String that contains a message.
-让我们运行函数并且使用 dbg！ 输出 Result ：
+if s.chars().count() >= min 为我们进行检查。如果计算结果为true，它将返回 Result 枚举的 Ok 变量中包装的字符串。我们之所以可以简单地写 Ok(s)，是因为组成 Result 的变量也被纳入了范围。我们可以看到 else 语句将返回一个 Err 变量。在本例中，它是一个包含消息的字符串。
+
+让我们运行函数并且使用 dbg！输出 Result ：
 
 ```rust
 let a = check_length("some str", 5);
@@ -412,8 +431,10 @@ let a_str = match func_return {
 // thread 'main' panicked at 'Problem running 'check_length':
 // "'some string literal' is not long enough!"'
 ```
-### Unwrapping the Result
-Instead of using a match expression, there is also a shortcut that you’ll come across very often. This shortcut is the unwrap method that is defined for the Result enum. The method is defined as follows:
+### 取出 Result 的值
+
+除了使用匹配表达式，还有一个你经常会遇到的快捷方式。此快捷方式是为 Result 枚举定义的 unwrap 方法。该方法定义如下：
+
 ```rust
 impl<T, E: fmt::Debug> Result<T, E> {
     ...
@@ -427,7 +448,7 @@ impl<T, E: fmt::Debug> Result<T, E> {
 }
 ```
 
-Calling unwrap returned the contained ‘Ok’ value. If there is no ‘Ok’ value, unwrap will panic. In the following example, the from_str method returns an ‘Ok’ value:
+调用 unwrap 返回一个包含 Ok 的值，如果没有 Ok 值，unwrap 将会触发恐慌。在下面的例子中，from_str 方法返回 Ok 值：
 
 ```rust
 use serde_json::json;
@@ -441,9 +462,9 @@ let json_serialized: serde_json::Value = serde_json::from_str(&json_string).unwr
 println!("{:?}", &json_serialized);
 // Object({"another key": String("another value"), "key": String("value"), "key to a list": Array([Number(1), Number(2)])})
 ```
-We can see that ‘json_serialized’ contains the value that was wrapped in the ‘Ok’ variant.
+我们可以看到 json_serialized 包含的数值包裹在 Ok 变量里面了。 
 
-The following demonstrates what happened when we call unwrap on a function that does not return an ‘Ok’ variant. Here, we call ‘serde_json::from_str’ on invalide JSON:
+以下演示了当我们在一个函数中调用 unwrap 时，如果不返回 Ok 变量会发生什么。这里，我们调用 serde_json::from_str 用于无效的 JSON ：
 
 ```rust
 use serde_json::json;
@@ -458,7 +479,7 @@ thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Error("c
 */
 ```
 
-There is a panic and the program comes to a halt. Instead of unwrap, we could also choose to use expect.
+这导致了一个恐慌并且程序终止了。除了 unwrap ，我们还可以选择使用 expect 。
 
 ```rust
 use serde_json::json;
@@ -471,13 +492,13 @@ let b: serde_json::Value =
     serde_json::from_str(&invalid_json).expect("unable to deserialize JSON");
 ```
 
-This time, when we run the code, we can also see the message that we added to it:
+这次，当我们执行代码时，我们也可以看到我们增加的消息：
 
 ```text
 thread 'main' panicked at 'unable to deserialize JSON: Error("control character (\\u0000-\\u001F) found while parsing a string", line: 4, column: 0)'
 ```
 
-Since unwrap and expect result in a panic, it ends the program, period. Most oftentimes, you’ll see unwrap being used in the example section, where the focus is on the example and lack of context really prohibits proper error handling for a specific scenario. The example section, code comments and documentation examples is where you will most oftentimes encounter unwrap. See for instance the example to have serde serialize fields as camelCase:
+因为 unwrap 和 expect 会导致恐慌，所以程序结束了。大多数情况下，你会在示例部分看到 unwrap 的使用，其中的重点是示例，缺乏上下文确实会妨碍对特定场景进行正确的错误处理。示例部分、代码注释和文档示例是你经常遇到的 unwrap 部分。例如，请参见将 serde 序列化字段作为 camelCase 的示例：
 
 ```rust
 use serde::Serialize;
@@ -506,7 +527,8 @@ fn main() {
     println!("{}", json);
 }
 ```
-Example taken from the serde documentation, right here.
+
+例子来自于 serde [文档](https://serde.rs/attr-rename.html) 。
 
 ### 使用 ? 并且处理不同的错误
 Different projects oftentimes define their own errors. Searching a repo for something like pub struct Error or pub enum Error can sometimes reveal the errors defined for a project. But the thing is, different crates and projects might return their own error type. If you have a function that uses methods from a variety of projects, and you want to propagate that error, things can get a bit trickier. There are several ways to deal with this. Let’s look at an example where we deal with this by ‘Boxing’ the error.
@@ -516,6 +538,7 @@ In the next example, we define a function that reads the entire contents of targ
 Another thing worth mentioning about the following example is the use of ?. We will use fs::read_to_string(s) to read a file as a string and we will use erde_json::from_str(&text) to serialize the text to a struct. In order to avoid having to write match arms for the Results returned by those methods, we place the ? behind the call to those methods. This syntactic sugar will perform an unwrap in case the preceding Result contains an Ok. If the preceding Result contains an Err variant, it ensures that this Err is returned just as if the return keyword would have been used to propagate the error. And when the error is returned, our ‘Box’ will catch them.
 
 实例代码：
+
 ```rust
 use serde::{Deserialize, Serialize};
 use std::error::Error;
@@ -544,7 +567,8 @@ dbg!(y);
 dbg!(z);
 ```
 
-The first time we call the function, it succeeds and dbg!(x); outputs the following:
+首次我们调用函数，运行成功并且 dbg!(x) 输出如下内容：
+
 ```text
 [src\main.rs:20] x = Ok(
     Person {
@@ -553,22 +577,28 @@ The first time we call the function, it succeeds and dbg!(x); outputs the follow
     },
 )
 ```
-The second calls encounters an error. The file contains the following:
+
+第二次调用遇到错误。文件包括如下内容：
+
 ```text
 {
 	"name": "Marie",
 	"a
 }
 ```
-This file can be opened and read to a String, but Serde cannot parse it as JSON. This function call outputs the following:
+
+这个文件可以打开并且读入数据，但是 Serde 不能解析成 JSON 格式。这个函数调用输出如下内容：
+
 ```text
 [src\main.rs:21] y = Err(
     Error("control character (\\u0000-\\u001F) found while parsing a string", line: 3, column: 4),     
 )
 ```
-We can see the Serde error was properly propagated.
 
-The last function call tried to open a file that does not exist:
+我们可以看到 Serde 的错误可以正确的传播
+
+最后一个函数调用试图打开一个并不存在的文件：
+
 ```text
 [src\main.rs:22] z = Err(
     Os {
@@ -578,7 +608,8 @@ The last function call tried to open a file that does not exist:
     },
 )
 ```
-That error, coming from std::fs, was also properly propagated.
+
+那个来自 std::fs 的错误可以被正确的传播。
 
 ### 使用其他的 crates：anyhow
 
