@@ -18,7 +18,7 @@ Rustt (读音 / rʌsˈti /) 是 StudyRust **的核心小组**，负责将国外�
 
 
 ## 最近翻译
-这里只列了一部分，想要阅读更多，请查看各个分类下的 Readme.md，里面的文章列表按时间降序排列，例如[文章列表](https://github.com/studyrs/Rustt/tree/main/Articles)。
+这里只列了一部分，想要阅读更多，请查看各个分类目录，例如[文章列表](https://github.com/studyrs/Rustt/tree/main/Articles)。
 
 | 中文名 | 原文名 |  翻译时间 | 作者 |
 | ------- | ------- | -------- | ----- |
