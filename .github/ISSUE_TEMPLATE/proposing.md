@@ -20,7 +20,8 @@ approver列表: https://guide.rustt.org/org-info/members.html#approver
 **翻译者须知**
 
 1. 在issue中评论：@ 一个 approver，申请翻译，并附上预期完成时间
-2. 请翻译者在翻译后，并将声明模版的 Markdown 文本加入到文章的尾部
+2. 请翻译者在翻译后，并将声明模版的 Markdown 文本加入到文章的 **顶部**
+3. 填写下面的推广渠道
 
 **声明模版**
 
@@ -28,8 +29,16 @@ approver列表: https://guide.rustt.org/org-info/members.html#approver
 ---
 > 原文链接: https://www.rust-lang.org
 > 
-> 翻译：_该部分由 Approver 替换填写_
+> **翻译：_该部分由 Approver 替换填写_**
+>
 > 选题：[Github昵称](GIthub个人链接)
 >
 > 本文由 [Rustt](https://Rustt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出
 ```
+
+**推广渠道**
+
+翻译者是否愿意在以下平台上推广你翻译的文章，是 Y ，否 N
+
+- 微信公众号(studyrust): 
+- [知乎专栏](https://www.zhihu.com/column/c_1492085510243414016):
