@@ -40,5 +40,5 @@ approver列表: https://guide.rustt.org/org-info/members.html#approver
 
 翻译者是否愿意在以下平台上推广你翻译的文章，是 Y ，否 N
 
-- 微信公众号(studyrust): 
-- [知乎专栏](https://www.zhihu.com/column/c_1492085510243414016):
+- 微信公众号(studyrust): Y
+- [知乎专栏](https://www.zhihu.com/column/c_1492085510243414016): Y
