@@ -26,7 +26,7 @@ let this = Example::This;
 let that = Example::That;
 ```
 
-在上面，我们定义了一个 enum 命名为 ``Example``，这个 enum 包括两个变量  ``This`` 和 ``That`` 。然后，我们创建了2个 enum 的实例变量  ``This`` 和 ``That`` 。他们使用其自己的字段被创建。重要的是一个 enum 实例经常使用多个字段中的一个。当你使用 struct 定义字段的时候，你可以使用其定义的全部可能的字段。一个 enum 是不一样的，因为你只可以使用其中的一个变量字段。
+在上面，我们定义了一个 enum 命名为 `Example`，这个 enum 包括两个变量  `This` 和 `That` 。然后，我们创建了2个 enum 的实例变量  `This` 和 `That` 。他们使用其自己的字段被创建。重要的是一个 enum 实例经常使用多个字段中的一个。当你使用 struct 定义字段的时候，你可以使用其定义的全部可能的字段。一个 enum 是不一样的，因为你只可以使用其中的一个变量字段。
 
 ### 显示 enum 变量
 
@@ -104,7 +104,7 @@ pub enum Option<T> {
 }
 ```
 
-以上我们可以看到 ``Option<T>`` 是一个<ruby>枚举<rt>enum</rt></ruby>并包含两个变量：``None`` 和 ``Some(T) ``。就其使用方式而言，``None ``可以被认为是 ``无`` ，``Some(T) ``可以被认为是“某物”。对于那些刚开始使用 Rust 的人来说，一件关键的事情不是很明显，那就是 T 这件符号。这个 T 告诉我们这是一个泛型。
+以上我们可以看到 `Option<T>` 是一个<ruby>枚举<rt>enum</rt></ruby>并包含两个变量：``None`` 和 ``Some(T) ``。就其使用方式而言，``None ``可以被认为是 ``无`` ，``Some(T) ``可以被认为是“某物”。对于那些刚开始使用 Rust 的人来说，一件关键的事情不是很明显，那就是 T 这件符号。这个 T 告诉我们这是一个泛型。
 
 ### `Option` 是 "T" 型上的泛型
 
@@ -199,7 +199,7 @@ pub const fn unwrap(self) -> T {
 }
 ```
 
-在 ``Option.rs`` 中，我们可以看到 unwrap 被定义在 impl \<T> ``Option<T>`` 代码块中。 当我们调用某个值时，它会尝试 unwrap 隐藏在 Some 变量中的值。它与 self 匹配，如果存在 Some 变量，val 将被 unwrap 并返回。如果存在 None 变量，则调用 panic 宏：
+在 ``Option.rs`` 中，我们可以看到 unwrap 被定义在 impl \<T> `Option<T>` 代码块中。 当我们调用某个值时，它会尝试 unwrap 隐藏在 Some 变量中的值。它与 self 匹配，如果存在 Some 变量，val 将被 unwrap 并返回。如果存在 None 变量，则调用 panic 宏：
 
 ```rust
 let something: Option<&str> = Some("Something");
@@ -332,7 +332,7 @@ Person { name: "Jan", age: None }
 
 #### 真实世界的实例
 
-在 Rust 中使用 `Option` 的一个例子是数组的 pop 方法。此方法返回一个 ``Option<T>`` 。pop 方法返回最后一个元素，有时候元素可能是空的。在这种情况下，它应该返回 None 值。另一个问题是，数组里的元素可以包含任何类型。在这种情况下，它很方便返回 Some(T) 。因此，pop() 返回 ``Option<T>`` 。
+在 Rust 中使用 `Option` 的一个例子是数组的 pop 方法。此方法返回一个 `Option<T>` 。pop 方法返回最后一个元素，有时候元素可能是空的。在这种情况下，它应该返回 None 值。另一个问题是，数组里的元素可以包含任何类型。在这种情况下，它很方便返回 Some(T) 。因此，pop() 返回 `Option<T>` 。
 
 从 Rust 1.53 获得数组的 pop 方法：
 
