@@ -1,10 +1,10 @@
- # rust 的 ``Option`` 和 ``Result``
+ # rust 的 `Option` 和 `Result`
  
- 在 Rust 中，完全理解枚举 ``Option`` 和枚举 ``Result`` ，对于理解可选数值和错误处理非常重要。在这篇文章中，我们将深入学习这两方面的内容。
+ 在 Rust 中，完全理解枚举 `Option` 和枚举 `Result` ，对于理解可选数值和错误处理非常重要。在这篇文章中，我们将深入学习这两方面的内容。
 
 ## 概述
 
-想理解 ``Option`` 和 ``Result``，理解如下内容是很重要的：
+想理解 `Option` 和 `Result`，理解如下内容是很重要的：
 
 * Rust 中的 enum
 * 匹配 enum 变量
@@ -12,9 +12,9 @@
 
 ### Rust 中的 enum
 
-有很好的原因去使用 enum ，除此之外，它们还有助于安全的输入处理，并通过为变量集合命名，为类型添加上下文。 在 Rust 中，``Option`` 和 ``Result`` 都是 enum 类型。 Rust 中的 enum 是非常灵活的，它可以包括很多数据类型，例如 tuple ，struct 等等。另外，你还可以在 enums 上实现方法。
+有很好的原因去使用 enum ，除此之外，它们还有助于安全的输入处理，并通过为变量集合命名，为类型添加上下文。 在 Rust 中，`Option` 和 `Result` 都是 enum 类型。 Rust 中的 enum 是非常灵活的，它可以包括很多数据类型，例如 tuple ，struct 等等。另外，你还可以在 enums 上实现方法。
 
-``Option`` 和 ``Result`` 理解起来非常简单。我们首先来看一个 enum 的例子：
+`Option` 和 `Result` 理解起来非常简单。我们首先来看一个 enum 的例子：
 
 ```rust
 enum Example {
@@ -86,16 +86,16 @@ We got That
 
 这里描述的 Rust prelude 是每个程序的一部分。它是自动导入到每个Rust程序中的内容列表。prelude 中的大多数内容都是经常使用的 <ruby>特征<rt>trait</rt></ruby> 。除此之外，我们还发现以下两项：
 
-* std::``Option``::``Option``::{self, Some, None}
-* std::``Result``::``Result``::{self, Ok, Err}
+* std::`Option`::`Option`::{self, Some, None}
+* std::`Result`::`Result`::{self, Ok, Err}
 
-第一个就是 ``Option`` enum，表示值的存在或不存在的类型。第二个是 ``Result`` enum，被描述为一种可能成功或失败的函数返回类型。
+第一个就是 `Option` enum，表示值的存在或不存在的类型。第二个是 `Result` enum，被描述为一种可能成功或失败的函数返回类型。
 
 因为这些类型非常常用，所以也会预先加载它们。让我们更详细地讨论这两种类型。
 
-## ``Option``
+## `Option`
 
-由 prelude 引入的 [Option](https://doc.rust-lang.org/std/``Option``/index.html) 我们不需要动一根手指就可以使用。 ``Option`` 定义如下：
+由 prelude 引入的 [Option](https://doc.rust-lang.org/std/`Option`/index.html) 我们不需要动一根手指就可以使用。 `Option` 定义如下：
 
 ```rust
 pub enum Option<T> {
@@ -106,7 +106,7 @@ pub enum Option<T> {
 
 以上我们可以看到 ``Option<T>`` 是一个<ruby>枚举<rt>enum</rt></ruby>并包含两个变量：``None`` 和 ``Some(T) ``。就其使用方式而言，``None ``可以被认为是 ``无`` ，``Some(T) ``可以被认为是“某物”。对于那些刚开始使用 Rust 的人来说，一件关键的事情不是很明显，那就是 T 这件符号。这个 T 告诉我们这是一个泛型。
 
-### ``Option`` 是 "T" 型上的泛型
+### `Option` 是 "T" 型上的泛型
 
 <ruby>枚举<rt>enum</rt></ruby>是 "T" 型上的泛型。字符 "T" 可以是任何的字符串, 只是 “T” 被用作涉及1个泛型的约定。
 
@@ -149,16 +149,16 @@ Some(Person { name: "Marie", age: 2 })
 None
 ```
 
-代码告诉我们，枚举可以是泛型，不但可以是标准类型，也可以是自定义类型。此外，当我们将枚举定义为 x 类型时，它仍然可以包含变量 “None” 。因此，这个 ``Option`` 是这样说的：
+代码告诉我们，枚举可以是泛型，不但可以是标准类型，也可以是自定义类型。此外，当我们将枚举定义为 x 类型时，它仍然可以包含变量 “None” 。因此，这个 `Option` 是这样说的：
 
 ```text
 This can be of a type T value, which can be anything really, or it can be nothing. 
 ```
 
-### ``Option`` 上的匹配
-既然 Rust 不使用异常或者空数值，你会看到 ``Option``（我们将在后面了解 ``Result`` ）被广泛使用。
+### `Option` 上的匹配
+既然 Rust 不使用异常或者空数值，你会看到 `Option`（我们将在后面了解 `Result` ）被广泛使用。
 
-由于该 ``Option`` 是一个<ruby>枚举<rt>enum</rt></ruby>，我们可以使用模式匹配以自己的方式处理每个变量：
+由于该 `Option` 是一个<ruby>枚举<rt>enum</rt></ruby>，我们可以使用模式匹配以自己的方式处理每个变量：
 
 ```rust
 let something: Option<&str> = Some("a String"); // Some("a String")
@@ -182,19 +182,19 @@ We go something: a String
 We got nothing
 ```
 
-### 取出 ``Option`` 中的值
+### 取出 `Option` 中的值
 
 通常，你会看到 unwrap 被使用。一开始看起来有点神秘，在IDE中浏览它可以提供一些线索：
 
-![unwrap.png](https://github.com/rustt-org/rustt-assets/blob/main/20220326-rust-``Option``-and-``Result``/ide_unwrap.png?raw=true)
+![unwrap.png](https://github.com/rustt-org/rustt-assets/blob/main/20220326-rust-`Option`-and-`Result`/ide_unwrap.png?raw=true)
 
-如果您使用的是 VScode ，那么同时按下 Ctrl + 鼠标左键可以找到源代码。在这种情况下，它将我们带到 ``Option``.rs 文件中 unwrap 定义的位置：
+如果您使用的是 VScode ，那么同时按下 Ctrl + 鼠标左键可以找到源代码。在这种情况下，它将我们带到 `Option`.rs 文件中 unwrap 定义的位置：
 
 ```rust
 pub const fn unwrap(self) -> T {
     match self {
         Some(val) => val,
-        None => panic!("called ```Option``::unwrap()` on a `None` value"),
+        None => panic!("called ``Option`::unwrap()` on a `None` value"),
     }
 }
 ```
@@ -214,14 +214,14 @@ nothing.unwrap();
 ```text
 Some("Something")
 "Something"
-thread 'main' panicked at 'called ```Option``::unwrap()` on a `None` value', src\main.rs:86:17
+thread 'main' panicked at 'called ``Option`::unwrap()` on a `None` value', src\main.rs:86:17
 ```
 
-在一个 ``Option`` 上调用 unwrap 方法既快捷又简单，但让程序陷入恐慌和崩溃并不是一种非常优雅或安全的方法。
+在一个 `Option` 上调用 unwrap 方法既快捷又简单，但让程序陷入恐慌和崩溃并不是一种非常优雅或安全的方法。
 
-### ``Option`` 实例
+### `Option` 实例
 
-让我们来看一些可以使用 ``Option`` 的示例。
+让我们来看一些可以使用 `Option` 的示例。
 
 #### 给一个函数传递一个可选的数值
 
@@ -245,7 +245,7 @@ The argument contains the following value: 'some str'
 The argument contains None.
 ```
 
-#### 定义一个函数返回一个 ``Option`` 数值
+#### 定义一个函数返回一个 `Option` 数值
 
 ```rust
 // Returns the text if it contains target character, None otherwise:
@@ -269,7 +269,7 @@ Some("Rust in action")
 None
 ```
 
-让我们研究三种不同的方法来处理 ``Option`` 的返回。
+让我们研究三种不同的方法来处理 `Option` 的返回。
 
 第一个，是最不安全的，简单地调用 unwrap 方法：
 
@@ -289,7 +289,7 @@ match a {
 }
 ```
 
-第三个， ``Option`` 是在变量中捕获函数的返回，并在以下情况下使用：
+第三个， `Option` 是在变量中捕获函数的返回，并在以下情况下使用：
 
 ```rust
 let a = contains_char("Rust in action", 'a');
@@ -300,9 +300,9 @@ if let Some(a) = contains_char("Rust in action", 'a') {
 }
 ```
 
-#### struct 中的 ``Option`` 数值
+#### struct 中的 `Option` 数值
 
-我们也可以在结构中使用 ``Option`` 。表示字段可能值有或可能没有任何值，一般会很有用：
+我们也可以在结构中使用 `Option` 。表示字段可能值有或可能没有任何值，一般会很有用：
 
 ```rust
 #[derive(Debug)]
@@ -332,7 +332,7 @@ Person { name: "Jan", age: None }
 
 #### 真实世界的实例
 
-在 Rust 中使用 ``Option`` 的一个例子是数组的 pop 方法。此方法返回一个 ``Option<T>`` 。pop 方法返回最后一个元素，有时候元素可能是空的。在这种情况下，它应该返回 None 值。另一个问题是，数组里的元素可以包含任何类型。在这种情况下，它很方便返回 Some(T) 。因此，pop() 返回 ``Option<T>`` 。
+在 Rust 中使用 `Option` 的一个例子是数组的 pop 方法。此方法返回一个 ``Option<T>`` 。pop 方法返回最后一个元素，有时候元素可能是空的。在这种情况下，它应该返回 None 值。另一个问题是，数组里的元素可以包含任何类型。在这种情况下，它很方便返回 Some(T) 。因此，pop() 返回 ``Option<T>`` 。
 
 从 Rust 1.53 获得数组的 pop 方法：
 
@@ -371,9 +371,9 @@ Some(0)
 None
 ```
 
-## ``Result``
+## `Result`
 
-Rust 另外的一个重要的结构就是 ``Result`` 枚举。和 ``Option`` 一样，``Result`` 也是一个枚举。在 ``Result.rs`` 源码里可以找到 ``Result`` 的定义：
+Rust 另外的一个重要的结构就是 `Result` 枚举。和 `Option` 一样，`Result` 也是一个枚举。在 ``Result.rs`` 源码里可以找到 `Result` 的定义：
 
 ```rust
 pub enum Result<T, E> {
@@ -383,19 +383,19 @@ pub enum Result<T, E> {
     Err(E),
 }
 ```
-``Result`` 枚举是包含2个类型的泛型，分别是 T 和 E 。T 用于 Ok 变量，表示一个成功的结果。E 用于 Err 变量，表示一个错误的数值。由于 E 是泛型，所以可以使人们可以传递不同的错误。如果 ``Result`` 不是 E 上的泛型，那么只会有1种类型的错误。就会与 ``Option`` 中有1种类型的 None 相同。在报告中使用错误值时，就显得不太灵活。
+`Result` 枚举是包含2个类型的泛型，分别是 T 和 E 。T 用于 Ok 变量，表示一个成功的结果。E 用于 Err 变量，表示一个错误的数值。由于 E 是泛型，所以可以使人们可以传递不同的错误。如果 `Result` 不是 E 上的泛型，那么只会有1种类型的错误。就会与 `Option` 中有1种类型的 None 相同。在报告中使用错误值时，就显得不太灵活。
 
-如前所述，Prelude 将 ``Result`` 枚举以及 Ok 和 Err 变量纳入 prelude 的范围，如下所示：
+如前所述，Prelude 将 `Result` 枚举以及 Ok 和 Err 变量纳入 prelude 的范围，如下所示：
 
 ```
-std::``Result``::``Result``::{self, Ok, Err}
+std::`Result`::`Result`::{self, Ok, Err}
 ```
 
-这意味着在我们的代码里面，我们可以在任何位置，直接访问 ``Result`` ，Ok 和 Err 。
+这意味着在我们的代码里面，我们可以在任何位置，直接访问 `Result` ，Ok 和 Err 。
 
-### ``Result`` 上的匹配
+### `Result` 上的匹配
 
-让我们开始创建一个可以返回 ``Result`` 的函数例子。在这个函数例子里，我们检查一个字符串是否包括一个最小数量的字符。函数如下：
+让我们开始创建一个可以返回 `Result` 的函数例子。在这个函数例子里，我们检查一个字符串是否包括一个最小数量的字符。函数如下：
 
 ```rust
 fn check_length(s: &str, min: usize) -> Result<&str, String> {
@@ -407,11 +407,11 @@ fn check_length(s: &str, min: usize) -> Result<&str, String> {
 }
 ```
 
-这不是一个非常有用的函数，但足够简单的展示返回一个 ``Result`` 。函数带有两个参数，一个是字符串字面量参数，一个是需要检查包含的字符数量参数。如果字符数量等于或者大于 min , 字符串被返回。这个返回值标记成了 ``Result`` 枚举。我们指定函数返回时 ``Result`` 将包含的类型。如果字符串足够长，我们将返回字符串文本。如果出现错误，我们将返回一条字符串消息。这例子很好解释了 ``Result`` <&str，String>。
+这不是一个非常有用的函数，但足够简单的展示返回一个 `Result` 。函数带有两个参数，一个是字符串字面量参数，一个是需要检查包含的字符数量参数。如果字符数量等于或者大于 min , 字符串被返回。这个返回值标记成了 `Result` 枚举。我们指定函数返回时 `Result` 将包含的类型。如果字符串足够长，我们将返回字符串文本。如果出现错误，我们将返回一条字符串消息。这例子很好解释了 `Result` <&str，String>。
 
-if s.chars().count() >= min 语句为我们进行检查。如果计算结果为true，它将返回 ``Result`` 枚举的 Ok 变量中包装的字符串。我们之所以可以简单地写 Ok(s)，是因为组成 ``Result`` 的变量也被纳入了范围。我们可以看到 else 语句将返回一个 Err 变量。在本例中，它是一个包含错误消息的字符串。
+if s.chars().count() >= min 语句为我们进行检查。如果计算结果为true，它将返回 `Result` 枚举的 Ok 变量中包装的字符串。我们之所以可以简单地写 Ok(s)，是因为组成 `Result` 的变量也被纳入了范围。我们可以看到 else 语句将返回一个 Err 变量。在本例中，它是一个包含错误消息的字符串。
 
-让我们运行函数并且使用 dbg！输出 ``Result`` ：
+让我们运行函数并且使用 dbg！输出 `Result` ：
 
 ```rust
 let a = check_length("some str", 5);
@@ -420,7 +420,7 @@ dbg!(a); // Ok("some str",)
 dbg!(b); // Err("'another str' is not long enough!",)
 ``` 
 
-我们可以使用 match 表达式处理我们函数的返回值 ``Result`` ：
+我们可以使用 match 表达式处理我们函数的返回值 `Result` ：
 
 ```rust
 let func_return = check_length("some string literal", 100);
@@ -431,9 +431,9 @@ let a_str = match func_return {
 // thread 'main' panicked at 'Problem running 'check_length':
 // "'some string literal' is not long enough!"'
 ```
-### 取出 ``Result`` 的值
+### 取出 `Result` 的值
 
-除了使用匹配表达式，还有一个你经常会遇到的快捷方式。此快捷方式是为 ``Result`` 枚举定义的 unwrap 方法。该方法定义如下：
+除了使用匹配表达式，还有一个你经常会遇到的快捷方式。此快捷方式是为 `Result` 枚举定义的 unwrap 方法。该方法定义如下：
 
 ```rust
 impl<T, E: fmt::Debug> Result<T, E> {
@@ -441,7 +441,7 @@ impl<T, E: fmt::Debug> Result<T, E> {
     pub fn unwrap(self) -> T {
         match self {
             Ok(t) => t,
-            Err(e) => unwrap_failed("called ```Result``::unwrap()` on an `Err` value", &e),
+            Err(e) => unwrap_failed("called ``Result`::unwrap()` on an `Err` value", &e),
         }
     }
     ...
@@ -475,7 +475,7 @@ let invalid_json = r#"
 
 let json_serialized: serde_json::Value = serde_json::from_str(&invalid_json).unwrap();
 /*
-thread 'main' panicked at 'called ```Result``::unwrap()` on an `Err` value: Error("control character (\\u0000-\\u001F) found while parsing a string", line: 4, column: 0)',
+thread 'main' panicked at 'called ``Result`::unwrap()` on an `Err` value: Error("control character (\\u0000-\\u001F) found while parsing a string", line: 4, column: 0)',
 */
 ```
 
@@ -534,9 +534,9 @@ fn main() {
 
 不同的项目通常会定义自己的错误。在 repo 中搜索诸如 pub struct Error 或 pub enum Error 之类的内容，有时可能会发现为项目定义的错误。但问题是，不同的 create 和项目可能会返回自己的错误类型。如果有一个函数使用来自各种项目中的方法，并且想要传播错误，那么事情可能会变得有点棘手。有几种方法可以解决这个问题。让我们来看一个例子，我们通过 Box 错误来处理这个问题。
 
-在下一个示例中，我们定义了一个函数，该函数将目标文件的全部内容读入到一个字符串中，然后将其序列化为 JSON ，同时将其映射到结构体。函数返回一个 ``Result`` 。Ok 变量是Person结构体，将传播的错误可能是来自 serde 或 std::fs 的错误。为了能够从这两个包返回错误，我们返回``Result``<Person，Box<dyn Error>>。 Person 是 ``Result`` 的 Ok 变体。Err 变量定义为 Box<dyn Error> ，表示任何类型的错误 。
+在下一个示例中，我们定义了一个函数，该函数将目标文件的全部内容读入到一个字符串中，然后将其序列化为 JSON ，同时将其映射到结构体。函数返回一个 `Result` 。Ok 变量是Person结构体，将传播的错误可能是来自 serde 或 std::fs 的错误。为了能够从这两个包返回错误，我们返回`Result`<Person，Box<dyn Error>>。 Person 是 `Result` 的 Ok 变体。Err 变量定义为 Box<dyn Error> ，表示任何类型的错误 。
 
-关于下面的例子，另一件值得一提的事情是 ？。我们将使用 fs::read_to_string 将文件作为字符串读取，并使用 serde_json::from_str(&text) 将文本序列化为结构。为了避免为这些方法返回的结果编写匹配表达式，我们将 ？放在调用这些方法的背后。如果前面的 ``Result`` 包含 Ok ，则此语法糖将执行 unwrap 。如果前面的结果包含 Err 变量，它将确保返回此错误，就像使用 return 关键字传播错误一样。当错误被返回时，我们的 Box 将捕获它们。
+关于下面的例子，另一件值得一提的事情是 ？。我们将使用 fs::read_to_string 将文件作为字符串读取，并使用 serde_json::from_str(&text) 将文本序列化为结构。为了避免为这些方法返回的结果编写匹配表达式，我们将 ？放在调用这些方法的背后。如果前面的 `Result` 包含 Ok ，则此语法糖将执行 unwrap 。如果前面的结果包含 Err 变量，它将确保返回此错误，就像使用 return 关键字传播错误一样。当错误被返回时，我们的 Box 将捕获它们。
 
 实例代码：
 
@@ -616,12 +616,12 @@ dbg!(z);
 
 有许多的 crates 可以帮助我们处理错误，一些可以帮助我们管理样板代码，另一些则添加了额外报告等功能。一个易于使用的 crates 的代表就是 anyhow ：
 
-![anyhow.png](https://github.com/rustt-org/rustt-assets/blob/main/20220326-rust-``Option``-and-``Result``/anyhow.png?raw=true)
+![anyhow.png](https://github.com/rustt-org/rustt-assets/blob/main/20220326-rust-`Option`-and-`Result`/anyhow.png?raw=true)
 
-这个 crate 将帮助我们实现一个简化的 ``Result`` 类型，同时通过增加 context 我们可以很轻松的标记我们的错误。下面的代码片段演示了三个 anyhow 的基础能力：
+这个 crate 将帮助我们实现一个简化的 `Result` 类型，同时通过增加 context 我们可以很轻松的标记我们的错误。下面的代码片段演示了三个 anyhow 的基础能力：
 
 ```rust
-use anyhow::{anyhow, Context, ``Result``};
+use anyhow::{anyhow, Context, `Result`};
 use serde::{Deserialize, Serialize};
 use std::fs;
 
@@ -642,10 +642,10 @@ fn get_secrets(s: &str) -> Result<Secrets> {
 }
 ```
 
-在以上的例子中，需要在 Cargo.toml 增加 anyhow = "1.0.43" 。在头部，anyhow ，Context 和 ``Result`` 被引入。让我们一个接一个的讨论：
+在以上的例子中，需要在 Cargo.toml 增加 anyhow = "1.0.43" 。在头部，anyhow ，Context 和 `Result` 被引入。让我们一个接一个的讨论：
 
-#### anyhow::``Result``
-这是一个处理错误的一个更方便的类型。你可以在 main() 中使用它。在 get_secrets 函数中我们可以看到 ``Result`` 在使用，就是这个被实现的 enum 使事情变得简单。这些 <ruby>特征<rt>trait</rt></ruby> 中的一个称作 Context ，我们将在下面进行讨论。
+#### anyhow::`Result`
+这是一个处理错误的一个更方便的类型。你可以在 main() 中使用它。在 get_secrets 函数中我们可以看到 `Result` 在使用，就是这个被实现的 enum 使事情变得简单。这些 <ruby>特征<rt>trait</rt></ruby> 中的一个称作 Context ，我们将在下面进行讨论。
 
 如果我们运行 get_secrets  并且一切正常，我们获得如下返回：
 
@@ -734,9 +734,9 @@ Jane Lusby 复制了 anyhow crate。她创建了[eyre](https://crates.io/crates/
 
 ## 收尾
 
-了解 ``Option`` 以及 ``Result`` 如何用于 Rust 非常重要。上面对 Rust 中的 ``Option`` ，``Result`` 和错误处理的解释，是我如何了解它们的书面描述。我希望这篇文章对其他人有益。
+了解 `Option` 以及 `Result` 如何用于 Rust 非常重要。上面对 Rust 中的 `Option` ，`Result` 和错误处理的解释，是我如何了解它们的书面描述。我希望这篇文章对其他人有益。
 
-这篇文章的源码可以在(这里)找到[https://github.com/saidvandeklundert/LearningRust/blob/master/blog/``Option``-and-``Result``/src/main.rs]。 除此之外，这里还有一些额外的链接值得查看，以更好地理解 Rust 中的 ``Option``，``Result`` 以及错误处理。
+这篇文章的源码可以在(这里)找到[https://github.com/saidvandeklundert/LearningRust/blob/master/blog/`Option`-and-`Result`/src/main.rs]。 除此之外，这里还有一些额外的链接值得查看，以更好地理解 Rust 中的 `Option`，`Result` 以及错误处理。
 
 * The Rust Programming Language [Chapter 6](https://doc.rust-lang.org/book/ch06-00-enums.html) and [Chapter 9](https://doc.rust-lang.org/book/ch09-00-error-handling.html)
 * From [Rustconf 2020](https://2020.rustconf.com/talks) talks, the [Error handling Isn’t All About Errors](https://www.youtube.com/watch?v=rAF8mLI0naQ) talk by by Jane Lusby 
