@@ -736,7 +736,7 @@ Jane Lusby 复制了 `anyhow` <ruby>包<rt>crate</rt></ruby>。她创建了[eyre
 
 了解 `Option` 以及 `Result` 如何用于 Rust 非常重要。上面对 Rust 中的 `Option` ，`Result` 和错误处理的解释，是我如何了解它们的书面描述。我希望这篇文章对其他人有益。
 
-这篇文章的源码可以在(这里)找到[https://github.com/saidvandeklundert/LearningRust/blob/master/blog/`Option`-and-`Result`/src/main.rs]。 除此之外，这里还有一些额外的链接值得查看，以更好地理解 Rust 中的 `Option`，`Result` 以及错误处理。
+这篇文章的源码可以在(这里)找到[https://github.com/saidvandeklundert/LearningRust/blob/master/blog/Option-and-Result/src/main.rs]。 除此之外，这里还有一些额外的链接值得查看，以更好地理解 Rust 中的 `Option`，`Result` 以及错误处理。
 
 * The Rust Programming Language [Chapter 6](https://doc.rust-lang.org/book/ch06-00-enums.html) and [Chapter 9](https://doc.rust-lang.org/book/ch09-00-error-handling.html)
 * From [Rustconf 2020](https://2020.rustconf.com/talks) talks, the [Error handling Isn’t All About Errors](https://www.youtube.com/watch?v=rAF8mLI0naQ) talk by by Jane Lusby 
