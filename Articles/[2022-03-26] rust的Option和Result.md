@@ -622,7 +622,7 @@ dbg!(z);
 这个<ruby>包<rt>crate</rt></ruby>将帮助我们实现一个简化的 `Result` 类型，同时通过增加 `context` 我们可以很轻松的标记我们的错误。下面的代码片段演示了三个 `anyhow` 的基础能力：
 
 ```rust
-use anyhow::{anyhow, Context, `Result`};
+use anyhow::{anyhow, Context, Result};
 use serde::{Deserialize, Serialize};
 use std::fs;
 
