@@ -194,7 +194,7 @@ We got nothing
 pub const fn unwrap(self) -> T {
     match self {
         Some(val) => val,
-        None => panic!("called ``Option`::unwrap()` on a `None` value"),
+        None => panic!("called Option::unwrap() on a `None` value"),
     }
 }
 ```
@@ -214,7 +214,7 @@ nothing.unwrap();
 ```text
 Some("Something")
 "Something"
-thread 'main' panicked at 'called ``Option`::unwrap()` on a `None` value', src\main.rs:86:17
+thread 'main' panicked at 'called Option::unwrap()` on a `None` value', src\main.rs:86:17
 ```
 
 在一个 `Option` 上调用 `unwrap` 方法既快捷又简单，但让程序陷入恐慌和崩溃并不是一种非常优雅或安全的方法。
@@ -441,7 +441,7 @@ impl<T, E: fmt::Debug> Result<T, E> {
     pub fn unwrap(self) -> T {
         match self {
             Ok(t) => t,
-            Err(e) => unwrap_failed("called ``Result`::unwrap()` on an `Err` value", &e),
+            Err(e) => unwrap_failed("called `Result::unwrap()` on an `Err` value", &e),
         }
     }
     ...
@@ -475,7 +475,7 @@ let invalid_json = r#"
 
 let json_serialized: serde_json::Value = serde_json::from_str(&invalid_json).unwrap();
 /*
-thread 'main' panicked at 'called ``Result`::unwrap()` on an `Err` value: Error("control character (\\u0000-\\u001F) found while parsing a string", line: 4, column: 0)',
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Error("control character (\\u0000-\\u001F) found while parsing a string", line: 4, column: 0)',
 */
 ```
 
