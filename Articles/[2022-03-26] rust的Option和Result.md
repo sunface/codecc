@@ -186,7 +186,7 @@ We got nothing
 
 通常，你会看到 `unwrap` 被使用。一开始看起来有点神秘，在 IDE 中浏览它可以提供一些线索：
 
-![unwrap.png](https://github.com/rustt-org/rustt-assets/blob/main/20220326-rust-`Option`-and-`Result`/ide_unwrap.png?raw=true)
+![unwrap.png](https://github.com/rustt-org/rustt-assets/blob/main/20220326-rust-option-and-result/ide_unwrap.png?raw=true)
 
 如果您使用的是 `VScode` ，那么同时按下 `Ctrl` + 鼠标左键可以找到源代码。在这种情况下，它将我们带到 *Option.rs* 文件中 `unwrap` 定义的位置：
 
@@ -616,7 +616,8 @@ dbg!(z);
 
 有许多的<ruby>包<rt>crate</rt></ruby>可以帮助我们处理错误，一些可以帮助我们管理样板代码，另一些则添加了额外报告等功能。一个易于使用的<ruby>包<rt>crate</rt></ruby>的代表就是 `anyhow` ：
 
-![anyhow.png](https://github.com/rustt-org/rustt-assets/blob/main/20220326-rust-`Option`-and-`Result`/anyhow.png?raw=true)
+![anyhow.png](https://github.com/rustt-org/rustt-assets/blob/main/20220326-rust-option-and-result/anyhow.png?raw=true)
+
 
 这个<ruby>包<rt>crate</rt></ruby>将帮助我们实现一个简化的 `Result` 类型，同时通过增加 `context` 我们可以很轻松的标记我们的错误。下面的代码片段演示了三个 `anyhow` 的基础能力：
 
