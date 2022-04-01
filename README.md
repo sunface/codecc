@@ -25,10 +25,10 @@ Rustt (读音 / rʌsˈti /) 是 [StudyRust](https://studyrust) **的核心小组
 
 | 中文名 | 原文名 |  翻译时间 | 作者 |
 | ------- | ------- | -------- | ----- |
-| [手把手实现Rust链表](https://github.com/studyrs/too-many-lists) | [Too Many Lists](https://rust-unofficial.github.io/too-many-lists/) | 2022-03-29 |  [Sunface](https://im.dev) |
+| [手把手实现Rust链表](https://github.com/studyrs/Rustt/tree/main/Books/Too-Many-Lists) | [Too Many Lists](https://rust-unofficial.github.io/too-many-lists/) | 2022-03-29 |  [Sunface](https://im.dev) |
 | [Rust嵌入式开发](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-03-26%5D%20Rust%20嵌入式开发.md) | [Use Rust for embedded development](https://opensource.com/article/21/10/rust-embedded-development) | 2022-03-27 | [Xiaobin.Liu](https://github.com/lxbwolf) |
 | [Rust异步编程指南](https://github.com/studyrs/async-book) | [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/) | 2022-03-01 |  [Sunface](https://im.dev) |
-| [Cargo使用指南](https://github.com/studyrs/cargo-book) | [The Cargo Book](https://doc.rust-lang.org/stable/cargo/index.html) | 2022-02-27 |  [Sunface](https://im.dev) |
+| [Cargo使用指南](https://github.com/studyrs/Rustt/tree/main/Books/Cargo-Book) | [The Cargo Book](https://doc.rust-lang.org/stable/cargo/index.html) | 2022-02-27 |  [Sunface](https://im.dev) |
 
 
 ## 优秀作品
