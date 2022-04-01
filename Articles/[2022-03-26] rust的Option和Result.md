@@ -6,15 +6,15 @@
 
 想理解 `Option` 和 `Result`，理解如下内容是很重要的：
 
-* Rust 中的 enum
-* 匹配 enum 变量
+* Rust 中的枚举
+* 匹配 枚举变量
 * Rust 中的 prelude
 
-### Rust 中的 enum
+### Rust 中的枚举
 
-有很好的原因去使用<ruby>枚举<rt>enum</rt></ruby>，除此之外，它们还有助于安全的输入处理，并通过为变量集合命名，为类型添加上下文。 在 Rust 中，`Option` 和 `Result` 都是<ruby>枚举<rt>enum</rt></ruby>类型。 Rust 中的<ruby>枚举<rt>enum</rt></ruby>是非常灵活的，它可以包括很多数据类型，例如<ruby>元组<rt>tuple</rt></ruby>，<ruby>结构体<rt>struct</rt></ruby>等等。另外，你还可以在<ruby>枚举<rt>enum</rt></ruby>上实现方法。
+有很好的原因去使用枚举，除此之外，它们还有助于安全的输入处理，并通过为变量集合命名，为类型添加上下文。 在 Rust 中，`Option` 和 `Result` 都是枚举类型。 Rust 中的枚举是非常灵活的，它可以包括很多数据类型，例如元组、结构体等等。另外，你还可以在枚举上实现方法。
 
-`Option` 和 `Result` 理解起来非常简单。我们首先来看一个 enum 的例子：
+`Option` 和 `Result` 理解起来非常简单。我们首先来看一个枚举的例子：
 
 ```rust
 enum Example {
@@ -26,11 +26,11 @@ let this = Example::This;
 let that = Example::That;
 ```
 
-在上面，我们定义了一个<ruby>枚举<rt>enum</rt></ruby>命名为 `Example`，这个 enum 包括两个变量 `This` 和 `That` 。然后，我们创建了2个<ruby>枚举<rt>enum</rt></ruby>的实例变量  `This` 和 `That` 。他们使用其自己的字段被创建。重要的是一个<ruby>枚举<rt>enum</rt></ruby>实例经常使用多个字段中的一个。当你使用 struct 定义字段的时候，你可以使用其定义的全部可能的字段。一个<ruby>枚举<rt>enum</rt></ruby>是不一样的，因为你只可以使用其中的一个变量字段。
+在上面，我们定义了一个枚举命名为 `Example`，这个枚举包括两个变量 `This` 和 `That` 。然后，我们创建了2个枚举的实例变量  `This` 和 `That` 。他们使用其自己的字段被创建。重要的是一个枚举实例经常使用多个字段中的一个。当你使用结构体定义字段的时候，你可以使用其定义的全部可能的字段。一个枚举是不一样的，因为你只可以使用其中的一个变量字段。
 
-### 显示<ruby>枚举<rt>enum</rt></ruby>变量
+### 显示枚举变量
 
-默认的，<ruby>枚举<rt>enum</rt></ruby>变量是不能打印到屏幕的。 在我们定义的<ruby>枚举<rt>enum</rt></ruby>上，通过使用 `strum_macros` 可以很容易的派生 ‘Display’， 在<ruby>枚举<rt>enum</rt></ruby>上我们使用 `#[derive(Display)]` ：
+默认的，枚举变量是不能打印到屏幕的。 在我们定义的枚举上，通过使用 `strum_macros` 可以很容易的派生 ‘Display’， 在枚举上我们使用 `#[derive(Display)]` ：
 
 ```rust
 use strum_macros::Display;
@@ -48,7 +48,7 @@ println!("Example::This contains: {}", this);
 println!("Example::That contains: {}", that);
 ```
 
-现在，我们可以在屏幕上使用 println！显示<ruby>枚举<rt>enum</rt></ruby>变量的数值：
+现在，我们可以在屏幕上使用 println！显示枚举变量的数值：
 
 ```text
 Example::This contains: This
@@ -57,7 +57,7 @@ Example::That contains: That
 
 ### 匹配 enum 变量
 
-使用 `match` 关键字，我们可以在<ruby>枚举<rt>enum</rt></ruby>上实现模式匹配。下面函数使用 `Example` <ruby>枚举<rt>enum</rt></ruby>做为参数：
+使用 `match` 关键字，我们可以在枚举上实现模式匹配。下面函数使用 `Example` 枚举做为参数：
 
 ```rust
 fn matcher(x: Example) {
@@ -86,10 +86,10 @@ We got That
 
 这里描述的 Rust prelude 是每个程序的一部分。它是自动导入到每个Rust程序中的内容列表。prelude 中的大多数内容都是经常使用的 <ruby>特征<rt>trait</rt></ruby> 。除此之外，我们还发现以下两项：
 
-* std::`Option`::`Option`::{self, Some, None}
-* std::`Result`::`Result`::{self, Ok, Err}
+* std::Option::Option::{self, Some, None}
+* std::Result::Result::{self, Ok, Err}
 
-第一个就是 `Option` <ruby>枚举<rt>enum</rt></ruby>，表示值的存在或不存在的类型。第二个是 `Result` <ruby>枚举<rt>enum</rt></ruby>，被描述为一种可能成功或失败的函数返回类型。
+第一个就是 `Option` 枚举，表示值的存在或不存在的类型。第二个是 `Result` 枚举，被描述为一种可能成功或失败的函数返回类型。
 
 因为这些类型非常常用，所以也会预先加载它们。让我们更详细地讨论这两种类型。
 
@@ -104,13 +104,13 @@ pub enum Option<T> {
 }
 ```
 
-以上我们可以看到 `Option<T>` 是一个<ruby>枚举<rt>enum</rt></ruby>并包含两个变量：`None` 和 `Some(T)`。就其使用方式而言，`None`可以被认为是 `无` ，`Some(T)`可以被认为是“某物”。对于那些刚开始使用 Rust 的人来说，一件关键的事情不是很明显，那就是 T 这件符号。这个 T 告诉我们这是一个泛型。
+以上我们可以看到 `Option<T>` 是一个枚举并包含两个变量：`None` 和 `Some(T)`。就其使用方式而言，`None`可以被认为是 `无` ，`Some(T)`可以被认为是“某物”。对于那些刚开始使用 Rust 的人来说，一件关键的事情不是很明显，那就是 T 这件符号。这个 T 告诉我们这是一个泛型。
 
 ### `Option` 是 "T" 型上的泛型
 
-<ruby>枚举<rt>enum</rt></ruby>是 "T" 型上的泛型。字符 "T" 可以是任何的字符串, 只是 “T” 被用作涉及1个泛型的约定。
+枚举是 "T" 型上的泛型。字符 "T" 可以是任何的字符串, 只是 “T” 被用作涉及1个泛型的约定。
 
-那么，当我们说 “枚举是T型上的泛型” 是什么意思呢？这意味着我们可以将其用于任何类型。一旦我们开始使用<ruby>枚举<rt>enum</rt></ruby>，我们就可以（而且必须）用具体类型替换 “T” 。这可以是任何类型，如下所示：
+那么，当我们说 “枚举是T型上的泛型” 是什么意思呢？这意味着我们可以将其用于任何类型。一旦我们开始使用枚举，我们就可以（而且必须）用具体类型替换 “T” 。这可以是任何类型，如下所示：
 
 ```rust
 let a_str: Option<&str> = Some("a str");
@@ -149,7 +149,7 @@ Some(Person { name: "Marie", age: 2 })
 None
 ```
 
-代码告诉我们，<ruby>枚举<rt>enum</rt></ruby>可以是泛型，不但可以是标准类型，也可以是自定义类型。此外，当我们将<ruby>枚举<rt>enum</rt></ruby>定义为 x 类型时，它仍然可以包含变量 “None” 。因此，这个 `Option` 是这样说的：
+代码告诉我们，枚举可以是泛型，不但可以是标准类型，也可以是自定义类型。此外，当我们将枚举定义为 x 类型时，它仍然可以包含变量 “None” 。因此，这个 `Option` 是这样说的：
 
 ```text
 This can be of a type T value, which can be anything really, or it can be nothing. 
@@ -158,7 +158,7 @@ This can be of a type T value, which can be anything really, or it can be nothin
 ### `Option` 上的匹配
 既然 Rust 不使用异常或者空数值，你会看到 `Option`（我们将在后面了解 `Result` ）被广泛使用。
 
-由于该 `Option` 是一个<ruby>枚举<rt>enum</rt></ruby>，我们可以使用模式匹配以自己的方式处理每个变量：
+由于该 `Option` 是一个枚举，我们可以使用模式匹配以自己的方式处理每个变量：
 
 ```rust
 let something: Option<&str> = Some("a String"); // Some("a String")
@@ -300,7 +300,7 @@ if let Some(a) = contains_char("Rust in action", 'a') {
 }
 ```
 
-#### struct 中的 `Option` 数值
+#### 结构体中的 `Option` 数值
 
 我们也可以在结构中使用 `Option` 。表示字段可能值有或可能没有任何值，一般会很有用：
 
@@ -373,7 +373,7 @@ None
 
 ## `Result`
 
-Rust 另外的一个重要的结构就是 `Result` 枚举。和 `Option` 一样，`Result` 也是一个枚举。在 ``Result.rs`` 源码里可以找到 `Result` 的定义：
+Rust 另外的一个重要的结构就是 `Result` 枚举。和 `Option` 一样，`Result` 也是一个枚举。在 __Result.rs__ 源码里可以找到 `Result` 的定义：
 
 ```rust
 pub enum Result<T, E> {
@@ -534,7 +534,7 @@ fn main() {
 
 不同的项目通常会定义自己的错误。在 `repo` 中搜索诸如 pub struct Error 或 pub enum Error 之类的内容，有时可能会发现为项目定义的错误。但问题是，不同的 create 和项目可能会返回自己的错误类型。如果有一个函数使用来自各种项目中的方法，并且想要传播错误，那么事情可能会变得有点棘手。有几种方法可以解决这个问题。让我们来看一个例子，我们通过 Box 错误来处理这个问题。
 
-在下一个示例中，我们定义了一个函数，该函数将目标文件的全部内容读入到一个字符串中，然后将其序列化为 JSON ，同时将其映射到结构体。函数返回一个 `Result` 。Ok 变量是Person结构体，将传播的错误可能是来自 serde 或 std::fs 的错误。为了能够从这两个包返回错误，我们返回`Result`<Person，Box<dyn Error>>。 Person 是 `Result` 的 Ok 变体。Err 变量定义为 Box<dyn Error> ，表示任何类型的错误 。
+在下一个示例中，我们定义了一个函数，该函数将目标文件的全部内容读入到一个字符串中，然后将其序列化为 JSON ，同时将其映射到结构体。函数返回一个 `Result` 。Ok 变量是 Person 结构体，将传播的错误可能是来自 serde 或 std::fs 的错误。为了能够从这两个包返回错误，我们返回`Result` <Person，Box<dyn Error>>。 Person 是 `Result` 的 Ok 变体。Err 变量定义为 Box<dyn Error> ，表示任何类型的错误 。
 
 关于下面的例子，另一件值得一提的事情是 ？。我们将使用 fs::read_to_string 将文件作为字符串读取，并使用 serde_json::from_str(&text) 将文本序列化为结构。为了避免为这些方法返回的结果编写匹配表达式，我们将 ？放在调用这些方法的背后。如果前面的 `Result` 包含 Ok ，则此语法糖将执行 unwrap 。如果前面的结果包含 Err 变量，它将确保返回此错误，就像使用 return 关键字传播错误一样。当错误被返回时，我们的 Box 将捕获它们。
 
@@ -645,7 +645,7 @@ fn get_secrets(s: &str) -> Result<Secrets> {
 在以上的例子中，需要在 Cargo.toml 增加 anyhow = "1.0.43" 。在头部，anyhow ，Context 和 `Result` 被引入。让我们一个接一个的讨论：
 
 #### anyhow::`Result`
-这是一个处理错误的一个更方便的类型。你可以在 main() 中使用它。在 get_secrets 函数中我们可以看到 `Result` 在使用，就是这个被实现的 enum 使事情变得简单。这些 <ruby>特征<rt>trait</rt></ruby> 中的一个称作 Context ，我们将在下面进行讨论。
+这是一个处理错误的一个更方便的类型。你可以在 main() 中使用它。在 get_secrets 函数中我们可以看到 `Result` 在使用，就是这个被实现的枚举使事情变得简单。这些 <ruby>特征<rt>trait</rt></ruby> 中的一个称作 Context ，我们将在下面进行讨论。
 
 如果我们运行 get_secrets  并且一切正常，我们获得如下返回：
 
