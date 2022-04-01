@@ -12,7 +12,7 @@
 
 ### Rust 中的 enum
 
-有很好的原因去使用 enum ，除此之外，它们还有助于安全的输入处理，并通过为变量集合命名，为类型添加上下文。 在 Rust 中，`Option` 和 `Result` 都是 enum 类型。 Rust 中的 enum 是非常灵活的，它可以包括很多数据类型，例如 tuple ，struct 等等。另外，你还可以在 enums 上实现方法。
+有很好的原因去使用<ruby>枚举<rt>enum</rt></ruby>，除此之外，它们还有助于安全的输入处理，并通过为变量集合命名，为类型添加上下文。 在 Rust 中，`Option` 和 `Result` 都是<ruby>枚举<rt>enum</rt></ruby>类型。 Rust 中的<ruby>枚举<rt>enum</rt></ruby>是非常灵活的，它可以包括很多数据类型，例如<ruby>元组<rt>tuple</rt></ruby>，<ruby>结构体<rt>struct</rt></ruby>等等。另外，你还可以在<ruby>枚举<rt>enum</rt></ruby>上实现方法。
 
 `Option` 和 `Result` 理解起来非常简单。我们首先来看一个 enum 的例子：
 
@@ -26,11 +26,11 @@ let this = Example::This;
 let that = Example::That;
 ```
 
-在上面，我们定义了一个 enum 命名为 `Example`，这个 enum 包括两个变量  `This` 和 `That` 。然后，我们创建了2个 enum 的实例变量  `This` 和 `That` 。他们使用其自己的字段被创建。重要的是一个 enum 实例经常使用多个字段中的一个。当你使用 struct 定义字段的时候，你可以使用其定义的全部可能的字段。一个 enum 是不一样的，因为你只可以使用其中的一个变量字段。
+在上面，我们定义了一个<ruby>枚举<rt>enum</rt></ruby>命名为 `Example`，这个 enum 包括两个变量 `This` 和 `That` 。然后，我们创建了2个<ruby>枚举<rt>enum</rt></ruby>的实例变量  `This` 和 `That` 。他们使用其自己的字段被创建。重要的是一个<ruby>枚举<rt>enum</rt></ruby>实例经常使用多个字段中的一个。当你使用 struct 定义字段的时候，你可以使用其定义的全部可能的字段。一个<ruby>枚举<rt>enum</rt></ruby>是不一样的，因为你只可以使用其中的一个变量字段。
 
-### 显示 enum 变量
+### 显示<ruby>枚举<rt>enum</rt></ruby>变量
 
-默认的，enum 变量是不能打印到屏幕的。 在我们定义的 enum 上，通过使用 ``strum_macros`` 可以很容易的派生 ‘Display’， 在 enum 上我们使用 ``#[derive(Display)] `` ：
+默认的，<ruby>枚举<rt>enum</rt></ruby>变量是不能打印到屏幕的。 在我们定义的<ruby>枚举<rt>enum</rt></ruby>上，通过使用 `strum_macros` 可以很容易的派生 ‘Display’， 在<ruby>枚举<rt>enum</rt></ruby>上我们使用 `#[derive(Display)]` ：
 
 ```rust
 use strum_macros::Display;
@@ -48,7 +48,7 @@ println!("Example::This contains: {}", this);
 println!("Example::That contains: {}", that);
 ```
 
-现在，我们可以在屏幕上使用 println！显示 enum 变量的数值：
+现在，我们可以在屏幕上使用 println！显示<ruby>枚举<rt>enum</rt></ruby>变量的数值：
 
 ```text
 Example::This contains: This
@@ -57,7 +57,7 @@ Example::That contains: That
 
 ### 匹配 enum 变量
 
-使用 match 关键字，我们可以在 enum 上实现模式匹配。下面函数使用Example 枚举做为参数：
+使用 `match` 关键字，我们可以在<ruby>枚举<rt>enum</rt></ruby>上实现模式匹配。下面函数使用 `Example` <ruby>枚举<rt>enum</rt></ruby>做为参数：
 
 ```rust
 fn matcher(x: Example) {
@@ -68,7 +68,7 @@ fn matcher(x: Example) {
 }
 ```
 
-我们可以给这个 matcher 函数传递一个 Example 的数值，函数内部的 ``match`` 将决定什么内容会被打印到屏幕：
+我们可以给这个 `matcher` 函数传递一个 Example 的数值，函数内部的 `match` 将决定什么内容会被打印到屏幕：
 
 ```rust
 matcher(Example::This);
@@ -89,7 +89,7 @@ We got That
 * std::`Option`::`Option`::{self, Some, None}
 * std::`Result`::`Result`::{self, Ok, Err}
 
-第一个就是 `Option` enum，表示值的存在或不存在的类型。第二个是 `Result` enum，被描述为一种可能成功或失败的函数返回类型。
+第一个就是 `Option` <ruby>枚举<rt>enum</rt></ruby>，表示值的存在或不存在的类型。第二个是 `Result` <ruby>枚举<rt>enum</rt></ruby>，被描述为一种可能成功或失败的函数返回类型。
 
 因为这些类型非常常用，所以也会预先加载它们。让我们更详细地讨论这两种类型。
 
@@ -104,7 +104,7 @@ pub enum Option<T> {
 }
 ```
 
-以上我们可以看到 `Option<T>` 是一个<ruby>枚举<rt>enum</rt></ruby>并包含两个变量：``None`` 和 ``Some(T) ``。就其使用方式而言，``None ``可以被认为是 ``无`` ，``Some(T) ``可以被认为是“某物”。对于那些刚开始使用 Rust 的人来说，一件关键的事情不是很明显，那就是 T 这件符号。这个 T 告诉我们这是一个泛型。
+以上我们可以看到 `Option<T>` 是一个<ruby>枚举<rt>enum</rt></ruby>并包含两个变量：`None` 和 `Some(T)`。就其使用方式而言，`None`可以被认为是 `无` ，`Some(T)`可以被认为是“某物”。对于那些刚开始使用 Rust 的人来说，一件关键的事情不是很明显，那就是 T 这件符号。这个 T 告诉我们这是一个泛型。
 
 ### `Option` 是 "T" 型上的泛型
 
@@ -149,7 +149,7 @@ Some(Person { name: "Marie", age: 2 })
 None
 ```
 
-代码告诉我们，枚举可以是泛型，不但可以是标准类型，也可以是自定义类型。此外，当我们将枚举定义为 x 类型时，它仍然可以包含变量 “None” 。因此，这个 `Option` 是这样说的：
+代码告诉我们，<ruby>枚举<rt>enum</rt></ruby>可以是泛型，不但可以是标准类型，也可以是自定义类型。此外，当我们将<ruby>枚举<rt>enum</rt></ruby>定义为 x 类型时，它仍然可以包含变量 “None” 。因此，这个 `Option` 是这样说的：
 
 ```text
 This can be of a type T value, which can be anything really, or it can be nothing. 
@@ -388,7 +388,7 @@ pub enum Result<T, E> {
 如前所述，Prelude 将 `Result` 枚举以及 Ok 和 Err 变量纳入 prelude 的范围，如下所示：
 
 ```
-std::`Result`::`Result`::{self, Ok, Err}
+std::Result::Result::{self, Ok, Err}
 ```
 
 这意味着在我们的代码里面，我们可以在任何位置，直接访问 `Result` ，Ok 和 Err 。
@@ -407,7 +407,7 @@ fn check_length(s: &str, min: usize) -> Result<&str, String> {
 }
 ```
 
-这不是一个非常有用的函数，但足够简单的展示返回一个 `Result` 。函数带有两个参数，一个是字符串字面量参数，一个是需要检查包含的字符数量参数。如果字符数量等于或者大于 min , 字符串被返回。这个返回值标记成了 `Result` 枚举。我们指定函数返回时 `Result` 将包含的类型。如果字符串足够长，我们将返回字符串文本。如果出现错误，我们将返回一条字符串消息。这例子很好解释了 `Result` <&str，String>。
+这不是一个非常有用的函数，但足够简单的展示返回一个 `Result` 。函数带有两个参数，一个是字符串字面量参数，一个是需要检查包含的字符数量参数。如果字符数量等于或者大于 min , 字符串被返回。这个返回值标记成了 `Result` 枚举。我们指定函数返回时 `Result` 将包含的类型。如果字符串足够长，我们将返回字符串文本。如果出现错误，我们将返回一条字符串消息。这例子很好解释了 `Result<&str,String>` 。
 
 if s.chars().count() >= min 语句为我们进行检查。如果计算结果为true，它将返回 `Result` 枚举的 Ok 变量中包装的字符串。我们之所以可以简单地写 Ok(s)，是因为组成 `Result` 的变量也被纳入了范围。我们可以看到 else 语句将返回一个 Err 变量。在本例中，它是一个包含错误消息的字符串。
 
@@ -479,7 +479,7 @@ thread 'main' panicked at 'called ``Result`::unwrap()` on an `Err` value: Error(
 */
 ```
 
-这导致了一个恐慌并且程序终止了。除了 unwrap ，我们还可以选择使用 expect 。
+这导致了一个恐慌并且程序终止了。除了 `unwrap` ，我们还可以选择使用 `expect` 。
 
 ```rust
 use serde_json::json;
@@ -498,7 +498,7 @@ let b: serde_json::Value =
 thread 'main' panicked at 'unable to deserialize JSON: Error("control character (\\u0000-\\u001F) found while parsing a string", line: 4, column: 0)'
 ```
 
-因为 unwrap 和 expect 会导致恐慌，所以程序结束了。大多数情况下，你会在示例部分看到 unwrap 的使用，其中的重点是示例，缺乏上下文确实会妨碍对特定场景进行正确的错误处理。示例部分、代码注释和文档示例是你经常遇到的 unwrap 部分。例如，请参见将 serde 序列化字段作为 camelCase 的示例：
+因为 `unwrap` 和 `expect` 会导致恐慌，所以程序结束了。大多数情况下，你会在示例部分看到 `unwrap` 的使用，其中的重点是示例，缺乏上下文确实会妨碍对特定场景进行正确的错误处理。示例部分、代码注释和文档示例是你经常遇到的 `unwrap` 部分。例如，请参见将 `serde` 序列化字段作为 `camelCase` 的示例：
 
 ```rust
 use serde::Serialize;
@@ -532,7 +532,7 @@ fn main() {
 
 ### 使用 ? 并且处理不同的错误
 
-不同的项目通常会定义自己的错误。在 repo 中搜索诸如 pub struct Error 或 pub enum Error 之类的内容，有时可能会发现为项目定义的错误。但问题是，不同的 create 和项目可能会返回自己的错误类型。如果有一个函数使用来自各种项目中的方法，并且想要传播错误，那么事情可能会变得有点棘手。有几种方法可以解决这个问题。让我们来看一个例子，我们通过 Box 错误来处理这个问题。
+不同的项目通常会定义自己的错误。在 `repo` 中搜索诸如 pub struct Error 或 pub enum Error 之类的内容，有时可能会发现为项目定义的错误。但问题是，不同的 create 和项目可能会返回自己的错误类型。如果有一个函数使用来自各种项目中的方法，并且想要传播错误，那么事情可能会变得有点棘手。有几种方法可以解决这个问题。让我们来看一个例子，我们通过 Box 错误来处理这个问题。
 
 在下一个示例中，我们定义了一个函数，该函数将目标文件的全部内容读入到一个字符串中，然后将其序列化为 JSON ，同时将其映射到结构体。函数返回一个 `Result` 。Ok 变量是Person结构体，将传播的错误可能是来自 serde 或 std::fs 的错误。为了能够从这两个包返回错误，我们返回`Result`<Person，Box<dyn Error>>。 Person 是 `Result` 的 Ok 变体。Err 变量定义为 Box<dyn Error> ，表示任何类型的错误 。
 
