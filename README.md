@@ -40,9 +40,9 @@ Rustt (读音 / rʌsˈti /) 是 [StudyRust](https://studyrust.org) **的核心�
             <a href="https://github.com/mrxiaozhuox">
                 <img src="https://avatars.githubusercontent.com/u/41265098?v=4?s=100" width="120px"  alt=""/>
                 <br />
-                <sub><b>YuKun Liu</b></sub>
+                <b>YuKun Liu</b>
                 <br />
-                <sub><a href="https://github.com/studyrs/rubot">Rubot发明人</a></sub>
+                <sub><a href="https://github.com/studyrs/rubot">🏆 Rubot发明人</a></sub>
             </a>
         </td>
     </tr>
