@@ -118,5 +118,17 @@
             "num": 0
         },
         "timestamp": "2022-4-2 22:33:9"
+    },
+    {
+        "username": "Ch3nYe",
+        "score": {
+            "operator": "+",
+            "num": 25
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-2 22:37:13"
     }
 ]
