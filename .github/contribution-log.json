@@ -10,5 +10,17 @@
             "num": 0
         },
         "timestamp": "2022-4-2 7:32:45"
+    },
+    {
+        "username": "mrxiaozhuox",
+        "score": {
+            "operator": "+",
+            "num": 1
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 7:33:56"
     }
 ]
