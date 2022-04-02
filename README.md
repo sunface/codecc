@@ -27,7 +27,7 @@ Rustt (读音 / rʌsˈti /) 是 [StudyRust](https://studyrust.org) **的核心�
 | [在 Rust 中使用 epoll 实现非阻塞 IO](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-03-29%5D%20在%20Rust%20中使用%20epoll%20实现基本的非阻塞%20IO.md) | 2022-03-29 | [BK0717](https://github.com/hyuuko) | 
 | [2022 年应该选择哪个 Web 框架](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-03-29%5D%202022%20年应该选择哪个%20Web%20框架.md) | 2022-03-29 | [YuKun Liu](https://github.com/mrxiaozhuox) |
 | [如何用 Rust 实现朴素贝叶斯分类器](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-03-28%5D%20如何用%20Rust%20实现朴素贝叶斯分类器.md) | 2022-03-28 | [ChenYe](https://github.com/Ch3nYe)|
-| [手把手实现Rust链表](https://github.com/studyrs/Rustt/tree/main/Books/Too-Many-Lists) | [Too Many Lists](https://rust-unofficial.github.io/too-many-lists/) | 2022-03-29 |  [Sunface](https://im.dev) |
+| [手把手实现Rust链表](https://github.com/studyrs/Rustt/tree/main/Books/Too-Many-Lists) | 2022-03-29 |  [Sunface](https://im.dev) |
 
 
 ## 明星贡献者
