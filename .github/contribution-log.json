@@ -70,5 +70,17 @@
             "num": 1
         },
         "timestamp": "2022-4-2 22:8:55"
+    },
+    {
+        "username": "allenli178",
+        "score": {
+            "operator": "+",
+            "num": 7
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 22:15:29"
     }
 ]
