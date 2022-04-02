@@ -1,1 +1,158 @@
-[]
+[
+    {
+        "username": "mrxiaozhuox",
+        "score": {
+            "operator": "+",
+            "num": 2
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 7:32:45"
+    },
+    {
+        "username": "mrxiaozhuox",
+        "score": {
+            "operator": "+",
+            "num": 1
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 7:33:56"
+    },
+    {
+        "username": "mrxiaozhuox",
+        "score": {
+            "operator": "+",
+            "num": 1
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-04-02 11:07:06"
+    },
+    {
+        "username": "mrxiaozhuox",
+        "score": {
+            "operator": "+",
+            "num": 1
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 19:15:56"
+    },
+    {
+        "username": "minikiller",
+        "score": {
+            "operator": "+",
+            "num": 25
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-2 22:3:5"
+    },
+    {
+        "username": "hyuuko",
+        "score": {
+            "operator": "+",
+            "num": 20
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-2 22:8:55"
+    },
+    {
+        "username": "allenli178",
+        "score": {
+            "operator": "+",
+            "num": 7
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 22:15:29"
+    },
+    {
+        "username": "lxbwolf",
+        "score": {
+            "operator": "+",
+            "num": 8
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 22:18:58"
+    },
+    {
+        "username": "Cerdore",
+        "score": {
+            "operator": "+",
+            "num": 7
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 22:31:29"
+    },
+    {
+        "username": "Facefall",
+        "score": {
+            "operator": "+",
+            "num": 7
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 22:33:9"
+    },
+    {
+        "username": "Ch3nYe",
+        "score": {
+            "operator": "+",
+            "num": 25
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-2 22:37:13"
+    },
+    {
+        "username": "asur4s",
+        "score": {
+            "operator": "+",
+            "num": 30
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-2 22:42:33"
+    },
+    {
+        "username": "sunface",
+        "score": {
+            "operator": "+",
+            "num": 8
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 23:1:35"
+    }
+]

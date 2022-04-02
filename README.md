@@ -10,7 +10,7 @@
 
 <br />
 
-Rustt (读音 / rʌsˈti /) 是 [StudyRust](https://studyrust) **的核心小组**，负责将国外优秀的技术文章、学习教程、新闻资讯翻译成中文。
+Rustt (读音 / rʌsˈti /) 是 [StudyRust](https://studyrust.org) **的核心小组**，负责将国外优秀的技术文章、学习教程、新闻资讯翻译成中文。
 
 ## 订阅
 

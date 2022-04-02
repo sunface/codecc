@@ -15,13 +15,10 @@ assignees: ''
 2. 将上面的原文链接和下面声明模版中的 `原文链接`、`选题` 替换成相应的内容
 -->
 
-approver列表: https://guide.rustt.org/org-info/members.html#approver
-
 **翻译者须知**
 
-1. 在issue中评论：@ 一个 approver，申请翻译，并附上预期完成时间
-2. 请翻译者在翻译后，并将声明模版的 Markdown 文本加入到文章的 **顶部**
-3. 填写下面的推广渠道
+1. 在issue中评论：申请翻译，并附上预期完成时间，等待一个 approver 来处理
+2. 请翻译者在翻译后，将声明模版的 Markdown 文本加入到文章的 **顶部**
 
 **声明模版**
 
@@ -35,10 +32,3 @@ approver列表: https://guide.rustt.org/org-info/members.html#approver
 >
 > 本文由 [Rustt](https://Rustt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出
 ```
-
-**推广渠道**
-
-翻译者是否愿意在以下平台上推广你翻译的文章，是 Y ，否 N
-
-- 微信公众号(studyrust): Y
-- [知乎专栏](https://www.zhihu.com/column/c_1492085510243414016): Y
