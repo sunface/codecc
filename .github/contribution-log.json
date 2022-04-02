@@ -142,5 +142,17 @@
             "num": 1
         },
         "timestamp": "2022-4-2 22:42:33"
+    },
+    {
+        "username": "sunface",
+        "score": {
+            "operator": "+",
+            "num": 8
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 23:1:35"
     }
 ]
