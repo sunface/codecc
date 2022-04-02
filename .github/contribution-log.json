@@ -58,5 +58,17 @@
             "num": 1
         },
         "timestamp": "2022-4-2 22:3:5"
+    },
+    {
+        "username": "hyuuko",
+        "score": {
+            "operator": "+",
+            "num": 20
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-2 22:8:55"
     }
 ]
