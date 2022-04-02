@@ -130,5 +130,17 @@
             "num": 1
         },
         "timestamp": "2022-4-2 22:37:13"
+    },
+    {
+        "username": "asur4s",
+        "score": {
+            "operator": "+",
+            "num": 30
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-2 22:42:33"
     }
 ]
