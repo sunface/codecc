@@ -70,8 +70,8 @@
         "is_admin": false,
         "joined": "2022-03-23"
     },
-    "FaceFall": {
-        "score": 0,
+    "Facefall": {
+        "score": 7,
         "article_num": 0,
         "is_approver": false,
         "is_admin": false,
@@ -91,11 +91,5 @@
         "is_approver": false,
         "is_admin": false,
         "joined": "2022-03-29"
-    },
-    "Facefall": {
-        "score": 7,
-        "article_num": 0,
-        "is_approver": false,
-        "is_admin": false
     }
 }
