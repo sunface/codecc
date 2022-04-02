@@ -46,5 +46,17 @@
             "num": 0
         },
         "timestamp": "2022-4-2 19:15:56"
+    },
+    {
+        "username": "minikiller",
+        "score": {
+            "operator": "+",
+            "num": 25
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-2 22:3:5"
     }
 ]
