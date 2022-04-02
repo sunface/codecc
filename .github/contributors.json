@@ -1,0 +1,87 @@
+{
+    "sunface": {
+        "name": "Sunface",
+        "score": 71,
+        "article_num": 3,
+        "is_approver": true,
+        "is_admin": false,
+        "title": "Rustt发起人",
+        "joined": "2022-03-22"
+    },
+    "mrxiaozhuox": {
+        "name": "刘禹琨",
+        "score": 55,
+        "article_num": 2,
+        "is_approver": false,
+        "is_admin": false,
+        "title": "[Rubot 发明者](https://github.com/studyrs/rubot)",
+        "joined": "2022-03-28"
+    },
+    "lxbwolf": {
+        "name": "Xiaobin.Liu",
+        "score": 50,
+        "article_num": 2,
+        "is_approver": false,
+        "is_admin": false,
+        "joined": "2022-03-23"
+    },
+    "trdthg": {
+        "score": 18,
+        "article_num": 0,
+        "is_approver": false,
+        "is_admin": false,
+        "joined": "2022-03-29"
+    },
+    "minikiller": {
+        "score": 12,
+        "article_num": 0,
+        "is_approver": false,
+        "is_admin": false,
+        "joined": "2022-03-23"
+    },
+    "asur4s": {
+        "name": "Asura",
+        "score": 11,
+        "article_num": 0,
+        "is_approver": false,
+        "is_admin": false,
+        "joined": "2022-03-22"
+    },
+    "Ch3nYe": {
+        "name": "ChenYe",
+        "score": 11,
+        "article_num": 0,
+        "is_approver": false,
+        "is_admin": false,
+        "joined": "2022-03-26"
+    },
+    "hyuuko": {
+        "name": "BK0717",
+        "score": 14,
+        "article_num": 0,
+        "is_approver": false,
+        "is_admin": false,
+        "joined": "2022-03-23"
+    },
+    "Cerdore": {
+        "score": 0,
+        "article_num": 0,
+        "is_approver": false,
+        "is_admin": false,
+        "joined": "2022-03-23"
+    },
+    "FaceFall": {
+        "score": 0,
+        "article_num": 0,
+        "is_approver": false,
+        "is_admin": false,
+        "joined": "2022-03-23"
+    },
+    "iamazy": {
+        "score": 0,
+        "article_num": 0,
+        "is_approver": false,
+        "is_admin": false,
+        "joined": "2022-03-26"
+    }
+}
