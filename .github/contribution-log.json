@@ -82,5 +82,17 @@
             "num": 0
         },
         "timestamp": "2022-4-2 22:15:29"
+    },
+    {
+        "username": "lxbwolf",
+        "score": {
+            "operator": "+",
+            "num": 8
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 22:18:58"
     }
 ]
