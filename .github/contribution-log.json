@@ -94,5 +94,17 @@
             "num": 0
         },
         "timestamp": "2022-4-2 22:18:58"
+    },
+    {
+        "username": "Cerdore",
+        "score": {
+            "operator": "+",
+            "num": 7
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-2 22:31:29"
     }
 ]
