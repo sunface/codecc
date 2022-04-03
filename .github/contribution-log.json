@@ -154,5 +154,17 @@
             "num": 0
         },
         "timestamp": "2022-4-2 23:1:35"
+    },
+    {
+        "username": "Facefall",
+        "score": {
+            "operator": "+",
+            "num": 10
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-3 9:42:15"
     }
 ]
