@@ -3,6 +3,18 @@
         "username": "a1393323447",
         "score": {
             "operator": "+",
+            "num": 23
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-4 23:24:27"
+    },
+    {
+        "username": "a1393323447",
+        "score": {
+            "operator": "+",
             "num": 8
         },
         "article": {
