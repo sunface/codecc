@@ -46,7 +46,7 @@ Everything done, ready to go!
 
 让我们来看看 `blogchain` 项目中的文件结构：
 
-![blogchain](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/blogchain_tree.png)
+![blogchain](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/blogchain_tree.png)
 
 正如你所看到的，我们在这里有相当多的文件和文件夹。最重要的是，我们有我们的 `pallets/blogchain` 区域，我们将在这里做大部分的定制和实现我们所有的业务逻辑。
 
@@ -448,24 +448,24 @@ yarn start
 
 在那里，你已经可以看到你的区块链应用状态。在右上方，你可以看到选定的账户，并在现有账户之间进行切换。
 
-![substrate-front-end-template-overview](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/substrate-front-end-template-overview.jpeg)
+![substrate-front-end-template-overview](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/substrate-front-end-template-overview.jpeg)
 
 下面，你可以看到每个账户的余额：
 
-![substrate-front-end-template-balances](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/substrate-front-end-template-balances.jpeg)
+![substrate-front-end-template-balances](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/substrate-front-end-template-balances.jpeg)
 
 现在，让我们通过使用左下方的 `Pallet Interactor` 来创建我们的第一篇博文。我们选择 `blogchain` pallet 和 `createBlogPost` 外部交易。然后，在内容栏里写一些文字（至少 64 字节，最多 4096 字节），然后点击 `Signed`。
 
-![substrate-front-end-template-create-blog-post](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/substrate-front-end-template-create-blog-post.jpeg)
+![substrate-front-end-template-create-blog-post](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/substrate-front-end-template-create-blog-post.jpeg)
 
 很好！博文的创建成功了，我们可以在右边的 `Events` 流中看到。
 
 让我们通过选择 `Query` 单选按钮来查询我们的博文。然后，再次选择 `blogchain` pallet 和 `blogPosts` 存储（这是我们实际的 `StorageMap`，我们上面定义的）。
 然后，从 `Events` 流中，复制博文的 ID，将其粘贴到表格中，并点击 `Query`。
 
-![substrate-front-end-template-blog-post-id](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/substrate-front-end-template-blog-post-id.jpeg)
+![substrate-front-end-template-blog-post-id](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/substrate-front-end-template-blog-post-id.jpeg)
 
-![substrate-front-end-template-queried-blog-post](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/substrate-front-end-template-queried-blog-post.jpeg)
+![substrate-front-end-template-queried-blog-post](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/substrate-front-end-template-queried-blog-post.jpeg)
 
 如果我们使用一个有效的博文 ID，我们将以如下形式获得这个条目的链上的持久化数据。
 
@@ -475,29 +475,29 @@ yarn start
 
 其内容是十六进制编码的字符串。你可以使用一个[免费的在线工具](https://codebeautify.org/hex-string-converter)将其转换为字符串。
 
-![substrate-front-end-template-content-plain-text](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/substrate-front-end-template-content-plain-text.jpeg)
+![substrate-front-end-template-content-plain-text](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/substrate-front-end-template-content-plain-text.jpeg)
 
 你也可以在 JSON 中找到 `author` 字段，它对应于你在 `Balances` 表中可以找到的账户 ID。
 
 接下来，让我们创建一个评论。在右上方切换到 `Bob` 的账户，使用 `Pallet Interactor` 找到 `blogchain → createBlogPostComment`。
 
-![substrate-front-end-template-create-comment](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/substrate-front-end-template-create-comment.jpeg)
+![substrate-front-end-template-create-comment](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/substrate-front-end-template-create-comment.jpeg)
 
 再次输入博文 ID 和一个评论（长度为 64-1024 字节）。点击 `Signed` 后，我们可以再次看 `Events` 流 ，这表明费用已经从 Bob 的账户中提取，并且外部交易工作。
 
 现在我们也可以查询评论了：
 
-![substrate-front-end-template-create-comment-2](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/substrate-front-end-template-create-comment-2.jpeg)
+![substrate-front-end-template-create-comment-2](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/substrate-front-end-template-create-comment-2.jpeg)
 
-![substrate-front-end-template-comment-content-plain-text](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/substrate-front-end-template-comment-content-plain-text.jpeg)
+![substrate-front-end-template-comment-content-plain-text](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/substrate-front-end-template-comment-content-plain-text.jpeg)
 
 最后，让我们给这篇博文的作者送上一份小费。
 
-![substrate-front-end-template-tip-author](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/substrate-front-end-template-tip-author.jpeg)
+![substrate-front-end-template-tip-author](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/substrate-front-end-template-tip-author.jpeg)
 
 然后，我们可以看到余额如何变化：
 
-![substrate-front-end-template-balance-before-tip](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/substrate-front-end-template-balance-before-tip.jpeg)
+![substrate-front-end-template-balance-before-tip](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402-custom-blockchain-implementation-rust-substrate/substrate-front-end-template-balance-before-tip.jpeg)
 
 就是这样 -- 它工作了！非常酷的东西。
 
