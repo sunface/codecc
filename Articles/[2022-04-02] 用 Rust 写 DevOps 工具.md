@@ -118,15 +118,18 @@ Rust 实现的版本也没有完全达到理想的体积。如果很注重体积
 
 在财富基准测试（测试范围包括：ORM、数据库连通、动态大小的集合、排序、服务侧模板、XSS 防攻击对策、字符编码）中，Rust 位于第二和第三位，以 4% 的差值落后于首位的基于 C++ 的框架。
 
-![01.png (2313×329) (raw.githubusercontent.com)](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402 Using Rust for DevOps tooling/01.png)
+<img src="https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402 Using Rust for DevOps tooling/01.png" />
+
 
 数据库单次查询的基准测试中，Rust 是第一和第二：
 
-![01.png (2313×329) (raw.githubusercontent.com)](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402 Using Rust for DevOps tooling/02.png)
+<img src="https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402 Using Rust for DevOps tooling/02.png" />
+
 
 包含所有内容的基准测试中，基于 Rust 的框架位于第二和第三。
 
-![01.png (2313×329) (raw.githubusercontent.com)](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402 Using Rust for DevOps tooling/03.png)
+<img src="https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220402 Using Rust for DevOps tooling/03.png" />
+
 
 当然生产环境中不只有语言和框架，但当涉及到其他因素时这个语言间的对比仍然是公平的（带有上下文且关注基准测试本身）。
 
