@@ -1,8 +1,8 @@
 {
     "sunface": {
         "name": "Sunface",
-        "score": 79,
-        "article_num": 3,
+        "score": 119,
+        "article_num": 4,
         "is_approver": true,
         "is_admin": false,
         "title": "Rustt发起人",
@@ -71,8 +71,8 @@
         "joined": "2022-03-23"
     },
     "Facefall": {
-        "score": 17,
-        "article_num": 0,
+        "score": 39,
+        "article_num": 1,
         "is_approver": false,
         "is_admin": false,
         "joined": "2022-03-23"
@@ -86,7 +86,7 @@
     },
     "allenli178": {
         "name": "子殊",
-        "score": 7,
+        "score": 17,
         "article_num": 0,
         "is_approver": false,
         "is_admin": false,
