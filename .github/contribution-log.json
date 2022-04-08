@@ -3,6 +3,18 @@
         "username": "hyuuko",
         "score": {
             "operator": "+",
+            "num": 35
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-8 20:53:20"
+    },
+    {
+        "username": "hyuuko",
+        "score": {
+            "operator": "+",
             "num": 30
         },
         "article": {
