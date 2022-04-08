@@ -8,7 +8,13 @@
 <a align="center" href="https://github.com/studyrs/Rustt/blob/main/贡献者排名.md">贡献者风采 </a>
 </div>
 
-<br />
+<!-- <div align="center">
+    <p>| <a href="#Add-ons-">🔮Add-ons</a> | <a href="#Resources-">🪐Resources</a> | <a
+            href="#Standalone-">📥Standalone</a> | <a href="#Explore-Blender-">🔍Explore Blender</a> | <a
+            href="#Social-">🖇Social</a> | <a href="#Tutorials-">👩🏻‍🏫Tutorials</a> | <a
+            href="#Development-">👩🏽‍💻Development</a> |</p>
+</div> -->
+
 
 Rustt (读音 / rʌsˈti /，发音类似 Rust Team) 是国内最好的 Rust 中文翻译组，由于 Rustt = Rust Translation，因此 Rustt 还是一个 Rust 翻译计划的代号，负责将国外优秀的技术文章、学习教程、新闻资讯翻译成中文。
 
