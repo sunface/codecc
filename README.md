@@ -14,16 +14,16 @@
     <p>| <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3ARust学习&type=Issues&ref=advsearch">🔮Rust学习</a> 
        | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3ARust新闻&type=Issues">🪐Rust新闻</a> 
        | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3AWeb编程&type=Issues">📥Web编程</a> 
-       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A区块链&type=Issues">🔍区块链</a> 
+       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A区块链&type=Issues">⛓区块链</a> 
        | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A嵌入式&type=Issues">🖇嵌入式</a> 
-       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A异步编程&type=Issues">👩🏻‍🏫异步编程</a> 
+       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A异步编程&type=Issues">🌪异步编程</a> 
     </p>
     <p>
-       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A架构设计&type=Issues">🚀架构设计</a> 
-       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A标准库&type=Issues">👩🏽‍💻标准库</a> 
-       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A算法与数据结构&type=Issues">👩🏽‍💻算法与数据结构</a> 
-       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A编译检查&type=Issues">👩🏽‍💻编译检查</a> 
-       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A跨平台&type=Issues">👩🏽‍💻跨平台</a> 
+       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A架构设计&type=Issues">🪜架构设计</a> 
+       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A标准库&type=Issues">🛳标准库</a> 
+       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A算法与数据结构&type=Issues">✏️算法与数据结构</a> 
+       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A编译检查&type=Issues">🔍编译检查</a> 
+       | <a href="https://github.com/search?q=repo%3Astudyrs%2FRustt+label%3A跨平台&type=Issues">🚀跨平台</a> 
     </p>
 </div>
 
