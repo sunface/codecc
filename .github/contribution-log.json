@@ -1,5 +1,29 @@
 [
     {
+        "username": "lxbwolf",
+        "score": {
+            "operator": "+",
+            "num": 28
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-8 18:35:31"
+    },
+    {
+        "username": "lxbwolf",
+        "score": {
+            "operator": "+",
+            "num": 8
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-8 18:34:45"
+    },
+    {
         "username": "Facefall",
         "score": {
             "operator": "+",
