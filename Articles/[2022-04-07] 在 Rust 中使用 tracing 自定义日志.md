@@ -1,6 +1,6 @@
 # 使用 tracing 输出自定义的 Rust 日志
 
-> 原文链接: https://www.rust-lang.org
+> 原文链接: https://burgers.io/custom-logging-in-rust-using-tracing
 > 
 > **翻译：[Sunface](https://github.com/sunface)**
 >
