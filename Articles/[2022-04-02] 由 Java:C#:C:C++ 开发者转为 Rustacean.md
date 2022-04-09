@@ -1,3 +1,12 @@
+> 原文链接: https://fasterthanli.me/articles/i-am-a-java-csharp-c-or-cplusplus-dev-time-to-do-some-rust
+> 
+> **翻译：[Xiaobin.Liu](https://github.com/lxbwolf)**
+>
+> 选题：[Xiaobin.Liu](https://github.com/lxbwolf)
+>
+> 本文由 [Rustt](https://Rustt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出
+
+
 # 由 Java/C#/C/C++ 开发者转为 Rustacean
 
 正如之前所说，我正在写一本关于生命周期的书。或者说，这只是一个长篇系列 —— 还没有决定具体内容。它跟其他系列或书一样，篇幅很长，不会直入主题，而是从其他方面开始循序渐进地到达主题。
