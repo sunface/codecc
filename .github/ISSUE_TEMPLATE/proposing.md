@@ -28,11 +28,10 @@ assignees: ''
 **声明模版**
 
 ```
-> 原文链接: https://www.rust-lang.org
+>  *[Rustt](https://rustt.org) 翻译计划，由 [StudyRust](https://studyrust.org) 社区荣誉推出*
 > 
 > **翻译：_该部分由 Approver 替换填写_**
->
 > 选题：[Github昵称](GIthub个人链接)
 >
-> 本文由 [Rustt](https://Rustt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出
+> 原文链接: https://www.rust-lang.org
 ```
