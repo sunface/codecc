@@ -1,5 +1,12 @@
  # Rust 的 `Option` 和 `Result`
  
+> 原文链接: http://saidvandeklundert.net/learn/2021-11-18-calling-rust-from-python-using-pyo3/
+> 
+> 翻译：[minikiller](https://github.com/minikiller)
+> 选题：[minikiller](https://github.com/minikiller)
+>
+> 本文由 [Rustt](https://Rustt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出
+
  在 Rust 中，完全理解枚举 `Option` 和枚举 `Result` ，对于理解可选数值和错误处理非常重要。在这篇文章中，我们将深入学习这两方面的内容。
 
 ## 概述
@@ -745,11 +752,4 @@ Jane Lusby 复制了 `anyhow` <ruby>包<rt>crate</rt></ruby>。她创建了[eyre
 * [Next level thoughts and ideas on errors](https://www.lpalmieri.com/posts/error-handling-rust/)
 * [Wrapping errors](https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/wrap_error.html)
 
----
 
-> 原文链接: [http://saidvandeklundert.net/learn/2021-11-18-calling-rust-from-python-using-pyo3/](http://saidvandeklundert.net/learn/2021-11-18-calling-rust-from-python-using-pyo3/)
-> 
-> 翻译：[minikiller](https://github.com/minikiller)
-> 选题：[minikiller](https://github.com/minikiller)
->
-> 本文由 [Rustt](https://Rustt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出

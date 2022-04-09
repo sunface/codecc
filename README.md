@@ -59,7 +59,16 @@ Rustt (读音 / rʌsˈti /，发音类似 Rust Team) 是国内最好的 Rust 中
                 <br />
                 <b>trdthg</b>
                 <br />
-                 <sub><a href="https://github.com/studyrs/rubot">💎积分第一</a></sub>
+                 <sub><a href="https://github.com/studyrs/Rustt/blob/main/贡献者排名.md">💎积分第一</a></sub>
+            </a>
+        </td>
+        <td align="center">
+              <a href="https://github.com/lxbwolf ">
+                  <img src="https://avatars.githubusercontent.com/u/12119889?v=4?s=100" width="120px"  alt=""/>
+                <br />
+                <b>Xiaobin.Liu</b>
+                <br />
+                 <sub><a href="https://github.com/studyrs/rubot">🚀最近贡献多</a></sub>
             </a>
         </td>
     </tr>
