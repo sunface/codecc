@@ -9,6 +9,18 @@
             "operator": "+",
             "num": 0
         },
+        "timestamp": "2022-4-9 11:36:22"
+    },
+    {
+        "username": "mrxiaozhuox",
+        "score": {
+            "operator": "+",
+            "num": 1
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
         "timestamp": "2022-4-9 11:24:45"
     },
     {
