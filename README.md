@@ -30,7 +30,7 @@
 
 <h2> </h2>
 
-Rustt (读音 / rʌsˈti /，发音类似 Rust Team) 是国内最好的 Rust 中文翻译组，由于 Rustt = Rust Translation，因此 Rustt 还是一个 Rust 翻译计划的代号，负责将国外优秀的技术文章、学习教程、新闻资讯翻译成中文。
+Rustt (读音 / rʌsˈti /) 是 Rust 翻译计划的英文缩写(Rustt = Rust Translation)，负责将国外优秀的技术文章、学习教程、新闻资讯翻译成中文。
 
 
 ## 订阅
