@@ -3,6 +3,18 @@
         "username": "Akagi201",
         "score": {
             "operator": "+",
+            "num": -30
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-12 13:34:36"
+    },
+    {
+        "username": "Akagi201",
+        "score": {
+            "operator": "+",
             "num": 30
         },
         "article": {
