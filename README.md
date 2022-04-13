@@ -79,12 +79,13 @@ Rustt (读音 / rʌsˈti /) 是 Rust 翻译计划的英文缩写(Rustt = Rust Tr
 
 | 中文名 |   翻译时间 | 作者 |
 | ------- | -------- | ----- |
-| [使用 tracing 输出自定义的 Rust 日志](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-07%5D%20在%20Rust%20中使用%20tracing%20自定义日志.md) | 2022-04-07 | [Sunface](https://github.com/sunface) |
-| [由 Java/C#/C/C++ 开发者转为 Rustacean](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-02%5D%20由%20Java:C%23:C:C%2B%2B%20开发者转为%20Rustacean.md) | 2022-04-06 | [Xiaobin.Liu](https://github.com/lxbwolf)|
-| [Rust 中的函数式编程 ](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-05%5D%20Rust%20中的函数式编程.md) | 2022-04-05 | [朕与将军解战袍](https://github.com/a1393323447) |
-| [series][Rust 六边形架构](https://github.com/studyrs/Rustt/tree/main/Articles/%5B2022-04-03%5D%20Rust%20六边形架构) | 2022-04-04 | [trdthg](https://github.com/trdthg) |
-| [用 Rust 写 Devops 工具](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-02%5D%20用%20Rust%20写%20DevOps%20工具.md) | 2022-04-03 | [Xiaobin.Liu](https://github.com/lxbwolf) |
-| [Rust 大佬给初学者的学习建议](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-02%5D%20Rust%20大佬给初学者的学习建议.md) | 2022-04-02 | [Asura](https://github.com/asur4s) |
+| [异步 Rust：协作与抢占式调度](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-12%5D%20异步%20Rust：协作与抢占式调度.md) | 2022-04-07 | [trdthg](https://github.com/trdthg) |
+| [自修改代码](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-08%5D%20自修改代码.md| 2022-04-06 | [朕与将军解战袍
+](https://github.com/a1393323447)|
+| Rust 的异步是有颜色的](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-08%5D%20Rust%20的异步是有颜色的，这并不是什么大问题.md) | 2022-04-08 |[BK0717](https://github.com/hyuuko) |
+| [理解 Rust 的借用检查器](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-07%5D%20理解%20Rust%20的借用检查器.md) | 2022-04-07 | [Xiaobin.Liu](https://github.com/lxbwolf) |
+| [使用 Rust 和 Substrate 构建自己的区块链平台](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-07%5D%20使用%20Rust%20和%20Substrate%20构建自己的区块链平台.md) | 2022-04-07 | [Akagi201](https://github.com/Akagi201) |
+|[Rust 的 unsafe 指针类型需要大修](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-07%5D%20Rust%20的%20unsafe%20指针类型需要大修.md) | 2022-04-07 | [BK0717](https://github.com/hyuuko) |
 
 ## 组织发展史
 
