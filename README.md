@@ -80,9 +80,8 @@ Rustt (读音 / rʌsˈti /) 是 Rust 翻译计划的英文缩写(Rustt = Rust Tr
 | 中文名 |   翻译时间 | 作者 |
 | ------- | -------- | ----- |
 | [异步 Rust：协作与抢占式调度](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-12%5D%20异步%20Rust：协作与抢占式调度.md) | 2022-04-07 | [trdthg](https://github.com/trdthg) |
-| [自修改代码](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-08%5D%20自修改代码.md| 2022-04-06 | [朕与将军解战袍
-](https://github.com/a1393323447)|
-| Rust 的异步是有颜色的](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-08%5D%20Rust%20的异步是有颜色的，这并不是什么大问题.md) | 2022-04-08 |[BK0717](https://github.com/hyuuko) |
+| [自修改代码](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-08%5D%20自修改代码.md)| 2022-04-06 | [朕与将军解战袍](https://github.com/a1393323447)|
+| [Rust 的异步是有颜色的](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-08%5D%20Rust%20的异步是有颜色的，这并不是什么大问题.md) | 2022-04-08 |[BK0717](https://github.com/hyuuko) |
 | [理解 Rust 的借用检查器](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-07%5D%20理解%20Rust%20的借用检查器.md) | 2022-04-07 | [Xiaobin.Liu](https://github.com/lxbwolf) |
 | [使用 Rust 和 Substrate 构建自己的区块链平台](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-07%5D%20使用%20Rust%20和%20Substrate%20构建自己的区块链平台.md) | 2022-04-07 | [Akagi201](https://github.com/Akagi201) |
 |[Rust 的 unsafe 指针类型需要大修](https://github.com/studyrs/Rustt/blob/main/Articles/%5B2022-04-07%5D%20Rust%20的%20unsafe%20指针类型需要大修.md) | 2022-04-07 | [BK0717](https://github.com/hyuuko) |
