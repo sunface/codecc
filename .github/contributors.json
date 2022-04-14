@@ -120,5 +120,13 @@
         "is_approver": false,
         "is_admin": false,
         "joined": "2022-04-04"
-    }
+    },
+    "codemystery": {
+        "id": 48076486,
+        "score": 0,
+        "article_num": 0,
+        "is_approver": false,
+        "is_admin": false,
+        "joined": "2022-04-14"
+    },
 }
