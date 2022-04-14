@@ -23,7 +23,7 @@ Python 是一门很棒的语言！至少，在我看来是这样。它有着丰�
 
   
 
-## Calling a Rust function from Python to print a string.
+## 在 Python 中调用 Rust 函数打印一个字符串.
 
 首先，我们将编写一个打印字符串的 Rust 函数。下图说明具体发生了什么：
 
@@ -54,7 +54,7 @@ Python 是一门很棒的语言！至少，在我看来是这样。它有着丰�
 
   
 
-### The Python side.
+### Python 侧.
 
 ```python
 import ctypes
@@ -99,7 +99,7 @@ rust_lib/
 
   
 
-### The Rust side.
+### Rust 侧.
 
 在 Rust 侧，我们先使用 `cargo new --lib` 创建一个库。然后我们编辑 **Cargo.toml** 文件：
 
@@ -209,7 +209,7 @@ Python says hi inside Rust!
 
   
 
-## Calling a Rust function from Python to print a number to screen.
+## 在 Python 中调用一个 Rust 函数打印一个整数.
 
 当从 Python 向 Rust 传递参数时，我们需要考虑 Python、C 和 Rust 中使用的类型。现在我们试试在屏幕上打印一个整数。首先，我们创建 Python 脚本：
 
@@ -249,7 +249,7 @@ Rust、Python 和 C 中有许多类型。这些类型之间的对应可能会把
 
   
 
-## Calling a Rust function from Python with multiple types
+## 从 Python 调用多类型的 Rust 函数
 
 现在，我们使用 Python 调用一个 `start_procedure` 。为了专注研究跨语言调用，该函数仅仅获取一个结构并返回另一个结构。在 Python 侧，我们使用 Pydantic basemodel 来创建 Rust 函数所需的输入。Pydantic basemodel 将具有与 Rust 结构相同的字段。我们对 Rust 的返回值做同样的事情。我们创建了一个 Pydantic basemodel ，它是 Rust struct 在 Python 侧的镜像。 Rust struct 和 Pydantic basemodel 将包含多种不同类型的字段。这是我们将以最简单的方式（至少在我看来）处理的这件事：使用 C 语言中的 `Char *`。
 
@@ -261,7 +261,7 @@ Rust、Python 和 C 中有许多类型。这些类型之间的对应可能会把
 
   
 
-### The Python side.
+### Python 侧.
 
 我们将使用的 Python 脚本如下：
 
@@ -333,7 +333,7 @@ root@rust:/python/rust/rust_lib# python3 call_rust_function.py
 
   
 
-### The Rust side.
+### Rust 侧.
 
 以下是 Rust 侧的代码：
 
@@ -426,7 +426,7 @@ pub extern "C" fn start_procedure(c_string_ptr: *const c_char) -> *mut c_char {
 
   
 
-## Calling a Rust function from Python with a memory leak
+## 从 Python 调用带有内存泄漏的 Rust 函数
 
 如果我们把 `start_procedure` 放在一个 while 循环里，让它运行一段时间，我们可以看到进程会逐渐开始消耗越来越多的内存。是因为从 Rust 返回的值没有被清理。
 
@@ -446,7 +446,7 @@ while True:
 
   
 
-### fixing the memory leak
+### 修复内存泄露问题
 
 为了解决这个内存泄漏问题，我们首先需要在 Rust 中创建一个清理内存的函数：
 
@@ -500,7 +500,7 @@ free(): double free detected in tcache 2
 Aborted
 ```
 
-## Closing thoughts
+## 总结
 
 从 Python 中使用 Rust 是我这段时间一直想尝试的事情。即使我已经研究 Rust 一段时间了，完全转向 Rust 对我现在参与的任何项目都没有任何意义。在某些情况下，我使用的库在 Rust 中不可用，而在其他情况下，我正在工作的项目太大而无法在 Rust 中重写。另外，其实我对于 Rust 还处于学习阶段。
 
