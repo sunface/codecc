@@ -2,7 +2,7 @@
     "sunface": {
         "id": 7036754,
         "name": "Sunface",
-        "score": 126,
+        "score": 118,
         "article_num": 4,
         "is_approver": true,
         "is_admin": false,
@@ -123,7 +123,7 @@
     },
     "codemystery": {
         "id": 48076486,
-        "score": 0,
+        "score": 5,
         "article_num": 0,
         "is_approver": false,
         "is_admin": false,
