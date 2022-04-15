@@ -19,7 +19,7 @@ Python 是一门很棒的语言！至少，在我看来是这样。它有着丰�
 
 在本文中，我将介绍一些关于如何从 Python 调用多个 Rust 函数的基本示例。在 Rust 一侧，我将使用 std 中的 `ffi`，在 Python 一侧，我将仍然使用 `ctypes`：
 
-![Calling Rust from Python](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220413-calling-rust-from-python/calling_rust_from_python_std_ffi_and_ctypes.webp)
+![Calling Rust from Python](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220413-calling-rust-from-python/calling_rust_from_python_std_ffi_and_ctypes.png)
 
   
 
@@ -27,7 +27,7 @@ Python 是一门很棒的语言！至少，在我看来是这样。它有着丰�
 
 首先，我们将编写一个打印字符串的 Rust 函数。下图说明具体发生了什么：
 
-![Python string to Rust](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220413-calling-rust-from-python/python_string_to_rust_via_c.webp)
+![Python string to Rust](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220413-calling-rust-from-python/python_string_to_rust_via_c.png)
 
   
 
@@ -253,7 +253,7 @@ Rust、Python 和 C 中有许多类型。这些类型之间的对应可能会把
 
 现在，我们使用 Python 调用一个 `start_procedure` 。为了专注研究跨语言调用，该函数仅仅获取一个结构并返回另一个结构。在 Python 侧，我们使用 Pydantic basemodel 来创建 Rust 函数所需的输入。Pydantic basemodel 将具有与 Rust 结构相同的字段。我们对 Rust 的返回值做同样的事情。我们创建了一个 Pydantic basemodel ，它是 Rust struct 在 Python 侧的镜像。 Rust struct 和 Pydantic basemodel 将包含多种不同类型的字段。这是我们将以最简单的方式（至少在我看来）处理的这件事：使用 C 语言中的 `Char *`。
 
-![Pydantic BaseModel to Rust Struct](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220413-calling-rust-from-python/model_to_struct.webp)
+![Pydantic BaseModel to Rust Struct](https://raw.githubusercontent.com/rustt-org/rustt-assets/main/20220413-calling-rust-from-python/model_to_struct.png)
 
 
 
