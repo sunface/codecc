@@ -3,7 +3,7 @@
 > **翻译：[Cerdore](https://github.com/cerdore)**
 > 选题：[Cerdore](https://github.com/cerdore)
 >
-> 本文由 [Rustt](https://Rustt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出
+> 本文由 [Rustt](https://Rustt.org) 翻译，[RustCn](https://hirust.cn) 荣誉推出
 
 # 基于RocksDB使用Rust构建关系型数据库
 
