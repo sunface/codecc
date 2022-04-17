@@ -1,5 +1,17 @@
 [
     {
+        "username": "aresbit",
+        "score": {
+            "operator": "+",
+            "num": 6
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-17 12:45:22"
+    },
+    {
         "username": "Akagi201",
         "score": {
             "operator": "+",
