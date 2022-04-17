@@ -9,7 +9,7 @@
 
 最近，我在 RocksDB 之上使用 Rust 开发了一个叫做 rrrdb 的迷你数据库，RocksDB 是一个著名的 Key-Value 存储引擎。尽管我不认为 rrrdb 是一个关系数据库，因为它根本不支持在对象之间建立关系，但 “rrrdb” 这个名字确实来自于 Relational-database in Rust with RocksDB。Rrrdb 提供 SQL 接口与它的底层存储层 RocksDB 进行交互。Rrrdb 只是提供了 SQL 接口来与它的底层存储层(RocksDB)进行交互。本文描述了 rrrdb 的样式和架构。
 
-GitHub repository: [petitviolet/rrrdb](https://github.com/petitviolet/rrrdb)
+GitHub 仓库: [petitviolet/rrrdb](https://github.com/petitviolet/rrrdb)
 
 # Overview
 
