@@ -11,7 +11,7 @@
 
 ## 介绍
 
-这篇是一篇简短的教程，教你如何手动实现 Rust 中关于相等、哈希和排序的 trait 。通常你可以通过 `derive` 自动实现：
+这篇是一篇简短的教程，教你如何手动实现 Rust 中关于相等、哈希和排序的 trait 。通常可以通过 `derive` 自动实现：
 
 ```rust
 #[derive(PartialEq, Eq, Hash, PartialOrd, Ord)]
@@ -20,7 +20,7 @@ pub MyStruct {
 }
 ```
 
-但有时候你想自己来，可能是因为你的版本比自动生成的性能更好，可能是你想要更明确地说明"相等"意味着什么，可能你想表达 `MyStruct` 和 `SomeOtherStruct` 的实例之间的关系，而自动生成的版本表达不了。
+但有时候你想要自己来，可能是因为手动版本比自动生成的性能更好，可能想要更明确地说明"相等"意味着什么，可能想表达 `MyStruct` 和 `SomeOtherStruct` 的实例之间的关系，而自动生成的版本表达不了。
 
 在这篇文章中，我会以下面这个简单的结构体为例：
 
@@ -69,7 +69,7 @@ impl Eq for FileInfo {}
 
 更简单的方法是使用 `#[derive(Eq)]` 。
 
-那什么情况下，你 **不** 应该实现 `Eq` 呢？这种情况很少见。`Eq` 表示[等价关系](https://en.wikipedia.org/wiki/Equivalence_relation)，因此所有的实例 `x` 都需要满足下面三种性质：
+那什么情况下， **不** 应该实现 `Eq` 呢？这种情况很少见。`Eq` 表示[等价关系](https://en.wikipedia.org/wiki/Equivalence_relation)，因此所有的实例 `x` 都需要满足下面三种性质：
 
 - [传递性](https://en.wikipedia.org/wiki/Transitive_relation)：若 `x == y` 且 `y == z` ，则 `x == z`
 - [对称性](https://en.wikipedia.org/wiki/Symmetric_relation)：若 `x == y`， 则 `y == x`
@@ -81,11 +81,11 @@ impl Eq for FileInfo {}
 
 ## 哈希
 
-对一个值进行哈希和相等的概念密切相关，因此，如果你实现了自己的 `PartialEq`，那么你也应该实现 `Hash` 。
+对一个值进行哈希和相等的概念密切相关，因此，如果实现了自己的 `PartialEq`，那么也应该实现 `Hash` 。
 
 > 这个关系必须成立：若 `x == y` ，则 `hash(x) == hash(y)`
 
-如果你违背了上述规则，那么你的自定义类型的值作为 [HashMap](https://doc.rust-lang.org/std/collections/struct.HashMap.html) 和  [HashSets](https://doc.rust-lang.org/std/collections/struct.HashSet.html) 的键时，不能正常工作。
+如果违背了上述规则，那么自定义类型的值作为 [HashMap](https://doc.rust-lang.org/std/collections/struct.HashMap.html) 和  [HashSets](https://doc.rust-lang.org/std/collections/struct.HashSet.html) 的键时，不能正常工作。
 
 也就是说，如果两个值根据 `PartialEq` 判断是相等的，那么它们应该有相同的哈希值。反之**不成立**——两个值具有相同的哈希值并**不**意味着它们相等。这种情况被称为“哈希冲突”。在某些域（domain）中，这是不可避免的，因为可能的值比不同的 `u64` 值要多得多（哈希值的类型是 `u64` ）。举一个小例子，一个有两个类型为 `u64` 的成员的结构体，它的实例有 `u64::MAX * u64::MAX` 种可能，这个数量远大于 `u64::MAX`。因此，不可能将这个结构体的每一个实例都映射到一个独特的哈希值。
 
@@ -169,7 +169,7 @@ impl Hash for FileInfo {
 }
 ```
 
-排序有点棘手——你需要先比较第一个字段，如果结果不是 `Equal`，那么就完成，但如果结果是`Equal`，则需要继续比较下一个字段，依此类推。这部分留给读者作为练习!
+排序有点麻烦——你需要先比较第一个字段，如果结果不是 `Equal`，那么就完成，但如果结果是`Equal`，则需要继续比较下一个字段，依此类推。这部分留给读者作为练习!
 
 ## 拓展到不同类型的比较
 
@@ -321,7 +321,7 @@ fn main() {
     }
 
     // ------------------------------------------------------------------------------
-    // 用于演示 Ord 。它让解锁了和排序有关的功能
+    // 用于演示 Ord 。它解锁了和排序有关的功能
     let mut v = vec![f1, f2];
     v.sort();
     println!("v after sorting = {:#?}", v);
