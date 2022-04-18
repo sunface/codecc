@@ -4,7 +4,8 @@
 >
 > 选题：[trdthg](https://github.com/trdthg)
 >
-> 本文由 [Rustt](https://Rustt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出
+> 本文由 [Rustt](https://Rustt.org) 翻译，[RustCn](https://hirust.cn) 荣誉推出
+
 
 # 在 Rust 中手动实现 `PartialEq` , `Eq` , `Hash` , `PartialOrd` 和 `Ord`
 
