@@ -667,5 +667,5 @@ OSError: Error from Rust: number is less than or equal to 2
 > 翻译：[minikiller](https://github.com/minikiller)
 > 选题：[minikiller](https://github.com/minikiller)
 >
-> 本文由 [Rustt](https://Rustt.org) 翻译，[StudyRust](https://studyrust.org) 荣誉推出
+> 本文由 [Rustt](https://Rustt.org) 翻译，[RustCn](https://hirust.cn) 荣誉推出
 
