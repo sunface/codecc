@@ -1,5 +1,17 @@
 [
     {
+        "username": "a1393323447",
+        "score": {
+            "operator": "+",
+            "num": 29
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-21 19:52:35"
+    },
+    {
         "username": "minikiller",
         "score": {
             "operator": "+",
