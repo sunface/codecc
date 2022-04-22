@@ -28,7 +28,7 @@ assignees: ''
 **声明模版**
 
 ```
-> *本文选自 [Rust 翻译计划](https://rustt.org)，由 [StudyRust](https://studyrust.org) 荣誉推出*
+> *本文选自 [Rust 翻译计划](https://rustt.org)，由 [RustCn](https://hirust.cn) 荣誉推出*
 > 
 > **翻译：_该部分由 Approver 替换填写_**
 > 选题：[Github昵称](GIthub个人链接)
