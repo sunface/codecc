@@ -3,6 +3,18 @@
         "username": "trdthg",
         "score": {
             "operator": "+",
+            "num": 8
+        },
+        "article": {
+            "operator": "+",
+            "num": 0
+        },
+        "timestamp": "2022-4-23 9:44:58"
+    },
+    {
+        "username": "trdthg",
+        "score": {
+            "operator": "+",
             "num": 32
         },
         "article": {
