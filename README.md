@@ -69,7 +69,7 @@ Rustt (读音 / rʌsˈti /) 是 RustCn 翻译计划的英文缩写，负责将�
                 <br />
                 <b>子殊</b>
                 <br />
-                 <sub>🚀最近贡献多</sub>
+                  <sub><a href="https://github.com/rustlang-cn/Rustt/blob/main/贡献者排名.md">🚀最近贡献多</a></sub>
             </a>
         </td>
     </tr>
