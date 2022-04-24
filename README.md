@@ -64,12 +64,12 @@ Rustt (读音 / rʌsˈti /) 是 RustCn 翻译计划的英文缩写，负责将�
             </a>
         </td>
         <td align="center">
-              <a href="https://github.com/lxbwolf ">
-                  <img src="https://avatars.githubusercontent.com/u/12119889?v=4?s=100" width="120px"  alt=""/>
+              <a href="https://github.com/allenli178">
+                  <img src="https://avatars.githubusercontent.com/u/53218750?v=4" width="120px"  alt=""/>
                 <br />
-                <b>Xiaobin.Liu</b>
+                <b>子殊</b>
                 <br />
-                 <sub><a href="https://github.com/rustlang-cn/rubot">🚀最近贡献多</a></sub>
+                 <sub>🚀最近贡献多</sub>
             </a>
         </td>
     </tr>
