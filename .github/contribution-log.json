@@ -3,6 +3,30 @@
         "username": "allenli178",
         "score": {
             "operator": "+",
+            "num": 32
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-29 9:20:28"
+    },
+    {
+        "username": "asur4s",
+        "score": {
+            "operator": "+",
+            "num": 30
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-4-29 8:33:48"
+    },
+    {
+        "username": "allenli178",
+        "score": {
+            "operator": "+",
             "num": 0
         },
         "article": {
