@@ -134,25 +134,158 @@ v               v
 
 ## Smallfuck 在 Rust 中的 Runtime
 
-那么在 Rust 中这个简单的实现会是什么样子呢？我将首先介绍与我的类型级实现捆绑在一起的 Smallfuck 的运行时实现，以验证类型级和运行时实现是否一致。我们将 Smallfuck 程序存储为 AST，如下所示：
+那么在 Rust 中这个简单的实现会是什么样子呢？首先我要介绍我实现的 Smallfuck Runtime 的实现，以验证 Rust type-level 和 Smallfuck 运行时实现是否一致。我们会将 Smallfuck 程序存储为枚举类型定义的 AST 节点，如下形式：
+
+```rust
+enum Program {
+    Empty,
+    Left(Box<Program>),
+    Right(Box<Program>),
+    Flip(Box<Program>),
+    Loop(Box<(Program, Program)>),
+}
+```
+
+这种表示方法对于字符串形式的 Smallfuck 程序并非十分精确，但它更容易理解。我们还需要一个类型来表示正在运行的 Smallfuck 程序的状态：
+
+```rust
+struct State {
+    ptr: u16,
+    bits: [u8; (std::u16::MAX as usize + 1) / 8],
+}
+```
+
+尽管要实现图灵完备，我们在技术上需要无限长的磁带，但我们的运行时实现仅仅是为了检查 Rust 类型系统的语义正确性。所以说，这里我们使用一个有限长的磁带作为近似就可以了。通过使用长度为`(std::u16::MAX as usize + 1) / 8`的`bits`，我们确保每个`u16`指针可以指向的范围内都是可用的。现在我们来定义实现 Smallfuck 程序解释器时需要用到的一些操作：
+
+```rust
+impl State {
+    fn get_bit(&self, at: u16) -> bool {
+        self.bits[(at >> 3) as usize] & (0x1 << (at & 0x7)) != 0
+    }
+
+    fn get_current_bit(&self) -> bool {
+        self.get_bit(self.ptr)
+    }
+
+    fn flip_current_bit(&mut self) {
+        self.bits[(self.ptr >> 3) as usize] ^= 0x1 << (self.ptr & 0x7);
+    }
+}
+```
+
+这是一些标准的位操作。我们将 8 位存储到我们的位数组中的一个单元格中，这样一来要找出给定的指针指向哪个单元格：将指针向右移位三位，然后使用指针的低三位作为单元格内部的索引，就找到了目标 bit 位。
+
+```
+ptr = 0b1100011010011001
+Index into the bytes of `bits` --> 1100011010011 \ 001 <-- Which bit in the byte
+```
+
+具体来说，这个寻址操作就如是上面的函数`get_bit`所示，将指针`at>>3`作为单元格寻址，通过`bits[(at >> 3) as usize]`取出单元格，然后使用`0x7`即`0b111`作为掩码取`at`的低三位，作为单元格内的偏移量，将`0x1`左移偏移量，再按位与上单元格就得到了目标bit是1还是0，对应函数返回true和false。同样的`flip_current_bit`也按相同的方式取出目标bit位，然后异或上`0x1`，将原bit位取反。
+
+现在我们有了这些原语，让我们继续实现我们的解释器。我们将通过递归调用一个在枚举类型 Program 上进行模式匹配的函数来实现：
+
+```rust
+impl Program {
+    fn big_step(&self, state: &mut State) {
+        use self::Program::*;
+
+        match *self {
+            Empty => unimplemented!(),
+            Left(ref next) => unimplemented!(),
+            Right(ref next) => unimplemented!(),
+            Flip(ref next) => unimplemented!(),
+            Loop(ref body_and_next) => unimplemented!(),
+        }
+    }
+}
+```
+
+`Empty` 程序不修改任何状态，因此其实现非常简单：
+
+```rust
+Empty => {},
+```
+
+`Left` 和 `Right` 只是将指针加/减一。由于我们在简单实现中选择使用有限的内存磁带，因此我们使用 wrapping_add 和 wrapping_sub：
+
+```rust
+Left(ref next) => {
+    state.ptr = state.ptr.wrapping_sub(1);
+    next.big_step(state);
+},
+Right(ref next) => {
+    state.ptr = state.ptr.wrapping_add(1);
+    next.big_step(state);
+},
+```
+
+`Flip` 非常简单，因为我们已经写了方便的 `flip_current_bit` 函数：
+
+```rust
+Flip(ref next) => {
+    state.flip_current_bit();
+    next.big_step(state);
+},
+```
+
+最后是循环。我们需要检查当前位。如果是 1，那么我们执行循环体，然后以更新的状态再次执行循环指令。如果为 0，我们继续循环体后的下一条指令：
+
+```rust
+Loop(ref body_and_next) => {
+    let (ref body, ref next) = **body_and_next;
+    if state.get_current_bit() {
+        body.big_step(state);
+        self.big_step(state);
+    } else {
+        next.big_step(state);
+    }
+},
+```
+
+注意，我们必须对 `body_and_next` 进行双重解引用，因为我们是将一个元组`(Program, Program)`装入`Box<>`中（见 Program 的定义）。我们通过 `ref` 来避免将 body 和 next 的所有权从 Box 中移走。最终我们为枚举类型 Program 完成的 `.big_step()` 函数如下所示：
+
+```rust
+impl Program {
+    fn big_step(&self, state: &mut State) {
+        use self::Program::*;
+    
+        match *self {
+            Empty => {},
+            Left(ref next) => {
+                state.ptr = state.ptr.wrapping_sub(1);
+                next.big_step(state);
+            },
+            Right(ref next) => {
+                state.ptr = state.ptr.wrapping_add(1);
+                next.big_step(state);
+            },
+            Flip(ref next) => {
+                state.flip_current_bit();
+                next.big_step(state);
+            },
+            Loop(ref body_and_next) => {
+                let (ref body, ref next) = **body_and_next;
+                if state.get_current_bit() {
+                    body.big_step(state);
+                    self.big_step(state);
+                } else {
+                    next.big_step(state);
+                }
+            },
+        }
+    }
+}
+```
+
+我们不会为`State`实现任何类型的调试打印，因为我们不需要。当使用我们的实现 Smallfuck 运行时解释器来检查 Rust type-level 解释器时，我们将通过检查 Rust type-level 解释器的输出，和 Smallfuck 运行时解释器输出，的一致性来完成检验。现在，我们终于可以开始做些有趣的事情了！
 
 
 
+## Type-Level Smallfuck in Rust
+
+Rust 有一个称为 *traits* 的特性。 Traits 是一种进行编译时静态分派的方法，也可以用于执行运行时分派（尽管在实践中很少见）我在这里假设读者知道 Rust 中有这些特征并且已经大量使用过。为了实现 Smallfuck，我们将依赖于被称为 *associated types* 的特性。
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Trait resolution and unification
 
