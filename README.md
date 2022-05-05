@@ -44,7 +44,7 @@ Rustt (读音 / rʌsˈti /) 是 RustCn 翻译计划的英文缩写，负责将�
 明星贡献者是我们根据积分、作品质量、近期贡献频率综合评定出来的，所有的贡献者排名在[这里查看](./贡献者排名.md)。
 
 <table>
-    <tr>
+     <tr>
          <td align="center">
               <a href="https://github.com/trdthg ">
                   <img src="https://avatars.githubusercontent.com/u/69898423?v=4?s=100" width="120px"  alt=""/>
