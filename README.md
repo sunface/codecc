@@ -63,7 +63,6 @@ Rustt (读音 / rʌsˈti /) 是 RustCn 翻译计划的英文缩写，负责将�
                 <sub><a href="https://github.com/rustlang-cn/rubot">🏆 Rubot发明人</a></sub>
             </a>
         </td>
-      
     </tr>
 </table>
 
