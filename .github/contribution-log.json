@@ -3,6 +3,18 @@
         "username": "lxbwolf",
         "score": {
             "operator": "+",
+            "num": 28
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-5-10 8:31:38"
+    },
+    {
+        "username": "lxbwolf",
+        "score": {
+            "operator": "+",
             "num": 7
         },
         "article": {
