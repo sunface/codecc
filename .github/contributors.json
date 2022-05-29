@@ -22,16 +22,16 @@
     "lxbwolf": {
         "id": 12119889,
         "name": "Xiaobin.Liu",
-        "score": 207,
-        "article_num": 6,
+        "score": 242,
+        "article_num": 7,
         "is_approver": false,
         "is_admin": false,
         "joined": "2022-03-23"
     },
     "trdthg": {
         "id": 69898423,
-        "score": 256,
-        "article_num": 9,
+        "score": 304,
+        "article_num": 11,
         "is_approver": false,
         "is_admin": false,
         "joined": "2022-03-29"
@@ -47,8 +47,8 @@
     "asur4s": {
         "id": 99897242,
         "name": "Asura",
-        "score": 41,
-        "article_num": 1,
+        "score": 78,
+        "article_num": 2,
         "is_approver": false,
         "is_admin": false,
         "joined": "2022-03-22"
@@ -56,8 +56,8 @@
     "Ch3nYe": {
         "id": 51895486,
         "name": "ChenYe",
-        "score": 69,
-        "article_num": 2,
+        "score": 104,
+        "article_num": 3,
         "is_approver": false,
         "is_admin": false,
         "joined": "2022-03-26"
@@ -98,8 +98,8 @@
     "allenli178": {
         "id": 53218750,
         "name": "子殊",
-        "score": 124,
-        "article_num": 5,
+        "score": 156,
+        "article_num": 6,
         "is_approver": false,
         "is_admin": false,
         "joined": "2022-03-29"

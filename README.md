@@ -44,17 +44,8 @@ Rustt (读音 / rʌsˈti /) 是 RustCn 翻译计划的英文缩写，负责将�
 明星贡献者是我们根据积分、作品质量、近期贡献频率综合评定出来的，所有的贡献者排名在[这里查看](./贡献者排名.md)。
 
 <table>
-    <tr>
-        <td align="center">
-            <a href="https://github.com/mrxiaozhuox">
-                <img src="https://avatars.githubusercontent.com/u/41265098?v=4?s=100" width="120px"  alt=""/>
-                <br />
-                <b>YuKun Liu</b>
-                <br />
-                <sub><a href="https://github.com/rustlang-cn/rubot">🏆 Rubot发明人</a></sub>
-            </a>
-        </td>
-        <td align="center">
+     <tr>
+         <td align="center">
               <a href="https://github.com/trdthg ">
                   <img src="https://avatars.githubusercontent.com/u/69898423?v=4?s=100" width="120px"  alt=""/>
                 <br />
@@ -64,12 +55,12 @@ Rustt (读音 / rʌsˈti /) 是 RustCn 翻译计划的英文缩写，负责将�
             </a>
         </td>
         <td align="center">
-              <a href="https://github.com/allenli178">
-                  <img src="https://avatars.githubusercontent.com/u/53218750?v=4" width="120px"  alt=""/>
+            <a href="https://github.com/mrxiaozhuox">
+                <img src="https://avatars.githubusercontent.com/u/41265098?v=4?s=100" width="120px"  alt=""/>
                 <br />
-                <b>子殊</b>
+                <b>YuKun Liu</b>
                 <br />
-                  <sub><a href="https://github.com/rustlang-cn/Rustt/blob/main/贡献者排名.md">🚀最近贡献多</a></sub>
+                <sub><a href="https://github.com/rustlang-cn/rubot">🏆 Rubot发明人</a></sub>
             </a>
         </td>
     </tr>
