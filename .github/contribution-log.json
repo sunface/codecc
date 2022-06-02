@@ -3,6 +3,18 @@
         "username": "asur4s",
         "score": {
             "operator": "+",
+            "num": 28
+        },
+        "article": {
+            "operator": "+",
+            "num": 1
+        },
+        "timestamp": "2022-6-2 8:38:46"
+    },
+    {
+        "username": "asur4s",
+        "score": {
+            "operator": "+",
             "num": 7
         },
         "article": {
