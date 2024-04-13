@@ -1,3 +1,3 @@
 ## APM
 
-An progammable and context-aware agentic platform, APM = Agent plus Mind
+What will happen when agent has mind? APM ( Agent plus Mind ) will give you the final answer.
