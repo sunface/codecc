@@ -1,3 +1,3 @@
-# 🌌CodeCC 技术天路
+# 🌌CodeCC
 > Sunface 的个人博客
 
